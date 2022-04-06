@@ -1,0 +1,30 @@
+{
+  "results" : [
+    {
+      "columns" : [
+        {
+          "name" : "TERM",
+          "type" : ""
+        },
+        {
+          "name" : "TERM_LDESC",
+          "type" : ""
+        }
+      ],
+      "items" : [
+        {
+          "term" : "2223",
+          "term_ldesc" : "Spring 2022"
+        },
+        {
+          "term" : "2221",
+          "term_ldesc" : "Winter Intersession 2022"
+        },
+        {
+          "term" : "2218",
+          "term_ldesc" : "Fall 2021"
+        }
+      ]
+    }
+  ]
+}
