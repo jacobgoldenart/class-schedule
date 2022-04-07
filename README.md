@@ -17,5 +17,5 @@ To Run the App locally.
 1. Ensure [Node.js](https://https://nodejs.org/en/download/) is installed on your machine
 2. Close this repository
 3. Open your Terminal an cd into the downloaded repository
-4. Run the command NPX start in your terminal (from inside the main folder of the app).
+4. Run the command: **npm start** in your terminal (from inside the main folder of the app).
 5. Your terminal should generate a local url where you can see the app. It will live update as you change the code. ; )
