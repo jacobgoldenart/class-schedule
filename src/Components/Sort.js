@@ -3,26 +3,47 @@ import useFetch from "./utils/useFetch";
 
 export default function Sort(props) {
   const [courses, setCourses] = useState();
+  const [groupedCourses, setGroupedCourses] = useState([]);
   const { get } = useFetch("./sample-data/");
 
   useEffect(() => {
-    get("semester-subject-all_spring2022.json").then((data) => {
-      console.log(data);
-      setCourses(data.results[0].items);
-    });
-  }, []);
+    get("semester-subject-all_spring2022.json")
+      .then((data) => {
+        //console.log(data);
+        setCourses(data.results[0].items);
+      })
+      .finally(() => {
+        groupNames();
+      });
+  }, [get]);
 
-  //console.log(courses);
+  const groupNames = () => {
+    const map = courses.reduce((acc, val) => {
+      let char = val.subject_ldesc.charAt(0).toUpperCase();
+
+      acc[char] = [].concat(acc[char] || [], val);
+      return acc;
+    }, {});
+    const res = Object.keys(map).map((el) => ({
+      letter: el,
+      names: map[el],
+    }));
+    setGroupedCourses(res);
+    console.log(res);
+  };
 
   return (
     <>
       <h1>Courses</h1>
-      <ul>
-        {courses &&
-          courses.map((course) => (
-            <li key={course.subject_code}>{course.subject_ldesc}</li>
-          ))}
-      </ul>
+      {groupedCourses &&
+        groupedCourses.map((groupCourse) => (
+          <div>
+            <h3>{groupCourse.letter}</h3>
+            <ul>
+              <li key={groupCourse.names.length}>{groupCourse.names}</li>
+            </ul>
+          </div>
+        ))}
     </>
   );
 }

@@ -1,0 +1,41 @@
+article h3 {
+  flex: 1 0 5%;
+  margin: 0;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+[class*="page-schedule-term-"] article > section > div:nth-of-type(even) {
+  background: var(--graylt);
+}
+
+[class*="page-schedule-term-"] article > section > div:nth-of-type(even) h3 {
+  background: var(--graymin);
+}
+
+[class*="page-schedule-term-"] article ul {
+  flex: 1 0 95%;
+  flex-wrap: wrap;
+  padding: .5rem 1ch 0 1ch;
+}
+
+[class*="page-schedule-term-"] article > section > div:nth-of-type(odd) ul {
+  background: var(--graymin);
+}
+
+[class*="page-schedule-term-"] article li {
+  flex-basis: min-content;
+  display: flex;
+  flex-wrap: wrap;
+  white-space: nowrap;
+  margin: 0 1ch .5rem 0;
+  border-radius: 4px;
+}
+
+[class*="page-schedule-term-"] article li a {
+  display: block;
+  background: var(--white);
+  padding: 1rem;
+}
