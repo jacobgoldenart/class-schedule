@@ -1,10 +1,11 @@
 import { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
-import { TermsContext } from "../App"
+import { TermsContext } from "../Main"
 
 
 
 function Semesters() {
+  
   const terms = useContext(TermsContext);
 
   return (

@@ -1,11 +1,10 @@
 import { useState, useContext, useEffect } from "react";
 import "./AllCourses.css";
-import { Link, useLocation, useNavigate } from "react-router-dom";
-import { TermsContext } from "../App";
+import { useNavigate } from "react-router-dom";
+import { TermsContext } from "../Main";
 
 function AllCourses(props) {
-  const [term, setTerm] = useState();
-  const location = useLocation();
+ 
   const termsLinks = useContext(TermsContext);
   const navigate = useNavigate();
 
@@ -15,19 +14,9 @@ function AllCourses(props) {
     navigate(`/${changeTerm}`);
   }
 
-  useEffect(() => {
-    let termPath = location.pathname.substr(1).split("_");
-    let termPathTitle = termPath.map((termTitle) => termTitle[0].toUpperCase() + termTitle.substr(1));
-
-    setTerm(termPathTitle.join(" "));
-  }, [handleTermChange]);
-
-  //console.log(termsLinks);
-
   return (
-    <div className={`page-schedule-term-${term}`}>
+    <div className={`page-schedule-term-`}>
       <article>
-        <h2 id="article-head">Class Schedule For {term}</h2>
 
         <form>
           <fieldset>
