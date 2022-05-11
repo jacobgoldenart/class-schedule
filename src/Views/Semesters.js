@@ -2,8 +2,6 @@ import { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 import { TermsContext } from "../Main"
 
-
-
 function Semesters() {
   
   const terms = useContext(TermsContext);

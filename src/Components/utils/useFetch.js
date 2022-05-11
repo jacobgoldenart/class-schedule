@@ -4,7 +4,7 @@ export default function useFetch(baseUrl) {
   const [loading, setLoading] = useState(true);
 
   function get(url) {
-    console.log(url)
+    //console.log(url)
     return new Promise((resolve, reject) => {
       fetch(baseUrl + url)
       // .then(res => res.text())          // convert to plain text to test api

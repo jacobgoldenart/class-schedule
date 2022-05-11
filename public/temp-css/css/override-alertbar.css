@@ -1,0 +1,284 @@
+@media screen and (min-width: 960px) {
+  /* adds space to bottom for video etc. */
+  /* line 6, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-alertbar.scss */
+  .page-nutrition-food-dietetics .alert-flex,
+  .page-fashion-merchandising-management .alert-flex {
+    padding-bottom: 1rem;
+  }
+}
+
+/* line 15, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-alertbar.scss */
+.t4.page-center-on-race-immigration-social-justice .alert-link a {
+  background: #f15a25;
+}
+
+/* line 17, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-alertbar.scss */
+.t4.page-center-on-race-immigration-social-justice .alert-link a span.alert-label {
+  color: #fff;
+}
+
+/* ====== COVID Only Alert Bar ======== */
+/* line 25, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-alertbar.scss */
+.covid-alert-bar {
+  /* ======= Covid Text Content Blocks ================ */
+}
+
+/* line 26, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-alertbar.scss */
+.covid-alert-bar .alert-flex {
+  border-bottom: 4px solid #c4b581;
+  background: #f1ead6;
+}
+
+/* line 30, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-alertbar.scss */
+.covid-alert-bar .covid-general-strip {
+  background: #f0e1b0;
+  width: 100%;
+  /*text-align: center;*/
+  /*border-top: 4px solid #7fd2c6;*/
+  border-bottom: 4px solid #c4b581;
+}
+
+/* line 36, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-alertbar.scss */
+.covid-alert-bar .covid-general-strip h2,
+.covid-alert-bar .covid-general-strip div {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* line 41, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-alertbar.scss */
+.covid-alert-bar .covid-general-strip h2 {
+  padding: 2rem 5% 0;
+  font-size: 1.2rem;
+  color: #5d4b3f;
+}
+
+@media screen and (min-width: 720px) {
+  /* line 41, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-alertbar.scss */
+  .covid-alert-bar .covid-general-strip h2 {
+    font-size: 26px;
+  }
+}
+
+/* line 49, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-alertbar.scss */
+.covid-alert-bar .covid-general-strip div {
+  padding: 1rem 5%;
+}
+
+/* line 52, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-alertbar.scss */
+.covid-alert-bar .covid-general-strip p {
+  display: flex;
+  flex-direction: column;
+  max-width: 1140px;
+  margin: 0 auto;
+  /*justify-content: space-evenly;*/
+  /*align-items: center;*/
+  /*white-space:nowrap;*/
+}
+
+@media screen and (min-width: 720px) {
+  /* line 52, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-alertbar.scss */
+  .covid-alert-bar .covid-general-strip p {
+    flex-direction: row;
+  }
+}
+
+/* line 64, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-alertbar.scss */
+.covid-alert-bar .covid-general-strip strong,
+.covid-alert-bar .covid-general-strip span,
+.covid-alert-bar .covid-general-strip a {
+  display: block;
+  padding: 1rem 2%;
+  flex: 1 1 100%;
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+/* line 75, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-alertbar.scss */
+.covid-alert-bar .covid-general-strip strong {
+  color: #c4b581;
+  font-weight: 600;
+}
+
+/* line 79, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-alertbar.scss */
+.covid-alert-bar .covid-general-strip span {
+  color: #000;
+  font-weight: 300;
+}
+
+/* line 83, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-alertbar.scss */
+.covid-alert-bar .covid-general-strip a {
+  background: #fff;
+  border: 1px solid #5d4b3f;
+  border-radius: 4px;
+  color: #5d4b3f;
+  text-align: center;
+  margin: 0 0 1rem;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 720px) {
+  /* line 83, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-alertbar.scss */
+  .covid-alert-bar .covid-general-strip a {
+    margin: 0 2% 1rem 0;
+  }
+  /* line 93, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-alertbar.scss */
+  .covid-alert-bar .covid-general-strip a:last-child {
+    margin-right: 0;
+  }
+}
+
+/* line 98, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-alertbar.scss */
+.covid-alert-bar .covid-general-strip a:hover, .covid-alert-bar .covid-general-strip a:focus {
+  background: rgba(196, 181, 129, 0.5);
+  color: #777;
+}
+
+/* line 107, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-alertbar.scss */
+.covid-alert-bar .covid-alert-block {
+  width: 100%;
+  padding: 2rem 10%;
+  background: #f0e1b0;
+}
+
+/* line 112, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-alertbar.scss */
+.covid-alert-bar .covid-alert-block h2,
+.covid-alert-bar .covid-alert-block h3,
+.covid-alert-bar .covid-alert-block strong,
+.covid-alert-bar .covid-alert-block:not(side-nav) a:hover,
+.covid-alert-bar .covid-alert-block p a:hover {
+  color: #5d4b3f;
+  max-width: unset;
+}
+
+/* line 120, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-alertbar.scss */
+.covid-alert-bar .covid-alert-block h2 {
+  margin: 0 0 1rem 0;
+  width: 100%;
+}
+
+@media screen and (min-width: 720px) {
+  /* line 120, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-alertbar.scss */
+  .covid-alert-bar .covid-alert-block h2 {
+    margin: 2rem 0;
+  }
+}
+
+/* line 127, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-alertbar.scss */
+.covid-alert-bar .covid-alert-block h3 {
+  margin-top: 2rem;
+}
+
+@media screen and (min-width: 960px) {
+  /* line 127, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-alertbar.scss */
+  .covid-alert-bar .covid-alert-block h3 {
+    margin-top: 0;
+  }
+}
+
+/* line 133, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-alertbar.scss */
+.covid-alert-bar .covid-alert-block p,
+.covid-alert-bar .covid-alert-block li {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: .5rem;
+}
+
+/* line 139, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-alertbar.scss */
+.covid-alert-bar .covid-alert-block li li {
+  margin-bottom: 0;
+}
+
+/* line 142, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-alertbar.scss */
+.covid-alert-bar .covid-alert-block ul {
+  /*list-style: none;*/
+  padding-left: 1.5rem;
+}
+
+/* line 146, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-alertbar.scss */
+.covid-alert-bar .covid-alert-block a:not(.button-default) {
+  display: inline;
+  background: none;
+  padding: 0;
+  text-decoration: underline;
+}
+
+/* line 152, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-alertbar.scss */
+.covid-alert-bar .covid-alert-block a.button-default {
+  display: block;
+  padding: 1rem;
+  background: #ffe9a8;
+  border-radius: 9px;
+  /*color: #004e38;*/
+  text-align: center;
+}
+
+/* line 159, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-alertbar.scss */
+.covid-alert-bar .covid-alert-block a.button-default:visited, .covid-alert-bar .covid-alert-block a.button-default:hover {
+  background: #fdf3d6;
+  border-color: #fff;
+}
+
+/* line 166, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-alertbar.scss */
+.covid-alert-bar .covid-alert-block aside {
+  width: 100%;
+  padding: 1rem 10%;
+  background: #ffc107;
+  text-align: center;
+  font-size: 1.3rem;
+  color: #00573d;
+}
+
+@media screen and (min-width: 720px) {
+  /* line 107, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-alertbar.scss */
+  .covid-alert-bar .covid-alert-block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 2rem 5% 1rem;
+    width: 100%;
+    max-width: 1140px;
+  }
+  /* line 182, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-alertbar.scss */
+  .covid-alert-bar .covid-alert-block div[class*="sub-"] {
+    display: flex;
+    margin: 1rem auto;
+  }
+  /* line 186, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-alertbar.scss */
+  .covid-alert-bar .covid-alert-block .sub-2cols,
+  .covid-alert-bar .covid-alert-block .sub-3cols {
+    flex: 1 0 46%;
+    margin-bottom: 0;
+    margin-right: 8%;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  /* line 193, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-alertbar.scss */
+  .covid-alert-bar .covid-alert-block .sub-2cols:last-child,
+  .covid-alert-bar .covid-alert-block .sub-3cols:last-child {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  /* line 199, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-alertbar.scss */
+  .covid-alert-bar .covid-alert-block .sub-3cols {
+    flex: 0 1 30%;
+    margin-right: 5%;
+  }
+  /* line 203, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-alertbar.scss */
+  .covid-alert-bar .covid-alert-block .sub-3cols:last-child {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  /* line 107, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-alertbar.scss */
+  .covid-alert-bar .covid-alert-block {
+    padding: 2rem 0;
+  }
+}
+
+/*# sourceMappingURL=override-alertbar.css.map */

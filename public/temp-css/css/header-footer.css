@@ -1,0 +1,890 @@
+/* line 3, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+[role="banner"] h1[aria-hidden="true"] {
+  display: none;
+}
+
+/* line 6, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+[role="banner"] .ie-browser-msg {
+  width: 100%;
+  padding: 1em 10%;
+  background: var(--hgob);
+  color: var(--grayDk);
+  text-align: center;
+}
+
+/* line 13, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+[role="banner"] [id="csus-global-navbar"] {
+  padding: 2rem 0 1rem;
+}
+
+/* line 15, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+[role="banner"] [id="csus-global-navbar"] .container {
+  max-width: 1400px;
+  padding: 0;
+  flex-wrap: nowrap;
+}
+
+/* line 19, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+[role="banner"] [id="csus-global-navbar"] .container .navbar-brand {
+  padding: 0;
+  margin: 0 0 0 5%;
+  flex: 0 0 55%;
+}
+
+@media screen and (min-width: 640px) {
+  /* line 19, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+  [role="banner"] [id="csus-global-navbar"] .container .navbar-brand {
+    flex: 0 0 50%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* line 19, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+  [role="banner"] [id="csus-global-navbar"] .container .navbar-brand {
+    flex: 0 0 35%;
+  }
+}
+
+/* line 29, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+[role="banner"] [id="csus-global-navbar"] .container .navbar-brand img {
+  width: 45%;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 960px) {
+  /* line 29, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+  [role="banner"] [id="csus-global-navbar"] .container .navbar-brand img {
+    width: 100%;
+    -o-object-fit: contain;
+    object-fit: contain;
+  }
+}
+
+/* line 39, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+[role="banner"] [id="csus-global-navbar"] .container ul.nav {
+  display: none;
+}
+
+@media screen and (min-width: 960px) {
+  /* line 39, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+  [role="banner"] [id="csus-global-navbar"] .container ul.nav {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+  }
+  /* line 46, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+  [role="banner"] [id="csus-global-navbar"] .container ul.nav li a {
+    font-size: 1.25rem;
+    font-weight: 600;
+    display: block;
+    padding: 0.5rem 1rem;
+    color: var(--black);
+    text-decoration: none;
+  }
+  /* line 53, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+  [role="banner"] [id="csus-global-navbar"] .container ul.nav li a:hover, [role="banner"] [id="csus-global-navbar"] .container ul.nav li a:focus {
+    text-decoration: underline;
+  }
+}
+
+/* line 61, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+[role="banner"] [id="csus-global-navbar"] .container .navbar-toggler {
+  flex: 0 0 35%;
+  text-align: left;
+  background-image: url("../svg/search.svg"), url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(4,57,39, 1)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  background-position: 80% 50%, 25% 50%;
+  background-size: contain, contain;
+  font-weight: 600;
+  text-indent: -9999px;
+  text-transform: uppercase;
+  border: 0;
+  padding: 0;
+}
+
+@media screen and (min-width: 420px) {
+  /* line 61, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+  [role="banner"] [id="csus-global-navbar"] .container .navbar-toggler {
+    background-position: 90% 50%, 65% 50%;
+    flex: 0 0 40%;
+    padding: 0 20% 0 0;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  /* line 61, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+  [role="banner"] [id="csus-global-navbar"] .container .navbar-toggler {
+    background-position: 90% 50%, 70% 50%;
+    flex: 0 0 45%;
+    text-indent: 0;
+    text-align: right;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  /* line 61, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+  [role="banner"] [id="csus-global-navbar"] .container .navbar-toggler {
+    background-position: 65% 50%, 20% 50%;
+    flex: 0 0 12%;
+    padding-right: 10%;
+    text-indent: -9999px;
+    text-align: unset;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  /* line 61, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+  [role="banner"] [id="csus-global-navbar"] .container .navbar-toggler {
+    background-position: 100% 50%, 65% 50%;
+  }
+}
+
+/* line 100, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+[role="banner"] [id="csus-global-navbar"] .container [id="quicklinks-modal"] .modal-dialog {
+  min-height: 100%;
+  margin: 0 0 0 auto;
+  background: transparent;
+}
+
+/* line 104, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+[role="banner"] [id="csus-global-navbar"] .container [id="quicklinks-modal"] .modal-dialog .modal-content {
+  width: 90%;
+  border: 0;
+  margin: 0 0 0 5%;
+  background: transparent;
+}
+
+/* line 109, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+[role="banner"] [id="csus-global-navbar"] .container [id="quicklinks-modal"] .modal-dialog .modal-content .modal-header {
+  border-bottom: 0;
+  position: relative;
+}
+
+/* line 113, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+[role="banner"] [id="csus-global-navbar"] .container [id="quicklinks-modal"] .modal-dialog .modal-content .modal-header .close {
+  background: var(--rwgr);
+  margin: 0;
+  color: var(--white);
+  font-size: .875rem;
+  padding: .5rem .75rem;
+  position: absolute;
+  top: 2rem;
+  right: calc(100% - 1rem);
+  z-index: 10;
+  border-radius: 50%;
+}
+
+/* line 126, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+[role="banner"] [id="csus-global-navbar"] .container [id="quicklinks-modal"] .modal-dialog .modal-content .modal-body {
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 0;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  box-shadow: rgba(50, 50, 50, 0.5) 112px 24px 36px;
+}
+
+/* line 133, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+[role="banner"] [id="csus-global-navbar"] .container [id="quicklinks-modal"] .modal-dialog .modal-content .modal-body ul {
+  list-style: none;
+}
+
+/* line 136, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+[role="banner"] [id="csus-global-navbar"] .container [id="quicklinks-modal"] .modal-dialog .modal-content .modal-body a {
+  color: #000;
+}
+
+/* line 138, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+[role="banner"] [id="csus-global-navbar"] .container [id="quicklinks-modal"] .modal-dialog .modal-content .modal-body a:hover, [role="banner"] [id="csus-global-navbar"] .container [id="quicklinks-modal"] .modal-dialog .modal-content .modal-body a:focus {
+  text-decoration: none;
+}
+
+/* line 143, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+[role="banner"] [id="csus-global-navbar"] .container [id="quicklinks-modal"] .modal-dialog .modal-content .modal-body form[role="search"] {
+  position: relative;
+  margin-top: 1rem;
+  width: 100%;
+  padding: 1em 5%;
+  display: flex;
+  align-items: center;
+  background-color: var(--white);
+  border-top-right-radius: 4px;
+}
+
+/* line 153, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+[role="banner"] [id="csus-global-navbar"] .container [id="quicklinks-modal"] .modal-dialog .modal-content .modal-body form[role="search"] fieldset {
+  display: flex;
+  flex: 1;
+  position: relative;
+}
+
+/* line 157, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+[role="banner"] [id="csus-global-navbar"] .container [id="quicklinks-modal"] .modal-dialog .modal-content .modal-body form[role="search"] fieldset legend {
+  /* hide search label */
+  text-indent: -9999px;
+  max-height: 1px;
+  margin: 0;
+}
+
+/* line 163, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+[role="banner"] [id="csus-global-navbar"] .container [id="quicklinks-modal"] .modal-dialog .modal-content .modal-body form[role="search"] fieldset input.form-control {
+  border: 3px solid var(--hgob);
+  border-radius: 4px;
+  min-height: 2.5rem;
+  padding: .5rem;
+  flex: 1;
+  width: calc(100% - 30px);
+}
+
+/* line 172, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+[role="banner"] [id="csus-global-navbar"] .container [id="quicklinks-modal"] .modal-dialog .modal-content .modal-body form[role="search"] fieldset button {
+  background-color: var(--white);
+  width: 44px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* line 191, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+[role="banner"] [id="csus-global-navbar"] .container [id="quicklinks-modal"] .modal-dialog .modal-content .modal-body form[role="search"] fieldset button:hover, [role="banner"] [id="csus-global-navbar"] .container [id="quicklinks-modal"] .modal-dialog .modal-content .modal-body form[role="search"] fieldset button:focus {
+  background-color: var(--black40a);
+}
+
+/* line 195, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+[role="banner"] [id="csus-global-navbar"] .container [id="quicklinks-modal"] .modal-dialog .modal-content .modal-body form[role="search"] fieldset button span {
+  /* hide search label */
+  text-indent: -9999px;
+  margin: 0;
+}
+
+/* line 205, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+[role="banner"] [id="csus-global-navbar"] .container [id="quicklinks-modal"] .modal-dialog .modal-content .modal-body [id="top-quick-links"].ql-stacker {
+  min-height: unset;
+  background-color: #f5de95;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  list-style: none;
+}
+
+@media screen and (min-width: 960px) {
+  /* line 205, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+  [role="banner"] [id="csus-global-navbar"] .container [id="quicklinks-modal"] .modal-dialog .modal-content .modal-body [id="top-quick-links"].ql-stacker {
+    display: flex;
+    margin-right: 0;
+    flex: 0 0 50%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  /* line 205, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+  [role="banner"] [id="csus-global-navbar"] .container [id="quicklinks-modal"] .modal-dialog .modal-content .modal-body [id="top-quick-links"].ql-stacker {
+    flex: 0 0 55%;
+  }
+}
+
+/* line 223, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+[role="banner"] [id="csus-global-navbar"] .container [id="quicklinks-modal"] .modal-dialog .modal-content .modal-body [id="top-quick-links"].ql-stacker li {
+  min-height: 90px;
+  flex: 0 1 100%;
+  border-bottom: 2px solid #f1cc4d;
+  min-height: unset;
+}
+
+/* line 228, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+[role="banner"] [id="csus-global-navbar"] .container [id="quicklinks-modal"] .modal-dialog .modal-content .modal-body [id="top-quick-links"].ql-stacker li:last-child {
+  border-bottom: 0;
+}
+
+/* line 231, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+[role="banner"] [id="csus-global-navbar"] .container [id="quicklinks-modal"] .modal-dialog .modal-content .modal-body [id="top-quick-links"].ql-stacker li:nth-child(odd) {
+  border-right: 2px solid #fff;
+}
+
+/* line 234, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+[role="banner"] [id="csus-global-navbar"] .container [id="quicklinks-modal"] .modal-dialog .modal-content .modal-body [id="top-quick-links"].ql-stacker li:nth-child(odd) {
+  border-right: 0;
+}
+
+/* line 237, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+[role="banner"] [id="csus-global-navbar"] .container [id="quicklinks-modal"] .modal-dialog .modal-content .modal-body [id="top-quick-links"].ql-stacker li a {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: left;
+  background-image: none !important;
+  border-left: 8px solid #e6b711;
+  padding: .75em 8%;
+  text-decoration: none;
+}
+
+/* line 245, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+[role="banner"] [id="csus-global-navbar"] .container [id="quicklinks-modal"] .modal-dialog .modal-content .modal-body [id="top-quick-links"].ql-stacker li a:link, [role="banner"] [id="csus-global-navbar"] .container [id="quicklinks-modal"] .modal-dialog .modal-content .modal-body [id="top-quick-links"].ql-stacker li a:visited {
+  background-color: var(--black00a);
+  display: block;
+}
+
+/* line 250, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+[role="banner"] [id="csus-global-navbar"] .container [id="quicklinks-modal"] .modal-dialog .modal-content .modal-body [id="top-quick-links"].ql-stacker li a:hover, [role="banner"] [id="csus-global-navbar"] .container [id="quicklinks-modal"] .modal-dialog .modal-content .modal-body [id="top-quick-links"].ql-stacker li a:focus {
+  background-color: var(--black20a);
+}
+
+@media screen and (min-width: 960px) {
+  /* line 255, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+  [role="banner"] [id="csus-global-navbar"] .container [id="quicklinks-modal"] .modal-dialog .modal-content .modal-body [id="top-quick-links"].ql-stacker li a:focus, [role="banner"] [id="csus-global-navbar"] .container [id="quicklinks-modal"] .modal-dialog .modal-content .modal-body [id="top-quick-links"].ql-stacker li a:hover {
+    text-decoration: none;
+    color: var(--brzdk);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  /* line 237, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+  [role="banner"] [id="csus-global-navbar"] .container [id="quicklinks-modal"] .modal-dialog .modal-content .modal-body [id="top-quick-links"].ql-stacker li a {
+    padding-top: .6em;
+  }
+}
+
+/* line 268, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+[role="banner"] [id="csus-global-navbar"] .container [id="quicklinks-modal"] .modal-dialog .modal-content .modal-body [id="nav-accordion"] .card {
+  border: none;
+  border-radius: 0;
+}
+
+@media screen and (max-height: 420px) {
+  /* line 268, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+  [role="banner"] [id="csus-global-navbar"] .container [id="quicklinks-modal"] .modal-dialog .modal-content .modal-body [id="nav-accordion"] .card {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  /* line 274, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+  [role="banner"] [id="csus-global-navbar"] .container [id="quicklinks-modal"] .modal-dialog .modal-content .modal-body [id="nav-accordion"] .card.mobile-nav-only {
+    display: none;
+  }
+}
+
+/* line 279, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+[role="banner"] [id="csus-global-navbar"] .container [id="quicklinks-modal"] .modal-dialog .modal-content .modal-body [id="nav-accordion"] .card .collapse.show {
+  border-bottom: solid 4px var(--brzdk);
+}
+
+/* line 282, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+[role="banner"] [id="csus-global-navbar"] .container [id="quicklinks-modal"] .modal-dialog .modal-content .modal-body [id="nav-accordion"] .card .card-header {
+  padding: 0;
+  background-color: #fff;
+  border: none;
+  border-radius: 0;
+  display: flex;
+  margin: 0;
+}
+
+/* line 289, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+[role="banner"] [id="csus-global-navbar"] .container [id="quicklinks-modal"] .modal-dialog .modal-content .modal-body [id="nav-accordion"] .card .card-header:hover {
+  background-color: var(--wgolt);
+}
+
+/* line 292, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+[role="banner"] [id="csus-global-navbar"] .container [id="quicklinks-modal"] .modal-dialog .modal-content .modal-body [id="nav-accordion"] .card .card-header > a {
+  flex: 1;
+  padding: .75em 10%;
+  border: none;
+  border-radius: 0;
+  border-bottom: 2px solid var(--stgr);
+  text-decoration: none;
+}
+
+/* line 299, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+[role="banner"] [id="csus-global-navbar"] .container [id="quicklinks-modal"] .modal-dialog .modal-content .modal-body [id="nav-accordion"] .card .card-header > a[aria-expanded="true"] {
+  border: none;
+  border-top: 2px solid var(--hgob);
+  background-color: var(--wgo40a);
+}
+
+/* line 308, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+[role="banner"] [id="csus-global-navbar"] .container [id="quicklinks-modal"] .modal-dialog .modal-content .modal-body [id="nav-accordion"] .card [id^="accordion-"] .card-body {
+  background-color: var(--hgo20a);
+  padding: 0;
+}
+
+/* line 311, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+[role="banner"] [id="csus-global-navbar"] .container [id="quicklinks-modal"] .modal-dialog .modal-content .modal-body [id="nav-accordion"] .card [id^="accordion-"] .card-body ul,
+[role="banner"] [id="csus-global-navbar"] .container [id="quicklinks-modal"] .modal-dialog .modal-content .modal-body [id="nav-accordion"] .card [id^="accordion-"] .card-body li {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 317, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+[role="banner"] [id="csus-global-navbar"] .container [id="quicklinks-modal"] .modal-dialog .modal-content .modal-body [id="nav-accordion"] .card [id^="accordion-"] .card-body li {
+  border-bottom: 1px solid #f0e1b0;
+}
+
+/* line 319, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+[role="banner"] [id="csus-global-navbar"] .container [id="quicklinks-modal"] .modal-dialog .modal-content .modal-body [id="nav-accordion"] .card [id^="accordion-"] .card-body li a {
+  display: block;
+  padding: .5rem 10%;
+  background: var(--black00a);
+  font-size: .875rem;
+}
+
+/* line 324, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+[role="banner"] [id="csus-global-navbar"] .container [id="quicklinks-modal"] .modal-dialog .modal-content .modal-body [id="nav-accordion"] .card [id^="accordion-"] .card-body li a:hover {
+  background: var(--wgo20a);
+}
+
+/* line 328, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+[role="banner"] [id="csus-global-navbar"] .container [id="quicklinks-modal"] .modal-dialog .modal-content .modal-body [id="nav-accordion"] .card [id^="accordion-"] .card-body li:last-of-type {
+  border-bottom: 0;
+}
+
+/* line 335, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+[role="banner"] [id="csus-global-navbar"] .container [id="quicklinks-modal"] .modal-dialog .modal-content .modal-body [id="nav-accordion"] [id="social-quick-links"] {
+  background-color: #004e38;
+  padding: 0 5%;
+  margin: 0;
+  width: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  bottom: 0;
+}
+
+/* line 346, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+[role="banner"] [id="csus-global-navbar"] .container [id="quicklinks-modal"] .modal-dialog .modal-content .modal-body [id="nav-accordion"] [id="social-quick-links"] li {
+  width: 20%;
+  position: relative;
+  max-height: 60px;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 420px) {
+  /* line 346, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+  [role="banner"] [id="csus-global-navbar"] .container [id="quicklinks-modal"] .modal-dialog .modal-content .modal-body [id="nav-accordion"] [id="social-quick-links"] li {
+    max-height: 80px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  /* line 346, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+  [role="banner"] [id="csus-global-navbar"] .container [id="quicklinks-modal"] .modal-dialog .modal-content .modal-body [id="nav-accordion"] [id="social-quick-links"] li {
+    max-height: 60px;
+  }
+}
+
+/* line 385, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+[id="csus-global-footer"] {
+  background-color: var(--black);
+  padding-top: 2rem;
+}
+
+@media screen and (min-width: 660px) {
+  /* line 385, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+  [id="csus-global-footer"] {
+    padding-top: 1rem;
+  }
+}
+
+/* line 391, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+[id="csus-global-footer"] .container-fluid {
+  padding: 0;
+}
+
+/* line 393, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+[id="csus-global-footer"] .container-fluid .row {
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-bottom: 2em;
+}
+
+@media screen and (min-width: 1000px) {
+  /* line 393, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+  [id="csus-global-footer"] .container-fluid .row {
+    flex-wrap: nowrap;
+  }
+}
+
+/* line 404, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+[id="csus-global-footer"] .container-fluid .row a {
+  color: #f0e1b0;
+  text-decoration: underline;
+}
+
+/* line 407, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+[id="csus-global-footer"] .container-fluid .row a:hover {
+  text-decoration: none;
+}
+
+/* line 410, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+[id="csus-global-footer"] .container-fluid .row a[title*="Sac State Home Page"] {
+  display: block;
+  width: 90%;
+  margin: 0 auto 1rem auto;
+  text-align: center;
+}
+
+/* line 415, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+[id="csus-global-footer"] .container-fluid .row a[title*="Sac State Home Page"] img {
+  -o-object-fit: scale-down;
+  object-fit: scale-down;
+  width: 100%;
+  max-width: 300px;
+}
+
+@media screen and (min-width: 660px) {
+  /* line 422, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+  [id="csus-global-footer"] .container-fluid .row a[title*="Sac State Home Page"] #csus-global-footer a[title*="Sac State Home Page"] {
+    width: 50%;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* line 410, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+  [id="csus-global-footer"] .container-fluid .row a[title*="Sac State Home Page"] {
+    flex: 0 0 50%;
+    max-width: 50%;
+    align-self: center;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  /* line 410, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+  [id="csus-global-footer"] .container-fluid .row a[title*="Sac State Home Page"] {
+    justify-content: flex-end;
+    display: flex;
+    flex: 0 0 30%;
+    max-width: 30%;
+    margin: .5em 0;
+  }
+}
+
+/* line 443, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+[id="csus-global-footer"] .container-fluid .row ul[aria-labelledby="campus-social-links"] {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 0;
+  margin: 0 auto;
+  max-width: 320px;
+  order: 1;
+}
+
+@media screen and (min-width: 660px) {
+  /* line 443, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+  [id="csus-global-footer"] .container-fluid .row ul[aria-labelledby="campus-social-links"] {
+    padding: 0 0 2em 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* line 443, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+  [id="csus-global-footer"] .container-fluid .row ul[aria-labelledby="campus-social-links"] {
+    flex: 0 0 50%;
+    max-width: 50%;
+    align-self: center;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  /* line 443, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+  [id="csus-global-footer"] .container-fluid .row ul[aria-labelledby="campus-social-links"] {
+    flex: 0 0 30%;
+    max-width: 30%;
+    margin: 0 auto;
+  }
+}
+
+/* line 470, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+[id="csus-global-footer"] .container-fluid .row ul li {
+  height: 51px;
+  width: 62px;
+  flex: 0 1 15%;
+  justify-items: center;
+  margin: 0;
+  position: relative;
+}
+
+/* line 479, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+[id="csus-global-footer"] .container-fluid .row address {
+  font-size: .9rem;
+  padding: 0;
+  max-width: 1400px;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  /* line 487, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+  [id="csus-global-footer"] .container-fluid .row address .locality:before, [id="csus-global-footer"] .container-fluid .row address .phone:before {
+    content: "";
+    display: block;
+  }
+  /* line 491, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+  [id="csus-global-footer"] .container-fluid .row address .country-name {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 660px) {
+  /* line 479, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+  [id="csus-global-footer"] .container-fluid .row address {
+    font-size: .75em;
+    padding: 1.5rem 5%;
+    width: 50%;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* line 479, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+  [id="csus-global-footer"] .container-fluid .row address {
+    flex: 0 0 50%;
+    max-width: 50%;
+    align-self: center;
+    margin: 0 0 0 50%;
+    padding: 0;
+    font-size: .9em;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  /* line 479, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+  [id="csus-global-footer"] .container-fluid .row address {
+    flex: 0 0 30%;
+    max-width: 30%;
+    margin: .5em 0;
+  }
+}
+
+/* line 517, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+[id="csus-global-footer"] .bottombar {
+  background-color: var(--rwgr);
+  position: relative;
+}
+
+/* line 520, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+[id="csus-global-footer"] .bottombar ul {
+  padding: 1rem 0;
+  max-width: 1400px;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+/* line 531, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+[id="csus-global-footer"] .bottombar ul li {
+  white-space: nowrap;
+  hyphens: none;
+}
+
+/* line 534, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+[id="csus-global-footer"] .bottombar ul li a {
+  font-size: .875rem;
+  display: block;
+  color: var(--wgolt);
+  padding: 0 3ch;
+  text-decoration: none;
+}
+
+/* line 540, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+[id="csus-global-footer"] .bottombar ul li a:hover {
+  color: var(--white);
+  text-decoration: underline;
+}
+
+/* line 554, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+#csus-global-footer ul[aria-labelledby="campus-social-links"] li a,
+#csus-global-footer ul[id="social-quick-links"] li a,
+#csus-global-navbar ul[aria-labelledby="campus-social-links"] li a,
+#csus-global-navbar ul[id="social-quick-links"] li a {
+  color: #FFF;
+  font-size: 0;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* line 559, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+#csus-global-footer ul[aria-labelledby="campus-social-links"] li a:before,
+#csus-global-footer ul[id="social-quick-links"] li a:before,
+#csus-global-navbar ul[aria-labelledby="campus-social-links"] li a:before,
+#csus-global-navbar ul[id="social-quick-links"] li a:before {
+  position: relative;
+  /*top: -.3rem;*/
+  text-decoration: none;
+}
+
+/* line 564, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+#csus-global-footer ul[aria-labelledby="campus-social-links"] li a[href*="twitter.com"]:before,
+#csus-global-footer ul[id="social-quick-links"] li a[href*="twitter.com"]:before,
+#csus-global-navbar ul[aria-labelledby="campus-social-links"] li a[href*="twitter.com"]:before,
+#csus-global-navbar ul[id="social-quick-links"] li a[href*="twitter.com"]:before {
+  content: url(../svg/socials/tw.svg);
+}
+
+/* line 567, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+#csus-global-footer ul[aria-labelledby="campus-social-links"] li a[href*="facebook.com"]:before,
+#csus-global-footer ul[id="social-quick-links"] li a[href*="facebook.com"]:before,
+#csus-global-navbar ul[aria-labelledby="campus-social-links"] li a[href*="facebook.com"]:before,
+#csus-global-navbar ul[id="social-quick-links"] li a[href*="facebook.com"]:before {
+  content: url(../svg/socials/fb.svg);
+}
+
+/* line 570, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+#csus-global-footer ul[aria-labelledby="campus-social-links"] li a[href*="instagram.com"]:before,
+#csus-global-footer ul[id="social-quick-links"] li a[href*="instagram.com"]:before,
+#csus-global-navbar ul[aria-labelledby="campus-social-links"] li a[href*="instagram.com"]:before,
+#csus-global-navbar ul[id="social-quick-links"] li a[href*="instagram.com"]:before {
+  content: url(../svg/socials/ig.svg);
+}
+
+/* line 573, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+#csus-global-footer ul[aria-labelledby="campus-social-links"] li a[href*="flickr.com"]:before,
+#csus-global-footer ul[id="social-quick-links"] li a[href*="flickr.com"]:before,
+#csus-global-navbar ul[aria-labelledby="campus-social-links"] li a[href*="flickr.com"]:before,
+#csus-global-navbar ul[id="social-quick-links"] li a[href*="flickr.com"]:before {
+  content: url(../svg/socials/fk.svg);
+}
+
+/* line 576, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+#csus-global-footer ul[aria-labelledby="campus-social-links"] li a[href*="youtube.com"]:before,
+#csus-global-footer ul[id="social-quick-links"] li a[href*="youtube.com"]:before,
+#csus-global-navbar ul[aria-labelledby="campus-social-links"] li a[href*="youtube.com"]:before,
+#csus-global-navbar ul[id="social-quick-links"] li a[href*="youtube.com"]:before {
+  content: url(../svg/socials/yt.svg);
+}
+
+/* line 579, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+#csus-global-footer ul[aria-labelledby="campus-social-links"] li a[href*="linkedin.com"]:before,
+#csus-global-footer ul[id="social-quick-links"] li a[href*="linkedin.com"]:before,
+#csus-global-navbar ul[aria-labelledby="campus-social-links"] li a[href*="linkedin.com"]:before,
+#csus-global-navbar ul[id="social-quick-links"] li a[href*="linkedin.com"]:before {
+  content: url(../svg/socials/li.svg);
+}
+
+/* line 582, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+#csus-global-footer ul[aria-labelledby="campus-social-links"] li a:hover, #csus-global-footer ul[aria-labelledby="campus-social-links"] li a:focus,
+#csus-global-footer ul[id="social-quick-links"] li a:hover,
+#csus-global-footer ul[id="social-quick-links"] li a:focus,
+#csus-global-navbar ul[aria-labelledby="campus-social-links"] li a:hover,
+#csus-global-navbar ul[aria-labelledby="campus-social-links"] li a:focus,
+#csus-global-navbar ul[id="social-quick-links"] li a:hover,
+#csus-global-navbar ul[id="social-quick-links"] li a:focus {
+  opacity: .6;
+}
+
+/* line 592, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+.button-copy-anchor {
+  text-indent: -2px;
+  white-space: nowrap;
+  overflow: hidden;
+  /*
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+    background: none;*/
+  border: none;
+  color: #00573d;
+}
+
+/* line 605, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+a.skip-nav {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  display: block;
+}
+
+/* line 612, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+a.skip-nav:focus {
+  position: relative;
+  left: 1rem;
+  top: 1rem;
+  border-radius: 4px;
+  width: auto;
+  height: auto;
+  overflow: unset;
+  text-align: center;
+  background: var(--wgolt);
+  color: var(--rwgr);
+  padding: .5rem 1rem;
+}
+
+/* line 627, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+[id="button-top"] {
+  display: none;
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 99;
+  border: none;
+  background-color: var(--ssgr);
+  color: var(--white);
+  cursor: pointer;
+  padding: .625rem;
+  border-radius: 4px;
+  font-size: .875rem;
+  line-height: 1;
+  text-shadow: 0;
+}
+
+@media screen and (min-width: 1000px) {
+  /* line 627, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+  [id="button-top"] {
+    bottom: 4rem;
+  }
+}
+
+/* line 645, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+[id="button-top"]:hover {
+  background-color: var(--rwgr);
+}
+
+/**************** Edit "Green Dot" Style ****************/
+/* line 653, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+.dot {
+  height: 0.65rem;
+  width: 0.65rem;
+  background-color: var(--ssgr);
+  border-radius: 50%;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-transition: ease 0.5s;
+  /* Safari prior 6.1 */
+  transition: ease 0.5s;
+  position: absolute;
+  top: 50%;
+  left: 2%;
+}
+
+/* line 671, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+.dot:hover {
+  background-color: #ccc;
+}
+
+@media screen and (max-width: 576px) {
+  /* line 653, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/header-footer.scss */
+  .dot {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=header-footer.css.map */

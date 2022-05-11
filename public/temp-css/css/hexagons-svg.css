@@ -1,0 +1,431 @@
+/* line 1, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/hexagons-svg.scss */
+.section2 + .section2,
+.t3 .section2:not(.sac-state-events-section),
+.t3.page-colleges-majors .section2,
+.t4 .section2 {
+  padding: 2em 10% 2em;
+  position: relative;
+}
+
+/* line 12, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/hexagons-svg.scss */
+.section2 > .container > .row > .col-md-6 {
+  padding: 0;
+}
+
+/* line 16, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/hexagons-svg.scss */
+.hex-row {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  /* IE 11 centering hack */
+}
+
+/* line 24, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/hexagons-svg.scss */
+.hex-row ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 1140px;
+}
+
+/* line 32, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/hexagons-svg.scss */
+.hex-row li {
+  padding: 0;
+  position: relative;
+}
+
+/* line 37, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/hexagons-svg.scss */
+.hex-row .hex {
+  font-size: 16px;
+  color: #FFF;
+  display: flex;
+  line-height: 1;
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  /* break at space, not mid-word */
+  -webkit-hyphens: none;
+  -moz-hyhens: none;
+  hyphens: none;
+  height: 100%;
+}
+
+/* line 53, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/hexagons-svg.scss */
+.hex:hover {
+  color: #f0e1b0;
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  /* line 60, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/hexagons-svg.scss */
+  .hex-row li {
+    flex: 1 0 100%;
+  }
+}
+
+@media (max-width: 849px) {
+  /* line 66, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/hexagons-svg.scss */
+  .hex-row ul {
+    /*flex-direction: column;*/
+    align-content: space-evenly;
+    flex-wrap: wrap;
+    border-right: 2px solid #fff6ce;
+    border-bottom: 2px solid #fff6ce;
+  }
+  /* line 73, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/hexagons-svg.scss */
+  .hex-row li {
+    flex: 1 0 50%;
+    min-width: min-content;
+    justify-content: center;
+    align-items: center;
+    border-left: 2px solid #fff6ce;
+    border-top: 2px solid #fff6ce;
+    position: relative;
+  }
+  /* line 82, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/hexagons-svg.scss */
+  .hex-row .hex {
+    padding: 2rem 5%;
+    line-height: 1;
+    flex: 1 1 100%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* break at space, not mid-word */
+    -webkit-hyphens: none;
+    -moz-hyhens: none;
+    hyphens: none;
+    background: linear-gradient(30deg, rgba(0, 78, 56, 0.4), rgba(0, 78, 56, 0.8) 100%);
+  }
+  /* line 95, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/hexagons-svg.scss */
+  .hex-row .hex:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  /* line 98, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/hexagons-svg.scss */
+  .hex-row svg {
+    height: 1px;
+    width: 1px;
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+}
+
+@media (min-width: 850px) {
+  /* line 109, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/hexagons-svg.scss */
+  .hex-row svg {
+    height: 100%;
+    width: 100%;
+    position: static;
+  }
+  /* line 115, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/hexagons-svg.scss */
+  .hexwrapper {
+    display: flex;
+  }
+  /* line 118, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/hexagons-svg.scss */
+  .hex-row ul {
+    align-content: space-evenly;
+    justify-content: space-evenly;
+    max-width: 1140px;
+  }
+  /* line 123, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/hexagons-svg.scss */
+  .hex-row ul.hex-3 {
+    max-width: 381px;
+  }
+  /* line 126, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/hexagons-svg.scss */
+  .hex-row ul.hex-4 {
+    max-width: 508px;
+  }
+  /* line 129, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/hexagons-svg.scss */
+  .hex-row ul.hex-5 {
+    max-width: 621px;
+  }
+  /* line 132, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/hexagons-svg.scss */
+  .hex-row {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 136, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/hexagons-svg.scss */
+  .hex-row li {
+    padding: 0;
+    margin-right: -35px;
+    background: none;
+    width: 238px;
+    height: 135px;
+  }
+  /* line 143, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/hexagons-svg.scss */
+  .hex-row li:nth-child(even) {
+    margin-top: 66px;
+  }
+  /* line 146, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/hexagons-svg.scss */
+  .hex-row .hex-5 li:nth-child(even) {
+    margin-top: 71px;
+  }
+  /*.hex-row .hex-5 li {*/
+  /*	margin-right: -35px;*/
+  /*    width:238px;*/
+  /*    height:148px;*/
+  /*}*/
+  /*.hex-row .hex-5 li:nth-child(even){*/
+  /*	margin-top: 73px;*/
+  /*}*/
+  /* line 158, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/hexagons-svg.scss */
+  .hex-row .hex {
+    background-color: transparent;
+    background-size: cover !important;
+    position: relative;
+    /*display: table-cell;*/
+    /*vertical-align: middle;*/
+    color: #FFF;
+    text-align: center;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+    font-weight: 600;
+    line-height: 1.2em;
+    /* use with inline SVG */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 25% 20%;
+    font-size: 16px;
+  }
+  /* line 178, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/hexagons-svg.scss */
+  .hex-row .hex:hover {
+    background-color: transparent;
+  }
+  /* line 181, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/hexagons-svg.scss */
+  .hex-row li.nav-item:nth-of-type(1) svg,
+  .hex-row li.nav-item:nth-of-type(4n) {
+    fill: rgba(235, 171, 33, 0.8);
+  }
+  /* line 185, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/hexagons-svg.scss */
+  .hex-row li.nav-item:nth-of-type(1):hover svg,
+  .hex-row li.nav-item:nth-of-type(4):hover svg {
+    fill: rgba(235, 171, 33, 0.6);
+  }
+  /* line 189, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/hexagons-svg.scss */
+  .hex-row li.nav-item:nth-of-type(2) svg,
+  .hex-row li.nav-item:nth-of-type(5) svg {
+    fill: rgba(207, 182, 104, 0.8);
+  }
+  /* line 193, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/hexagons-svg.scss */
+  .hex-row li.nav-item:nth-of-type(2):hover svg,
+  .hex-row li.nav-item:nth-of-type(5):hover svg {
+    fill: rgba(207, 182, 104, 0.6);
+  }
+  /* line 197, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/hexagons-svg.scss */
+  .hex-row li.nav-item:nth-of-type(3n) svg {
+    fill: rgba(230, 183, 17, 0.8);
+  }
+  /* line 200, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/hexagons-svg.scss */
+  .hex-row li.nav-item:nth-of-type(3n):hover svg {
+    fill: rgba(230, 183, 17, 0.6);
+  }
+}
+
+@media (min-width: 1000px) {
+  /* line 207, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/hexagons-svg.scss */
+  .hex-row ul {
+    flex-wrap: wrap;
+  }
+  /* line 210, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/hexagons-svg.scss */
+  .hex-row ul.hex-3 {
+    max-width: 400px;
+  }
+  /* line 213, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/hexagons-svg.scss */
+  .hex-row ul.hex-4 {
+    max-width: 570px;
+  }
+  /* line 216, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/hexagons-svg.scss */
+  .hex-row ul.hex-5 {
+    max-width: 663px;
+  }
+  /* line 219, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/hexagons-svg.scss */
+  .hex-row li {
+    width: 180px;
+    height: 144px;
+    margin-right: -51px;
+  }
+  /* line 224, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/hexagons-svg.scss */
+  .hex-row li:nth-child(even),
+  .hex-row .hex-5 li:nth-child(even) {
+    margin-top: 72px;
+  }
+}
+
+@media (min-width: 1100px) {
+  /* line 234, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/hexagons-svg.scss */
+  .hex-row li {
+    height: 240px;
+    margin-right: -44px;
+  }
+  /* line 238, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/hexagons-svg.scss */
+  .hex-row li:nth-child(even),
+  .hex-row ul.hex-5 li:nth-child(even) {
+    margin-top: 78px;
+  }
+  /* line 242, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/hexagons-svg.scss */
+  .hex-row .hex {
+    font-size: 18px;
+  }
+  /* line 245, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/hexagons-svg.scss */
+  .hex-row ul.hex-3 {
+    max-width: 431px;
+  }
+  /* line 248, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/hexagons-svg.scss */
+  .hex-row ul.hex-4 {
+    max-width: 577px;
+  }
+  /* line 251, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/hexagons-svg.scss */
+  .hex-row ul.hex-4 li:nth-child(even) {
+    margin-top: 86px;
+  }
+  /* line 254, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/hexagons-svg.scss */
+  .hex-row ul.hex-5 {
+    max-width: 757px;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* line 260, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/hexagons-svg.scss */
+  .hex-row li {
+    height: 190px;
+    width: 200px;
+    margin-right: -45px;
+  }
+  /* line 265, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/hexagons-svg.scss */
+  .hex-row li:nth-child(even) {
+    margin-top: 87px;
+  }
+  /* line 268, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/hexagons-svg.scss */
+  .hex-row ul.hex-3 {
+    max-width: 485px;
+  }
+  /* line 271, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/hexagons-svg.scss */
+  .hex-row ul.hex-3 li:nth-child(even) {
+    margin-top: 87px;
+  }
+  /* line 274, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/hexagons-svg.scss */
+  .hex-row ul.hex-4 {
+    max-width: 657px;
+  }
+  /* line 277, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/hexagons-svg.scss */
+  .hex-row ul.hex-5 {
+    max-width: 816px;
+  }
+  /* line 280, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/hexagons-svg.scss */
+  .hex-row ul.hex-5 li:nth-child(even) {
+    margin-top: 86px;
+  }
+  /*.hex-row .hex-5 li {*/
+  /*    height:190px;*/
+  /*    width: 238px;*/
+  /*    margin-right: -108px;*/
+  /*}*/
+  /*.hex-row .hex-5 li:nth-child(even){*/
+  /*	margin-top: 95px;*/
+  /*}*/
+}
+
+@media (min-width: 1300px) {
+  /* line 295, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/hexagons-svg.scss */
+  .hex-row li {
+    width: 218px;
+    margin-right: -46px;
+  }
+  /* line 299, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/hexagons-svg.scss */
+  .hex-row li:nth-child(even) {
+    margin-top: 94px;
+  }
+  /* line 302, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/hexagons-svg.scss */
+  .hex-row ul.hex-3 {
+    max-width: 520px;
+  }
+  /* line 305, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/hexagons-svg.scss */
+  .hex-row ul.hex-4 {
+    max-width: 703px;
+  }
+  /* line 308, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/hexagons-svg.scss */
+  .hex-row ul.hex-5 {
+    max-width: 865px;
+  }
+  /* line 311, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/hexagons-svg.scss */
+  .hex-row ul.hex-3 li:nth-child(even) {
+    margin-top: 97px;
+  }
+  /* line 314, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/hexagons-svg.scss */
+  .hex-row ul.hex-4 li:nth-child(even),
+  .hex-row ul.hex-5 li:nth-child(even) {
+    margin-top: 94px;
+  }
+  /*.hex-row .hex-5 li {*/
+  /*    height:223px;*/
+  /*    width: 260px;*/
+  /*    margin-right: -56px;*/
+  /*}*/
+  /*.hex-row .hex-5 li:nth-child(even){*/
+  /*	margin-top: 111px;*/
+  /*}*/
+}
+
+@media (min-width: 1400px) {
+  /* line 329, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/hexagons-svg.scss */
+  .hex-row li {
+    width: 280px;
+    height: 206px;
+    margin-right: -104px;
+  }
+  /* line 334, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/hexagons-svg.scss */
+  .hex-row li:nth-child(even) {
+    margin-top: 104px;
+  }
+  /* line 337, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/hexagons-svg.scss */
+  .hex-row ul.hex-3 {
+    max-width: 577px;
+  }
+  /* line 340, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/hexagons-svg.scss */
+  .hex-row ul.hex-3 li:nth-child(even) {
+    margin-top: 103px;
+  }
+  /* line 343, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/hexagons-svg.scss */
+  .hex-row ul.hex-4 {
+    max-width: 752px;
+  }
+  /* line 346, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/hexagons-svg.scss */
+  .hex-row ul.hex-4 li:nth-child(even) {
+    margin-top: 105px;
+  }
+  /* line 349, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/hexagons-svg.scss */
+  .hex-row ul.hex-5 {
+    max-width: 955px;
+  }
+  /* line 352, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/hexagons-svg.scss */
+  .hex-row ul.hex-5 li:nth-child(even) {
+    margin-top: 104px;
+  }
+  /*.hex-row .hex-5 li {*/
+  /*    height:223px;*/
+  /*    width: 260px;*/
+  /*    margin-right: -80px;*/
+  /*}*/
+  /*.hex-row .hex-5 li:nth-child(even){*/
+  /*	margin-top: 111px;*/
+  /*}*/
+  /*.hex-row .hex-5 li:last-child {*/
+  /*    margin-right: 0;*/
+}
+
+/*Flag Exclusions*/
+/* line 370, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/hexagons-svg.scss */
+.hex-row .hex a[href*=".pdf"],
+.hex-row .hex a[href*=".ppt"],
+.hex-row .hex a[href*=".doc"] {
+  color: #f00 !important;
+  background: #333;
+  border: 2px solid #f00;
+}
+
+/*# sourceMappingURL=hexagons-svg.css.map */

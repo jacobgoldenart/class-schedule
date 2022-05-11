@@ -1,0 +1,14 @@
+/* line 1, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/static-nav.scss */
+.flex-section {
+  background-blend-mode: unset;
+  border-radius: 0;
+}
+
+@media screen and (min-width: 1320px) {
+  /* line 1, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/static-nav.scss */
+  .flex-section {
+    background-size: cover;
+  }
+}
+
+/*# sourceMappingURL=static-nav.css.map */

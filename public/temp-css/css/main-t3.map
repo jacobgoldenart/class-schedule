@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "main-t3.css",
+	"sources": [
+		"../scss/main-t3.scss"
+	],
+	"sourcesContent": [
+		".t3 .section2:not(.sac-state-events-section),\n.t3.page-colleges-majors .section2 {\n    padding-bottom: 150px;\n}\n"
+	],
+	"names": [],
+	"mappings": ";AAAA,AAAA,GAAG,CAAC,SAAS,AAAA,IAAK,CAAA,yBAAyB;AAC3C,GAAG,AAAA,qBAAqB,CAAC,SAAS,CAAC;EAC/B,cAAc,EAAE,KAAK;CACxB"
+}

@@ -1,0 +1,220 @@
+/* line 1, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-wide-events.scss */
+.sac-state-events-section {
+  background-color: var(--ssgr);
+  background-image: url("../svg/rivers-1600w.svg");
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: contain;
+  background-blend-mode: screen;
+  background-position: center;
+}
+
+/* line 9, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-wide-events.scss */
+.sac-state-events-section h2 {
+  max-width: unset;
+  text-align: center;
+  color: var(--white);
+  padding-bottom: 1rem;
+}
+
+/* line 15, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-wide-events.scss */
+.sac-state-events-section .row {
+  margin-right: 0;
+  margin-left: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* line 20, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-wide-events.scss */
+.sac-state-events-section .row ul.sac-state-events {
+  padding: 0;
+  width: 100%;
+  margin: 0 auto;
+  list-style: none;
+  padding-left: 0;
+}
+
+@media screen and (min-width: 500px) {
+  /* line 20, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-wide-events.scss */
+  .sac-state-events-section .row ul.sac-state-events {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+/* line 31, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-wide-events.scss */
+.sac-state-events-section .row ul.sac-state-events li {
+  margin-bottom: 1rem;
+  background-color: var(--wgolt);
+  border: 2px solid var(--wgomd);
+  border-radius: 4px;
+}
+
+@media screen and (min-width: 500px) {
+  /* line 31, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-wide-events.scss */
+  .sac-state-events-section .row ul.sac-state-events li {
+    flex: 1 1 calc(50% - 1rem);
+    margin-right: 1rem;
+  }
+  /* line 39, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-wide-events.scss */
+  .sac-state-events-section .row ul.sac-state-events li:nth-child(even) {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  /* line 31, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-wide-events.scss */
+  .sac-state-events-section .row ul.sac-state-events li {
+    flex: 1 1 calc(25% - 1rem);
+  }
+  /* line 45, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-wide-events.scss */
+  .sac-state-events-section .row ul.sac-state-events li:nth-child(even) {
+    margin-right: 1rem;
+  }
+  /* line 48, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-wide-events.scss */
+  .sac-state-events-section .row ul.sac-state-events li:nth-child(4n) {
+    margin-right: 0;
+  }
+}
+
+/* line 52, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-wide-events.scss */
+.sac-state-events-section .row ul.sac-state-events li a {
+  display: block;
+  padding: 2rem;
+  text-decoration: none;
+  height: 100%;
+  line-height: 1.5rem;
+  background-size: 45%;
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+  background-position-y: 80%;
+}
+
+/* line 62, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-wide-events.scss */
+.sac-state-events-section .row ul.sac-state-events li a:link, .sac-state-events-section .row ul.sac-state-events li a:visited {
+  color: var(--black);
+  border: 2px solid var(--wgomd);
+}
+
+/* line 67, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-wide-events.scss */
+.sac-state-events-section .row ul.sac-state-events li a:hover, .sac-state-events-section .row ul.sac-state-events li a:focus {
+  color: var(--ssgr);
+  border: 2px solid var(--wgolt);
+}
+
+/* line 72, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-wide-events.scss */
+.sac-state-events-section .row ul.sac-state-events li a .eventdate {
+  margin-bottom: .5rem;
+}
+
+/* line 75, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-wide-events.scss */
+.sac-state-events-section .row ul.sac-state-events li a .eventcontent {
+  font-size: 1.2rem;
+}
+
+/* line 79, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-wide-events.scss */
+.sac-state-events-section .row ul.sac-state-events li:hover, .sac-state-events-section .row ul.sac-state-events li:focus {
+  background-color: var(--wgomd);
+  border: 2px solid var(--wgolt);
+}
+
+/* line 85, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-wide-events.scss */
+.sac-state-events-section .row ul.sac-state-events li.academic a {
+  background-image: url(../svg/calendar-icons/wgo/a-academic.svg);
+}
+
+/* line 90, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-wide-events.scss */
+.sac-state-events-section .row ul.sac-state-events li.deadline a {
+  background-image: url(../svg/calendar-icons/wgo/b-deadline.svg);
+}
+
+/* line 96, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-wide-events.scss */
+.sac-state-events-section .row ul.sac-state-events li.student-activity a, .sac-state-events-section .row ul.sac-state-events li.hornet-wow-event a {
+  background-image: url(../svg/calendar-icons/wgo/c-csuslogo.svg);
+}
+
+/* line 101, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-wide-events.scss */
+.sac-state-events-section .row ul.sac-state-events li.ceremony a {
+  background-image: url(../svg/calendar-icons/wgo/d-ceremony.svg);
+}
+
+/* line 108, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-wide-events.scss */
+.sac-state-events-section .row ul.sac-state-events li.meeting a, .sac-state-events-section .row ul.sac-state-events li.networking a, .sac-state-events-section .row ul.sac-state-events li.open-house a {
+  background-image: url(../svg/calendar-icons/wgo/e-networking.svg);
+}
+
+/* line 118, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-wide-events.scss */
+.sac-state-events-section .row ul.sac-state-events li.conference a, .sac-state-events-section .row ul.sac-state-events li.presentation a, .sac-state-events-section .row ul.sac-state-events li.lecture a, .sac-state-events-section .row ul.sac-state-events li.training a, .sac-state-events-section .row ul.sac-state-events li.workshop a, .sac-state-events-section .row ul.sac-state-events li.professional-development a {
+  background-image: url(../svg/calendar-icons/wgo/f-presentation.svg);
+}
+
+/* line 130, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-wide-events.scss */
+.sac-state-events-section .row ul.sac-state-events li.concert a, .sac-state-events-section .row ul.sac-state-events li.dance a, .sac-state-events-section .row ul.sac-state-events li.movie a, .sac-state-events-section .row ul.sac-state-events li.play a, .sac-state-events-section .row ul.sac-state-events li.photography a, .sac-state-events-section .row ul.sac-state-events li.performance a, .sac-state-events-section .row ul.sac-state-events li.literature a, .sac-state-events-section .row ul.sac-state-events li.exhibit a {
+  background-image: url(../svg/calendar-icons/wgo/g-performance.svg);
+}
+
+/* line 136, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-wide-events.scss */
+.sac-state-events-section .row ul.sac-state-events li.health-wellness a, .sac-state-events-section .row ul.sac-state-events li.recreation a {
+  background-image: url(../svg/calendar-icons/wgo/h-health.svg);
+}
+
+/* line 141, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-wide-events.scss */
+.sac-state-events-section .row ul.sac-state-events li.sporting-event a {
+  background-image: url(../svg/calendar-icons/wgo/i-sports.svg);
+}
+
+/* line 148, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-wide-events.scss */
+.sac-state-events-section .cal-event-link {
+  text-align: right;
+}
+
+/* line 150, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-wide-events.scss */
+.sac-state-events-section .cal-event-link a {
+  color: var(--white);
+}
+
+/* line 152, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-wide-events.scss */
+.sac-state-events-section .cal-event-link a:hover, .sac-state-events-section .cal-event-link a:focus {
+  color: var(--wgolt);
+  text-decoration: none;
+}
+
+/* line 161, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-wide-events.scss */
+[id^="spotlight"] + .sac-state-events-section {
+  background-color: var(--wgo);
+  background-image: url("../svg/rivers-1600w.svg");
+  background-repeat: no-repeat;
+  background-blend-mode: exclusion;
+  background-size: contain;
+  background-position: center;
+}
+
+/* line 168, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-wide-events.scss */
+[id^="spotlight"] + .sac-state-events-section h2 {
+  color: var(--wgodk);
+}
+
+/* line 181, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-wide-events.scss */
+[id^="spotlight"] + .sac-state-events-section .row ul.sac-state-events li a:hover, [id^="spotlight"] + .sac-state-events-section .row ul.sac-state-events li a:focus {
+  color: var(--brzdk);
+  background-color: var(--wgomd);
+  border: 2px solid var(--wgolt);
+}
+
+/* line 190, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-wide-events.scss */
+[id^="spotlight"] + .sac-state-events-section .row .cal-event-link {
+  text-align: right;
+}
+
+/* line 192, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-wide-events.scss */
+[id^="spotlight"] + .sac-state-events-section .row .cal-event-link a {
+  color: var(--brzdk);
+}
+
+/* line 194, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-wide-events.scss */
+[id^="spotlight"] + .sac-state-events-section .row .cal-event-link a:hover, [id^="spotlight"] + .sac-state-events-section .row .cal-event-link a:focus {
+  color: var(--brz);
+}
+
+/*# sourceMappingURL=module-wide-events.css.map */

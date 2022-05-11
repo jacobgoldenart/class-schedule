@@ -1,0 +1,88 @@
+/* line 1, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-quicklinks.scss */
+.quicklinks-section {
+  background: var(--gvgr);
+}
+
+/* line 4, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-quicklinks.scss */
+.quicklinks-section h2 {
+  background: var(--stgr);
+  color: var(--white);
+  border: 2px solid var(--ssgr);
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+  padding: 1rem 5% 0.5rem;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 780px) {
+  /* line 4, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-quicklinks.scss */
+  .quicklinks-section h2 {
+    text-align: center;
+  }
+}
+
+/* line 16, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-quicklinks.scss */
+.quicklinks-section nav.degrees {
+  border: 2px solid var(--stgr);
+  border-radius: .25rem;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-top: 0;
+}
+
+/* line 23, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-quicklinks.scss */
+.quicklinks-section nav.degrees div[class*=col-] {
+  background: var(--white);
+  border-right: 2px solid var(--stgr);
+  border-bottom: 2px solid var(--stgr);
+}
+
+/* line 27, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-quicklinks.scss */
+.quicklinks-section nav.degrees div[class*=col-]:last-child {
+  border-right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  /* line 23, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-quicklinks.scss */
+  .quicklinks-section nav.degrees div[class*=col-] {
+    border-right: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* line 23, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-quicklinks.scss */
+  .quicklinks-section nav.degrees div[class*=col-] {
+    border-bottom: 0;
+  }
+}
+
+/* line 57, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-quicklinks.scss */
+.quicklinks-section nav.degrees div a {
+  display: block;
+  padding: 2rem;
+  background: var(--white);
+  color: var(--stgr);
+  padding: 1.25em 5% 1.25em 7%;
+  text-decoration: none;
+  height: 100%;
+  line-height: 1;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 1140px) {
+  /* line 57, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-quicklinks.scss */
+  .quicklinks-section nav.degrees div a {
+    text-align: center;
+    font-size: 1.3rem;
+  }
+}
+
+/* line 74, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-quicklinks.scss */
+.quicklinks-section nav.degrees div a:hover, .quicklinks-section nav.degrees div a:active, .quicklinks-section nav.degrees div a:focus {
+  background: var(--wgo20a);
+  color: var(--ssgr);
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=module-quicklinks.css.map */

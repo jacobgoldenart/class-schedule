@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "module-hero.css",
+	"sources": [
+		"../scss/module-hero.scss"
+	],
+	"sourcesContent": [
+		"/* =========== HERO ================== */\r\n\r\nmain:not(.t1) header {\r\n    display: flex;\r\n    position: relative;\r\n    align-items: center;\r\n    justify-content: center;\r\n    background-color: var(--rwgr);\r\n    background-size: cover;\r\n    position: relative;\r\n    background-position-y: top;\r\n    background-position-x: center;\r\n    background-repeat: no-repeat;\r\n    .container {\r\n        padding: 4rem 5%;\r\n        max-width: calc(1400px - 8%);\r\n        @media screen and (min-width: 1400px) {\r\n            padding: 4rem 0;\r\n        }\r\n        .row {\r\n            margin: 0;\r\n            h1 {\r\n                margin-bottom: 0;\r\n                padding: 0;\r\n                margin-top: 0;\r\n            }\r\n        }\r\n    }\r\n    h1 {\r\n        * {\r\n            display: block;\r\n            white-space: normal; // max-width: 460px;\r\n        }\r\n        span {}\r\n    }\r\n}\r\n"
+	],
+	"names": [],
+	"mappings": "AAAA,yCAAyC;;AAEzC,AAAA,IAAI,AAAA,IAAK,CAAA,GAAG,EAAE,MAAM,CAAC;EACjB,OAAO,EAAE,IAAI;EACb,QAAQ,EAAE,QAAQ;EAClB,WAAW,EAAE,MAAM;EACnB,eAAe,EAAE,MAAM;EACvB,gBAAgB,EAAE,WAAW;EAC7B,eAAe,EAAE,KAAK;EACtB,QAAQ,EAAE,QAAQ;EAClB,qBAAqB,EAAE,GAAG;EAC1B,qBAAqB,EAAE,MAAM;EAC7B,iBAAiB,EAAE,SAAS;CAuB/B;;;AAjCD,AAWI,IAXA,AAAA,IAAK,CAAA,GAAG,EAAE,MAAM,CAWhB,UAAU,CAAC;EACP,OAAO,EAAE,OAAO;EAChB,SAAS,EAAE,iBAAiB;CAY/B;;AAXG,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,MAAM;;EAd5C,AAWI,IAXA,AAAA,IAAK,CAAA,GAAG,EAAE,MAAM,CAWhB,UAAU,CAAC;IAIH,OAAO,EAAE,MAAM;GAUtB;;;;AAzBL,AAiBQ,IAjBJ,AAAA,IAAK,CAAA,GAAG,EAAE,MAAM,CAWhB,UAAU,CAMN,IAAI,CAAC;EACD,MAAM,EAAE,CAAC;CAMZ;;;AAxBT,AAmBY,IAnBR,AAAA,IAAK,CAAA,GAAG,EAAE,MAAM,CAWhB,UAAU,CAMN,IAAI,CAEA,EAAE,CAAC;EACC,aAAa,EAAE,CAAC;EAChB,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,CAAC;CAChB;;;AAvBb,AA2BQ,IA3BJ,AAAA,IAAK,CAAA,GAAG,EAAE,MAAM,CA0BhB,EAAE,CACE,CAAC,CAAC;EACE,OAAO,EAAE,KAAK;EACd,WAAW,EAAE,MAAM;CACtB"
+}

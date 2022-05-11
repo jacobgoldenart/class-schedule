@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import BreadCrumbs from "./Components/BreadCrumbs";
 import App from "./App";
 import useFetch from "./Components/utils/useFetch";
 export const TermsContext = React.createContext();
@@ -15,12 +14,12 @@ export default function Main() {
     });
 
 
-  }, []);
+  },[]);
 
-  console.log(terms);
 
   return (
     <TermsContext.Provider value={terms}>
+    {console.log(`this is terms context ${terms}`)}
       <App />
     </TermsContext.Provider>
   );

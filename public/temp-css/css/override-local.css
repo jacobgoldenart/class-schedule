@@ -1,0 +1,384 @@
+/* =========================== */
+/* line 4, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-local.scss */
+.section2 h1,
+.section2 h2 {
+  /*    Meng: Remove lightgreen as a class */
+  color: #fff6ce;
+  /* light cream */
+  margin-bottom: 0;
+  font-weight: 500;
+  padding-bottom: 1rem;
+  font-size: 28px;
+}
+
+/* line 20, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-local.scss */
+.navbar-default ul.nav a:hover, .navbar-default ul.nav a:focus, .navbar-default ul.nav a:visited {
+  color: var(--stgr);
+}
+
+/* line 37, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-local.scss */
+.t5 section p a:after {
+  content: "";
+  /*Blank char " ", creates an extra blank char with underline. Changed to "" on default: MH*/
+  color: #DAD490;
+  font-size: 11px;
+}
+
+/* line 47, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-local.scss */
+#quadrants .sidenav li a:after {
+  content: "";
+  display: inline-block;
+  color: #0fa153;
+  font-size: .8rem;
+}
+
+/* line 57, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-local.scss */
+.t4[class*="page-inside-"] section li a:only-child:after,
+.t5[class*="page-inside-"] p a:after,
+.t5 section li a:only-child:after,
+.t5 section p a:after {
+  color: #043927;
+}
+
+/*External Links*/
+/* line 67, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-local.scss */
+main:not(.my-inside) #quadrants .box1 li a[href^="mailto:"]:after,
+#quadrants li a[href^="mailto:"]:after,
+.t5 section li a[href^="mailto:"]:only-child:after,
+.t5 section p a[href^="mailto:"]:after {
+  content: ' EMAIL';
+}
+
+/* line 74, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-local.scss */
+#quadrants li a[href*="qualtrics"]:after,
+#quadrants li a[href*="jotform"]:after,
+#quadrants li a[href*="signup"]:after,
+#quadrants li a[href*="wufoo"]:after,
+#quadrants li a[href*="google.com/forms"]:after,
+#quadrants li a[href*="forms.office"]:after,
+#quadrants li a[href*="=GIVEGiving"]:only-child:after,
+.t5 section li a[href*="forms.office"]:only-child:after,
+.t5 section li a[href*="google.com/forms"]:only-child:after,
+.t5 section li a[href*="wufoo"]:only-child:after,
+.t5 section li a[href*="qualtrics"]:only-child:after,
+.t5 section li a[href*="jotform"]:only-child:after,
+.t5 section li a[href*="=GIVEGiving"]:only-child:after,
+.t5 section li a[href*="signup"]:after,
+.t5 section p a[href*="forms.office"]:only-child:after,
+.t5 section p a[href*="google.com/forms"]:only-child:after,
+.t5 section p a[href*="wufoo"]:only-child:after,
+.t5 section p a[href*="qualtrics"]:only-child:after,
+.t5 section p a[href*="jotform"]:only-child:after,
+.t5 section p a[href*="=GIVEGiving"]:only-child:after,
+.t5 section p a[href*="signup"]:after {
+  content: ' FORM';
+}
+
+/*Video*/
+/* line 101, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-local.scss */
+#quadrants li a[href^="https://www.vimeo"]:after,
+#quadrants li a[href^="https://www.youtube"]:after,
+#quadrants li a[href^="https://www.mediasite"]:after,
+#quadrants li a[href^="https://www.spotify"]:after,
+#quadrants li a[href^="https://www.panopto"]:after,
+.t5 section li a[href^="https://www.vimeo"]:only-child:after,
+.t5 section li a[href^="https://www.youtube"]:only-child:after,
+.t5 section li a[href^="https://www.mediasite"]:only-child:after,
+.t5 section li a[href^="https://www.spotify"]:only-child:after,
+.t5 section li a[href^="https://www.panopto"]:only-child:after,
+.t5 section p a[href^="https://www.vimeo"]:not(.button-default):after,
+.t5 section p a[href^="https://www.youtube"]:not(.button-default):after,
+.t5 section p a[href^="https://www.mediasite"]:not(.button-default):after,
+.t5 section p a[href^="https://www.panopto"]:not(.button-default):after {
+  content: ' WATCH';
+}
+
+/* Audio */
+/* line 121, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-local.scss */
+#quadrants li a[href^="https://www.spotify"]:after,
+.t5 section li a[href^="https://www.spotify"]:only-child:after,
+.t5 section p a[href^="https://www.spotify"]:not(.button-default):after {
+  content: ' LISTEN';
+}
+
+/*Download*/
+/* line 130, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-local.scss */
+#quadrants li a[href$=".mp4"]:after,
+.t5 section li a[href$=".mp4"]:only-child:after,
+.t5 section p a[href$=".mp4"]:not(.button-default):after {
+  content: ' MP4';
+}
+
+/* line 136, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-local.scss */
+#quadrants li a[href$=".doc"]:after,
+.t5 section li a[href$=".doc"]:only-child:after,
+.t5 section p a[href$=".doc"]:not(.button-default):after {
+  content: ' DOC';
+}
+
+/* line 142, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-local.scss */
+#quadrants li a[href$=".pdf"]:after,
+.t5 section li a[href$=".pdf"]:only-child:after,
+.t5 section p a[href$=".pdf"]:not(.button-default):after {
+  content: ' PDF';
+}
+
+/* line 148, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-local.scss */
+#quadrants li a[href$=".ppt"]:after,
+.t5 section li a[href$=".ppt"]:only-child:after,
+.t5 section p a[href$=".ppt"]:not(.button-default):after {
+  content: ' PPT';
+}
+
+/* line 154, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-local.scss */
+#quadrants li a[href$=".xls"]:after,
+.t5 section li a[href$=".xls"]:only-child:after,
+.t5 section p a[href$=".xls"]:not(.button-default):after {
+  content: ' XLS';
+}
+
+/*a.button-cta:after,*/
+/*a.button-default:after,*/
+/*.t5 section li a[href$=".ppt"]:only-child:after,*/
+/*.t5 section li a[href$=".xls"]:only-child:after,*/
+/*.t4 #quadrants li a[class*="button-"]:after,*/
+/*.t5 section p a[class*="button-"]:after,*/
+/*.t5 section li a[class*="button-"]:after,*/
+/*.t5 section a[class="btn"]:after {content:'' !important;}*/
+/* line 184, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-local.scss */
+.t5.page-administer-a-building-emergency-action-plan .table-bordered > tbody > tr > td a[href$=".doc"]:only-child:after,
+.t5.page-administer-a-building-emergency-action-plan .table-bordered > tbody > tr > td a[href$=".docx"]:only-child:after,
+.t5.page-develop-your-grant-proposal- section li a[href$=".doc"]:only-child:after,
+.t5.page-develop-your-grant-proposal- section li a[href$=".docx"]:only-child:after,
+.t5.page-research-creative-activity- section li a[href$=".doc"]:only-child:after,
+.t5.page-research-creative-activity- section li a[href$=".docx"]:only-child:after,
+.t5.page-forms- section li a[href$=".doc"]:only-child:after,
+.t5.page-forms- section li a[href$=".docx"]:only-child:after,
+.t5.make-a-gift section li a[href$=".doc"]:only-child:after,
+.t5.make-a-gift section li a[href$=".docx"]:only-child:after {
+  content: ' DOC';
+  color: #043927;
+}
+
+/* line 198, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-local.scss */
+.t5.page-administer-a-building-emergency-action-plan .table-bordered > tbody > tr > td a[href$=".xls"]:only-child:after,
+.t5.page-administer-a-building-emergency-action-plan .table-bordered > tbody > tr > td a[href$=".xlsx"]:only-child:after,
+.t5.page-develop-your-grant-proposal- section li:not(.btn-contact) a[href$=".xls"]:only-child:after,
+.t5.page-develop-your-grant-proposal- section li:not(.btn-contact) a[href$=".xlsx"]:only-child:after,
+.t5.page-research-creative-activity- section li:not(.btn-contact) a[href$=".xls"]:only-child:after,
+.t5.page-research-creative-activity- section li:not(.btn-contact) a[href$=".xlsx"]:only-child:after,
+.t5.page-forms- section li:not(.btn-contact) a[href$=".xls"]:only-child:after,
+.t5.page-forms- section li:not(.btn-contact) a[href$=".xlsx"]:only-child:after,
+.t5.make-a-gift section li:not(.btn-contact) a[href$=".xls"]:only-child:after,
+.t5.make-a-gift section li:not(.btn-contact) a[href$=".xlsx"]:only-child:after {
+  content: ' XLS';
+  color: #043927;
+}
+
+@media screen and (max-width: 960px) {
+  /* line 213, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-local.scss */
+  .section2 {
+    /*        overwrite to fix background position and size layout l4*/
+    background: #004e38 url(../images/section2-admissionsrightbg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+  }
+}
+
+/* ================ Utility ======================= */
+/* line 225, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-local.scss */
+div a,
+li a,
+p a,
+.button li a,
+.collapse,
+.collapse.show,
+.hex-row .hex,
+li.item,
+#spotlight div.socialbox a,
+.hex-row li.nav-item,
+ul.sac-state-events li,
+ul.sac-state-events-section li,
+.btn-green-white,
+.side-nav li a,
+nav#navbar-primary .modal .modal-body ul[aria-labelledby="campus-social-links"] li,
+footer ul[aria-labelledby="campus-social-links"] li,
+.covid-cards a,
+.covid-cards a img {
+  -moz-transition: background .5s ease, background-color .5s ease, fill .5s ease, color .5s ease, box-shadow 1.5s ease, text-shadow .5s ease, background-image .5s ease, border-color .5s ease;
+  -webkit-transition: background .5s ease, background-color .5s ease, fill .5s ease, color .5s ease, box-shadow .5s ease, text-shadow .5s ease, background-image .5s ease, border-color .5s ease;
+  transition: background .5s ease, background-color .5s ease, fill .5s ease, color .5s ease, box-shadow .5s ease, text-shadow .5s ease, background-image .5s ease, border-color .5s ease;
+}
+
+/* line 248, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-local.scss */
+.t5-meetus-manual article a[href="#"],
+.t5:not(.t5-meetus-manual) article a[href*="csus.edu/umanual/"] {
+  border: unset;
+  color: unset;
+  text-decoration: unset;
+}
+
+/* line 255, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-local.scss */
+.t4 #quadrants li a:before,
+.hashtag,
+.t4.page-campaign .sac-breadcrumb,
+.t4.page-campaign .bg-image-full .row,
+.t5-meetus-manual article a[href="#"]:after,
+article a[href*="https://www.csus.edu/indiv"]:after,
+article a[href*="https://www.csus.edu/faculty"]:after,
+.t5:not(.t5-meetus-manual) article a[href*="https://www.csus.edu/umanual/"]:after {
+  display: none !important;
+}
+
+/* =================== Laptop Image ======================= */
+/* line 269, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-local.scss */
+.page-hornet-laptop-discount-program .box2.image.bg-logo {
+  background-position: bottom !important;
+}
+
+@media screen and (min-width: 875px) {
+  /* line 269, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-local.scss */
+  .page-hornet-laptop-discount-program .box2.image.bg-logo {
+    background-size: cover !important;
+  }
+}
+
+@media screen and (min-width: 875px) {
+  /* line 269, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-local.scss */
+  .page-hornet-laptop-discount-program .box2.image.bg-logo {
+    min-height: 50vw !important;
+    max-height: 820px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  /* line 269, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-local.scss */
+  .page-hornet-laptop-discount-program .box2.image.bg-logo {
+    min-height: 42vw !important;
+  }
+}
+
+/* 2-col list */
+/* line 287, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-local.scss */
+.t4.page-technology-procurement .box3.general {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+/* line 290, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-local.scss */
+.t4.page-technology-procurement .box3.general ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 295, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-local.scss */
+.t4.page-technology-procurement .box3.general ul li {
+  flex: 1 0 50%;
+  padding: .25rem 2%;
+  margin-bottom: 0;
+  border-top: 1px solid #c4b581;
+}
+
+/* line 300, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-local.scss */
+.t4.page-technology-procurement .box3.general ul li:nth-child(even) {
+  padding-right: 0;
+}
+
+/* line 303, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-local.scss */
+.t4.page-technology-procurement .box3.general ul li:nth-child(odd) {
+  padding-left: 0;
+  border-right: 1px solid #c4b581;
+}
+
+/* line 307, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-local.scss */
+.t4.page-technology-procurement .box3.general ul li:first-child, .t4.page-technology-procurement .box3.general ul li:nth-child(2) {
+  border-top: 0;
+}
+
+/* Only used on Resources t5 in OTR */
+/* Global Give */
+/* line 322, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-local.scss */
+.global-give.button-top {
+  position: fixed;
+  bottom: 70px;
+  left: 20px;
+  z-index: 200;
+  width: 90%;
+}
+
+/* line 328, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-local.scss */
+.global-give.button-top a {
+  background: #00573d;
+  padding: 1rem;
+  width: 100%;
+  display: block;
+  border-radius: 4px;
+  text-align: center;
+  border-radius: 3.25em;
+  border-bottom: 1px solid #fff;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 4px 0;
+  transition: background 1s ease-in-out;
+  text-decoration: none;
+}
+
+/* line 340, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-local.scss */
+.global-give.button-top a:hover, .global-give.button-top a:focus {
+  background: #0FA153;
+}
+
+@media screen and (min-width: 660px) {
+  /* line 322, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-local.scss */
+  .global-give.button-top {
+    padding: 0 10vw;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  /* line 322, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-local.scss */
+  .global-give.button-top {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 20%;
+    padding: unset;
+  }
+}
+
+/*Hack for GradFest*/
+/* line 360, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-local.scss */
+h2#event-sponsors + p + p + p,
+h2#alumni-essentials + p + p + .cta {
+  clear: both;
+}
+
+/* Hack for SSO page */
+/* line 368, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-local.scss */
+.page-single-sign-on-applications h2[title="Anchor is: sso-applications-by-title"] + p {
+  max-width: unset;
+}
+
+/* Hack for Hornet Five Series in OTR */
+/* Hides last h2 from anchor nav, styles as tagline */
+/* line 378, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-local.scss */
+.t5.one-column-aside[class*="page-the-hornet-five"] section.general:last-of-type {
+  margin-bottom: 4rem;
+}
+
+/* line 382, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-local.scss */
+.t5.one-column-aside[class*="page-the-hornet-five"] section.general:last-of-type h2 {
+  font-style: italic;
+  color: #008554;
+}
+
+/* line 387, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/override-local.scss */
+.t5.one-column-aside[class*="page-the-hornet-five"] img.small-image-right,
+.t5.one-column-aside[class*="page-the-hornet-five"] img.small-image-left {
+  border-radius: 50%;
+  overflow: hidden;
+  background: #dad490;
+}
+
+/*# sourceMappingURL=override-local.css.map */

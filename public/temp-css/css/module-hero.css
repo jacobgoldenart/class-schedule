@@ -1,0 +1,47 @@
+/* =========== HERO ================== */
+/* line 3, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hero.scss */
+main:not(.t1) header {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--rwgr);
+  background-size: cover;
+  position: relative;
+  background-position-y: top;
+  background-position-x: center;
+  background-repeat: no-repeat;
+}
+
+/* line 14, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hero.scss */
+main:not(.t1) header .container {
+  padding: 4rem 5%;
+  max-width: calc(1400px - 8%);
+}
+
+@media screen and (min-width: 1400px) {
+  /* line 14, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hero.scss */
+  main:not(.t1) header .container {
+    padding: 4rem 0;
+  }
+}
+
+/* line 20, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hero.scss */
+main:not(.t1) header .container .row {
+  margin: 0;
+}
+
+/* line 22, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hero.scss */
+main:not(.t1) header .container .row h1 {
+  margin-bottom: 0;
+  padding: 0;
+  margin-top: 0;
+}
+
+/* line 30, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hero.scss */
+main:not(.t1) header h1 * {
+  display: block;
+  white-space: normal;
+}
+
+/*# sourceMappingURL=module-hero.css.map */
