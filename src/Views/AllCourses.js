@@ -1,17 +1,29 @@
-import { useContext } from "react";
+import { useState, useEffect, useContext } from "react";
 import "./AllCourses.css";
 import { useNavigate, Link } from "react-router-dom";
 import { TermsContext } from "../App";
+import useFetch from "../Components/utils/useFetch";
 
-function AllCourses(props) {
+function AllCourses() {
+  const [courses, setCourses] = useState(null);
   const termsLinks = useContext(TermsContext);
   const navigate = useNavigate();
+  const { get } = useFetch("./sample-data/");
+
+  useEffect(() => {
+    // Todo
+    // get(currentPath) for api
+    get("semester-subject-all_spring2022.json").then((data) => {
+      setCourses(data.results[0].items);
+    });
+  }, []);
 
   function handleTermChange(e) {
+    // Todo on change Load JSON for specific term (based on pathname)
+    // and re render content
     const changeTerm = e.target.value.toLowerCase().replaceAll(" ", "_");
     navigate(`/${changeTerm}`);
   }
-
 
   return (
     <div className={`page-schedule-term-`}>
@@ -37,8 +49,12 @@ function AllCourses(props) {
         <section>
           <div>
             <ul>
-              <li>course list will go here</li>
-              <Link to="foo">Test Link</Link>
+              {courses &&
+                courses.map((course) => (
+                  <li key={course.subject_code}>
+                    <Link to={course.subject_code}>{course.subject_ldesc}</Link>
+                  </li>
+                ))}
             </ul>
           </div>
         </section>
