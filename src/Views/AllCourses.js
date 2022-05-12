@@ -1,6 +1,11 @@
 import { useState, useEffect, useContext } from "react";
 import "./AllCourses.css";
-import { useNavigate, Link } from "react-router-dom";
+import {
+  useNavigate,
+  useLocation,
+  NavLink,
+  useSearchParams,
+} from "react-router-dom";
 import { TermsContext } from "../App";
 import useFetch from "../Components/utils/useFetch";
 
@@ -9,6 +14,7 @@ function AllCourses() {
   const termsLinks = useContext(TermsContext);
   const navigate = useNavigate();
   const { get } = useFetch("./sample-data/");
+  let [searchParams, setSearchParams] = useSearchParams({ replace: true });
 
   useEffect(() => {
     // Todo
@@ -17,6 +23,11 @@ function AllCourses() {
       setCourses(data.results[0].items);
     });
   }, []);
+
+  function QueryNavLink({ to, ...props }) {
+    let location = useLocation();
+    return <NavLink to={to + location.search} {...props} />;
+  }
 
   function handleTermChange(e) {
     // Todo on change Load JSON for specific term (based on pathname)
@@ -31,7 +42,17 @@ function AllCourses() {
         <form>
           <fieldset>
             <label aria-hidden="true">Filter Courses</label>
-            <input type="text" placeholder="Filter Courses" />
+            <input
+              value={searchParams.get("filter") || ""}
+              onChange={(event) => {
+                let filter = event.target.value;
+                if (filter) {
+                  setSearchParams({ filter }, { replace: true });
+                } else {
+                  setSearchParams({}, { replace: true });
+                }
+              }}
+            />
           </fieldset>
           <fieldset>
             <select onChange={handleTermChange} defaultValue="">
@@ -50,11 +71,29 @@ function AllCourses() {
           <div>
             <ul>
               {courses &&
-                courses.map((course) => (
-                  <li key={course.subject_code}>
-                    <Link to={course.subject_code}>{course.subject_ldesc}</Link>
-                  </li>
-                ))}
+                courses
+                  .filter((filteredCourse) => {
+                    let filter = searchParams.get("filter");
+                    if (!filter) return true;
+                    let name = filteredCourse.subject_ldesc.toLowerCase();
+                    return name.startsWith(filter.toLowerCase());
+                  })
+                  .map((filteredCourse) => (
+                    <li key={filteredCourse.subject_code}>
+                      <QueryNavLink
+                        style={({ isActive }) => {
+                          return {
+                            display: "block",
+                            margin: "1rem 0",
+                            color: isActive ? "red" : "",
+                          };
+                        }}
+                        to={filteredCourse.subject_code}
+                      >
+                        {filteredCourse.subject_ldesc}
+                      </QueryNavLink>
+                    </li>
+                  ))}
             </ul>
           </div>
         </section>
