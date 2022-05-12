@@ -1,23 +1,21 @@
-import { useState, useContext, useEffect } from "react";
+import { useContext } from "react";
 import "./AllCourses.css";
-import { useNavigate } from "react-router-dom";
-import { TermsContext } from "../Main";
+import { useNavigate, Link } from "react-router-dom";
+import { TermsContext } from "../App";
 
 function AllCourses(props) {
- 
   const termsLinks = useContext(TermsContext);
   const navigate = useNavigate();
 
   function handleTermChange(e) {
-    //console.log(e.target.value);
     const changeTerm = e.target.value.toLowerCase().replaceAll(" ", "_");
     navigate(`/${changeTerm}`);
   }
 
+
   return (
     <div className={`page-schedule-term-`}>
       <article>
-
         <form>
           <fieldset>
             <label aria-hidden="true">Filter Courses</label>
@@ -40,6 +38,7 @@ function AllCourses(props) {
           <div>
             <ul>
               <li>course list will go here</li>
+              <Link to="foo">Test Link</Link>
             </ul>
           </div>
         </section>

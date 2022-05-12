@@ -1,4 +1,6 @@
 function CourseDetails() {
+
+
   return (
     <>
       <p>Course Details here</p>
