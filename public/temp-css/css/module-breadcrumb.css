@@ -1,0 +1,130 @@
+@charset "UTF-8";
+/*** START: For breadcrumb sidebar ***/
+/* line 3, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-breadcrumb.scss */
+.sac-breadcrumb {
+  position: relative;
+  background-color: var(--black);
+}
+
+/* line 7, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-breadcrumb.scss */
+.sac-breadcrumb nav a {
+  color: var(--white);
+}
+
+/* line 9, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-breadcrumb.scss */
+.sac-breadcrumb nav a:hover {
+  color: var(--graylt);
+}
+
+/* line 12, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-breadcrumb.scss */
+.sac-breadcrumb nav a:first-child, .sac-breadcrumb nav a:only-child {
+  color: var(--hgob);
+}
+
+/* line 16, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-breadcrumb.scss */
+.sac-breadcrumb nav a:nth-child(2) {
+  color: var(--hgobmd);
+}
+
+/* line 19, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-breadcrumb.scss */
+.sac-breadcrumb nav a:nth-child(3) {
+  color: var(--hgoblt);
+}
+
+/* line 22, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-breadcrumb.scss */
+.sac-breadcrumb nav a:last-child, .sac-breadcrumb nav a:only-child {
+  color: var(--white) !important;
+}
+
+/* line 26, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-breadcrumb.scss */
+.sac-breadcrumb nav a:after {
+  color: var(--graymd);
+}
+
+/* line 30, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-breadcrumb.scss */
+.sac-breadcrumb nav.navbar {
+  display: flex;
+  width: 100%;
+  max-width: calc(1400px - 8%);
+  padding: .5rem 5%;
+  position: relative;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 1400px) {
+  /* line 30, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-breadcrumb.scss */
+  .sac-breadcrumb nav.navbar {
+    padding: 0;
+  }
+}
+
+/* line 42, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-breadcrumb.scss */
+.sac-breadcrumb nav.navbar div {
+  display: flex;
+}
+
+/* line 49, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-breadcrumb.scss */
+.sac-breadcrumb nav.navbar div a {
+  font-weight: normal;
+  font-weight: 500;
+  color: var(--hgoblt);
+  display: block;
+  font-size: .875rem;
+  text-decoration: none;
+  padding: calc(.5rem + 6px) 0;
+}
+
+@media screen and (min-width: 700px) {
+  /* line 49, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-breadcrumb.scss */
+  .sac-breadcrumb nav.navbar div a {
+    padding: calc(1rem + 6px) 0;
+  }
+}
+
+/* line 60, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-breadcrumb.scss */
+.sac-breadcrumb nav.navbar div a:hover {
+  color: var(--graylt);
+}
+
+/* line 63, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-breadcrumb.scss */
+.sac-breadcrumb nav.navbar div a::after {
+  content: '➤';
+  display: inline;
+  color: #aaa;
+  margin: 0 1ch;
+}
+
+/* line 72, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-breadcrumb.scss */
+.sac-breadcrumb nav.navbar div a:last-child, .sac-breadcrumb nav.navbar div a:only-child {
+  color: #fff;
+}
+
+/* line 75, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-breadcrumb.scss */
+.sac-breadcrumb nav.navbar div a:last-child::after, .sac-breadcrumb nav.navbar div a:only-child::after {
+  display: none;
+}
+
+/* line 79, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-breadcrumb.scss */
+.sac-breadcrumb nav.navbar div a:first-child {
+  color: var(--hgo);
+}
+
+/* line 82, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-breadcrumb.scss */
+.sac-breadcrumb nav.navbar div a:nth-child(2) {
+  color: var(--hgobmd);
+}
+
+/* line 87, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-breadcrumb.scss */
+.sac-breadcrumb nav.navbar [href="#connect"] {
+  display: block;
+  font-size: .875rem;
+  font-weight: 600;
+  padding: .5rem 2ch;
+  background: var(--stgr);
+  color: var(--white);
+  border: 1px solid var(--hgob);
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=module-breadcrumb.css.map */

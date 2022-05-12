@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "static-nav.css",
+	"sources": [
+		"../scss/static-nav.scss"
+	],
+	"sourcesContent": [
+		".flex-section {\r\n    background-blend-mode: unset;\r\n    border-radius: 0;\r\n\r\n    @media screen and (min-width: 1320px) {\r\n        background-size: cover;\r\n    }\r\n}\r\n"
+	],
+	"names": [],
+	"mappings": ";AAAA,AAAA,aAAa,CAAC;EACV,qBAAqB,EAAE,KAAK;EAC5B,aAAa,EAAE,CAAC;CAKnB;;AAHG,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,MAAM;;EAJxC,AAAA,aAAa,CAAC;IAKN,eAAe,EAAE,KAAK;GAE7B"
+}

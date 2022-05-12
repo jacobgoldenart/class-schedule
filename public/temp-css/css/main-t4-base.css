@@ -1,0 +1,248 @@
+/* =========================== Quad Boxes ====================*/
+@import url(module-t4Quad-lists.css);
+@import url(module-tables.css);
+@import url(module-t4Quad-calendar.css);
+@import url(module-connect.css);
+@import url(module-quicklinks.css);
+@import url(module-hornetcomb-5.css);
+@import url(module-spotlight.css);
+@import url(module-wide-events.css);
+@import url(module-alertbar.css);
+/* line 3, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t4-base.scss */
+article {
+  position: relative;
+}
+
+/* line 5, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t4-base.scss */
+article div[id="quadrants"] {
+  position: relative;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* line 9, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t4-base.scss */
+article div[id="quadrants"] div[class^="col-"] {
+  position: relative;
+  min-height: 100%;
+  padding: 4rem 10%;
+  background-position: center center !important;
+  border-bottom: 1px solid var(--wgo);
+  display: flex;
+  max-width: unset;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* line 20, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t4-base.scss */
+article div[id="quadrants"] div[class^="col-"] .boxa p {
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 9, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t4-base.scss */
+  article div[id="quadrants"] div[class^="col-"] {
+    padding: 4rem 5%;
+  }
+  /* line 26, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t4-base.scss */
+  article div[id="quadrants"] div[class^="col-"]:nth-of-type(2n-1) {
+    border-right: 1px solid var(--wgo);
+  }
+}
+
+/* line 35, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t4-base.scss */
+main section,
+main .alert-bar {
+  position: relative;
+  padding: 4rem 10%;
+}
+
+@media screen and (min-width: 1140px) {
+  /* line 35, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t4-base.scss */
+  main section,
+  main .alert-bar {
+    padding: 2rem 5%;
+  }
+}
+
+/* line 42, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t4-base.scss */
+main section .center-shell,
+main .alert-bar .center-shell {
+  position: relative;
+  max-width: calc(1400px - 8%);
+  margin: 0 auto;
+}
+
+/* =============================================== Q: Text/General ==================*/
+/* line 53, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t4-base.scss */
+p,
+li,
+td {
+  color: var(--graydk);
+  line-height: 1.6;
+}
+
+/* line 63, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t4-base.scss */
+.general h1,
+.general h3,
+.general blockquote p,
+.boxa h1,
+.boxa h3,
+.boxa blockquote p,
+.boxb h1,
+.boxb h3,
+.boxb blockquote p {
+  color: var(--ssgr);
+}
+
+/* line 68, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t4-base.scss */
+.general h2,
+.boxa h2,
+.boxb h2 {
+  padding: 1rem 0 0;
+}
+
+/* line 72, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t4-base.scss */
+.general a:not(.button-default),
+.boxa a:not(.button-default),
+.boxb a:not(.button-default) {
+  color: var(--stgr);
+  text-decoration: underline;
+}
+
+/* line 75, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t4-base.scss */
+.general a:not(.button-default):hover, .general a:not(.button-default):focus,
+.boxa a:not(.button-default):hover,
+.boxa a:not(.button-default):focus,
+.boxb a:not(.button-default):hover,
+.boxb a:not(.button-default):focus {
+  color: var(--ssgr);
+  text-decoration: none;
+}
+
+/* line 80, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t4-base.scss */
+.general a:not(.button-default):visited,
+.boxa a:not(.button-default):visited,
+.boxb a:not(.button-default):visited {
+  color: var(--graymd);
+}
+
+/* line 85, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t4-base.scss */
+.general strong,
+.boxa strong,
+.boxb strong {
+  font-weight: 500;
+}
+
+/* line 88, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t4-base.scss */
+.general img,
+.boxa img,
+.boxb img {
+  width: 100%;
+  object-fit: contain;
+  margin: 1rem 0;
+  border-radius: 4px;
+}
+
+/* line 93, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t4-base.scss */
+.general img.small-image-right,
+.boxa img.small-image-right,
+.boxb img.small-image-right {
+  float: right;
+  width: unset;
+  max-width: 25ch;
+  margin: 0 0 1rem 2em;
+  border: 0 !important;
+}
+
+/* line 114, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t4-base.scss */
+.image,
+[class^=image] {
+  padding: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 300px;
+}
+
+/* line 120, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t4-base.scss */
+.image *,
+[class^=image] * {
+  display: none !important;
+}
+
+@media screen and (max-width: 768px) {
+  /* line 114, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t4-base.scss */
+  .image,
+  [class^=image] {
+    min-height: 320px;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  /* line 114, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t4-base.scss */
+  .image,
+  [class^=image] {
+    min-height: 480px;
+  }
+}
+
+/* line 137, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t4-base.scss */
+.video h2,
+[class^=video] h2 {
+  text-indent: -9999px;
+  height: 0;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 147, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t4-base.scss */
+.showcase {
+  /* outer block */
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  background-color: #043124;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* line 156, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t4-base.scss */
+.showcase h2 {
+  /*font-size:22px;  dupe 322 ?*/
+  color: #fac606;
+  text-indent: -9999px;
+  height: 0;
+  margin: 0;
+}
+
+/* line 162, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t4-base.scss */
+.showcase h2:first-of-type {
+  text-indent: 0;
+  color: #d9d0ac;
+  align-self: flex-start;
+  flex: 1 1 25%;
+  border-radius: 0;
+  background: rgba(0, 0, 0, 0.75);
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.75);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0)), color-stop(25%, rgba(0, 0, 0, 0)), color-stop(75%, rgba(0, 0, 0, 0.75)), to(black));
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0.75) 75%, black 100%);
+  padding: 1.5em 15% 1em;
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 992px) {
+  /* line 162, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t4-base.scss */
+  .showcase h2:first-of-type {
+    padding: 1.5em 10% 1em;
+  }
+}
+
+/* =============================================== Q: sidenav =============*/
+/* =============================================== Q: Table ====================*/
+/* =============================================== Q: Events ====================*/
+/* =============================================== Misc ???? ====================*/
+/* ==================================== Landing Only Assets =============== */
+
+/*# sourceMappingURL=main-t4-base.css.map */

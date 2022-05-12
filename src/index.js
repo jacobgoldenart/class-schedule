@@ -1,11 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
-import App from "./App";
+import GlobalHeader from "./Components/GlobalHeader";
+import Footer from "./Components/Footer";
+import GlobalFooter from "./Components/GlobalFooter";
+import Main from "./Main";
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <GlobalHeader />
+    <Main />
+    <Footer />
+    <GlobalFooter />
   </React.StrictMode>,
   document.getElementById("root")
 );

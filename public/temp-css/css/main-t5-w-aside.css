@@ -1,0 +1,716 @@
+@charset "UTF-8";
+/************ T5 Modified Styles ***********/
+/* line 3, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+main.one-column-aside section.container {
+  /* #t5-section */
+  padding: 4em 0 2em;
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+/* line 13, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+main.one-column-aside section.container > h1 {
+  order: 1;
+}
+
+/* line 17, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+main.one-column-aside section.container > aside {
+  order: 2;
+}
+
+/* line 21, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+main.one-column-aside section.container > h1 + div {
+  order: 3;
+}
+
+/* line 25, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+main.one-column-aside section.container > aside.right-nav {
+  order: 4;
+}
+
+/* line 29, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+main.one-column-aside section.border,
+main.one-column-aside section.card {
+  padding: 2rem 10% 1rem;
+}
+
+/* line 34, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+main.one-column-aside section.img-top {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+/* line 39, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+main.one-column-aside section.img-top > h2 {
+  order: 2;
+  margin-top: 2rem;
+}
+
+/* line 44, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+main.one-column-aside section.img-top > figure {
+  order: 1;
+}
+
+/* line 48, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+main.one-column-aside section.img-top > * {
+  order: 3;
+}
+
+/* line 52, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+main.one-column-aside section.container > h1,
+main.one-column-aside section.container > h1 + div > section {
+  clear: both;
+  margin-top: 2rem;
+}
+
+/* line 58, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+main.one-column-aside section.container > h1 + div > section {
+  /*overflow: auto;*/
+}
+
+/* line 62, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+main.one-column-aside section.container > h1 + div > section.image:first-child {
+  margin-top: 0;
+}
+
+/* line 66, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+.one-column-aside section > h2 {
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+/*.one-column-aside section.border > h2 {*/
+/*    margin-top: 2rem;*/
+/*}*/
+/* line 80, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+hr {
+  margin: 4rem 35%;
+  border-top: #c4b581 solid 1px;
+}
+
+/* ===== utility ====== */
+/* line 88, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+.one-column-aside section img,
+section .two-column img.float-right,
+main.one-column-aside section.container > h1 + div > section figure:only-child img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 96, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+  .one-column-aside section p > img.small-image-right,
+  .one-column-aside section p > img.small-image-left,
+  .one-column-aside section p > a > img.small-image-right,
+  .one-column-aside section p > a > img.small-image-left,
+  .one-column-aside section p > img.img-small-right,
+  .one-column-aside section p > img.img-smallleft,
+  .one-column-aside section p > a > img.img-small-right,
+  .one-column-aside section p > a > img.img-small-left,
+  .one-column-aside section > h4 + figure {
+    width: 45%;
+    max-width: 25ch;
+    margin: 0 5% 1rem;
+  }
+  /* line 109, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+  .one-column-aside section > h4 + figure {
+    float: right;
+    margin: 0 0 1rem 5%;
+  }
+  /* line 113, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+  .one-column-aside section > h4 + figure img[class*="small-image-"],
+  .one-column-aside section > h4 + figure img[class*="img-small-"] {
+    /* Resets context for p-wrapped imgs that float right from 45%, 45% applied to figure  */
+    width: 100%;
+    max-width: unset;
+    margin: 0;
+  }
+  /* line 120, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+  .page-welcome-to-grad-fest.one-column-aside section p > img.small-image-right,
+  .page-welcome-to-grad-fest.one-column-aside section p > img.small-image-left,
+  .page-welcome-to-grad-fest.one-column-aside section p > a > img.small-image-right,
+  .page-welcome-to-grad-fest.one-column-aside section p > a > img.small-image-left,
+  .page-welcome-to-grad-fest.one-column-aside section p > img.img-small-right,
+  .page-welcome-to-grad-fest.one-column-aside section p > img.img-small-left,
+  .page-welcome-to-grad-fest.one-column-aside section p > a > img.img-small-right,
+  .page-welcome-to-grad-fest.one-column-aside section p > a > img.img-small-left {
+    width: 48%;
+    max-width: unset;
+    margin: 0 2% 1rem;
+  }
+  /* line 132, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+  .one-column-aside section p > img.small-image-right,
+  .one-column-aside section p > a > img.small-image-right,
+  .page-welcome-to-grad-fest.one-column-aside section p > a > img.small-image-right,
+  .page-welcome-to-grad-fest.one-column-aside section p > img.small-image-right,
+  .one-column-aside section p > img.img-small-right,
+  .one-column-aside section p > a > img.img-small-right,
+  .page-welcome-to-grad-fest.one-column-aside section p > a > img.img-small-right,
+  .page-welcome-to-grad-fest.one-column-aside section p > img.img-small-right {
+    margin-right: 0;
+  }
+  /* line 142, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+  .one-column-aside section p > img.img-small-left,
+  .one-column-aside section p > a > img.img-small-left,
+  .page-welcome-to-grad-fest.one-column-aside section p > img.img-small-left,
+  .page-welcome-to-grad-fest.one-column-aside section p > a > img-small-left {
+    margin-left: 0;
+  }
+  /* line 148, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+  .one-column-aside section > h2 + p > img.small-image-right,
+  .one-column-aside section > h2 + p > img.small-image-left,
+  .one-column-aside section p > a > img.small-image-right,
+  .one-column-aside section p > a > img.small-image-left,
+  .one-column-aside section > h2 + p > img.img-small-right,
+  .one-column-aside section > h2 + p > img.img-small-left,
+  .one-column-aside section p > a > img.img-small-right,
+  .one-column-aside section p > a > img.img-small-left {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* line 161, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+  .one-column-aside section p > img.small-image-right,
+  .one-column-aside section p > img.small-image-left,
+  .one-column-aside section p > a > img.small-image-right,
+  .one-column-aside section p > a > img.small-image-left,
+  .one-column-aside section p > img.img-small-right,
+  .one-column-aside section p > img.img-small-left,
+  .one-column-aside section p > a > img.img-small-right,
+  .one-column-aside section p > a > img.img-small-left {
+    width: 100%;
+    float: unset;
+    max-width: unset;
+    margin: 0 auto 1rem;
+  }
+  /* line 174, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+  .one-column-aside section > h4 + figure {
+    margin: 0 0 1rem 0;
+  }
+}
+
+/*.one-column-aside section.video h2 {*/
+/*    text-indent:-9999px;*/
+/*    margin:0;*/
+/*    padding:0;*/
+/*}*/
+/* line 194, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+.one-column-aside[class*="cohort-directory"] section.general {
+  padding: 0;
+  clear: both;
+}
+
+/* line 199, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+.one-column-aside section.general {
+  padding: 0;
+}
+
+/* line 203, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+.one-column-aside section:not(.border) {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+/* line 208, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+.one-column-aside section.image.border,
+.one-column-aside section.image.border figure,
+main.one-column-aside section.container > h1 + div > section figure {
+  padding: 0;
+  border: 0 !important;
+}
+
+/* line 215, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+.one-column-aside aside.side-nav ul {
+  border: 0;
+  overflow: hidden;
+}
+
+/* line 220, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+main.one-column-aside p {
+  max-width: unset;
+}
+
+/* line 224, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+section[class*="border"] + section[class*="border"],
+section[class*="image"] + section[class*="border"],
+section[class*="border"] + section[class*="video"],
+section[class*="video"] + section[class*="video"],
+section.general.border + section.general.image:not(:first-of-type) {
+  margin-top: 2rem;
+}
+
+/*main.one-column-aside section.container > h1 + div > section.general.border {*/
+/*}*/
+/*.one-column-aside section.two-column div.two-column {*/
+/*    column-count: 2;*/
+/*    -moz-column-count: 2;*/
+/*    -webkit-column-count: 2;*/
+/*    column-gap: 2ch;*/
+/*    -moz-column-gap: 2ch;*/
+/*    -webkit-column-gap: 2ch;*/
+/*    column-width: 50%;*/
+/*    border: 0;*/
+/*    border-radius: 0;*/
+/*    padding: 0;*/
+/*    margin: 0;*/
+/*}*/
+/*section.two-column div p,*/
+/*section.two-column div ul li {*/
+/*    break-inside: avoid;*/
+/*}*/
+/* ===== painters ====== */
+/* --------- Bordered Boxes ---------------- */
+/* line 295, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+main.one-column-aside section.bg-sand {
+  /*background-color: #F2F0D9;*/
+  background: url("https://irt-cdn.webhost.csus.edu/cascade/csusnew2019/NewCSUS2019-global-assets/_internal/images/background-accent-double-ss.png") no-repeat #f3f0e6;
+  background-position: right bottom;
+  background-size: contain;
+}
+
+/* line 302, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+main.one-column-aside section.border,
+main.one-column-aside section.card {
+  border: 2px solid #c4b581 !important;
+  border-radius: 8px;
+}
+
+/* line 308, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+.one-column-aside section figure {
+  border: 2px solid #c4b581 !important;
+  border-radius: 8px;
+  margin: 0 0 1rem;
+}
+
+/* line 314, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+main.one-column-aside section.container section figcaption {
+  background-color: #f3f0e6;
+}
+
+/* line 318, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+main.one-column-aside section.container section.bg-sand figcaption {
+  border-bottom: 1px solid #e4d49d;
+}
+
+/* ----------------- Images ------------------------- */
+/* line 325, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+main.one-column-aside section.container > h1 + div > section figure img,
+main.one-column-aside section.container > h1 + div > section.card img {
+  border-radius: 8px 8px 0 0;
+}
+
+/* line 330, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+main.one-column-aside section.container > h1 + div > section figure img:only-child {
+  border-radius: 8px;
+}
+
+/* line 334, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+main.one-column-aside section.container > h1 + div > section figure figcaption {
+  padding: 1em 10%;
+  font-size: 0.8em;
+  border-radius: 0 0 8px 8px;
+}
+
+/* line 340, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+section.bg-sand figure {
+  background-color: #ffffff;
+}
+
+/* --------- Card ---------------- */
+/* line 347, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+main.one-column-aside section.container > h1 + div > section.card {
+  background-color: #f3f0e6;
+  padding: 0;
+}
+
+/* line 352, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+main.one-column-aside section.container > h1 + div > section.card img {
+  order: 1;
+}
+
+/* line 356, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+main.one-column-aside section.container > h1 + div > section.card > h2 {
+  margin-top: -2rem;
+  margin-bottom: 0;
+  padding: 1rem;
+  background-color: #f3f0e6bd;
+  line-height: 1.2em;
+  order: 2;
+}
+
+/* line 365, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+main.one-column-aside section.container > h1 + div > section.card > *:not(img) {
+  padding-left: 10%;
+  padding-right: 10%;
+  order: 3;
+}
+
+/* line 371, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+main.one-column-aside section.container > h1 + div > section.card ul,
+main.one-column-aside section.container > h1 + div > section.card ol {
+  margin-left: 1rem;
+}
+
+/*main.one-column-aside section.container > h1 + div > section.general p + ul,*/
+/*main.one-column-aside section.container > h1 + div > section.general p + ol {*/
+/*    clear:both;*/
+/*}*/
+/* line 388, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+main.one-column-aside section.container > h1 + div > section p + h3,
+main.one-column-aside section.container > h1 + div > section ul + h3,
+main.one-column-aside section.container > h1 + div > section ol + h3,
+main.one-column-aside section.container > h1 + div > section.card p + h3 {
+  margin-top: 1rem;
+}
+
+/* line 395, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+img + h3,
+p + h3,
+p + h4 {
+  margin-top: 2rem;
+}
+
+/* line 401, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+main.one-column-aside section.container > h1 + div > section.card a.button-default {
+  background: #fff;
+}
+
+/* ---------------- Table -------------------------- */
+/* line 408, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+main.one-column-aside .card .table-responsive {
+  width: 80%;
+}
+
+/* line 412, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+main.one-column-aside .table-responsive {
+  margin: 2rem auto;
+  overflow: auto;
+  padding: 0 !important;
+  border-radius: 8px;
+  border: 2px solid #c4b581;
+}
+
+/* line 420, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+main.one-column-aside .table-responsive .table {
+  margin: 0;
+}
+
+/* ---------------- CTA -------------------------- */
+/* line 427, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+main.one-column-aside div.cta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* line 435, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+main.one-column-aside div.cta a {
+  display: unset;
+  border: 2px solid #28a745;
+  background: #f0e1b099;
+  width: auto;
+  flex: 1 1 100%;
+  margin-top: 1rem;
+  font-weight: 600;
+  color: #00573d;
+}
+
+/* line 446, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+main.one-column-aside div.cta a:first-of-type {
+  margin-top: 0;
+}
+
+/* line 450, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+main.one-column-aside div.cta a.button-default:visted,
+main.one-column-aside div.cta a.button-default:hover,
+main.one-column-aside div.cta a.button-default:focus {
+  border: 2px solid #28a745;
+  background: #f0e1b0;
+  width: auto;
+}
+
+/*.one-column-aside #t5-section section div.cta {*/
+/*    display:flex;    */
+/*    margin-top:1.5em;*/
+/*    margin-bottom: 1.25em*/
+/*}*/
+/*.one-column-aside #t5-section section div.cta a.button-default:nth-child(2),*/
+/*.one-column-aside #t5-section section div.cta a.button-default:nth-child(3){*/
+/*  margin-left:1em;*/
+/*}*/
+/* =================== Side Nav ========================== */
+/* line 488, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+.one-column-aside aside.side-nav {
+  padding: 2rem 0 0;
+}
+
+/* line 492, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+.one-column-aside aside.side-nav ul {
+  background: #fff;
+  border-radius: 8px;
+}
+
+/* line 497, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+.one-column-aside aside.side-nav li {
+  padding-bottom: 0;
+  border-bottom: 1px solid #c4b581;
+}
+
+/* line 502, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+.one-column-aside aside.side-nav li:last-of-type {
+  border: 0;
+}
+
+/* line 506, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+.one-column-aside aside.side-nav li a {
+  line-height: 1.2em;
+  padding: 1em;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+/* line 514, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+.one-column-aside aside.side-nav li a:hover,
+.one-column-aside aside.side-nav li a:focus,
+.one-column-aside aside.side-nav ul > li.active {
+  /*background: rgba(196,182,129, .25);*/
+  background-color: #eae4cf;
+  color: #00573d;
+  /* stinger */
+}
+
+@media screen and (min-width: 768px) {
+  /* line 524, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+  .one-column-aside aside.side-nav {
+    margin-bottom: 2rem;
+  }
+  /* line 527, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+  .one-column-aside aside.side-nav ul {
+    border-left: 2px solid #c4b581;
+  }
+  /* line 530, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+  main.one-column-aside section.container > h1 + div > section.border {
+    padding: 2rem 5% 1rem;
+  }
+  /* line 533, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+  main.one-column-aside section.container > h1 + div > section.card {
+    padding: 0;
+  }
+  /* line 536, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+  .one-column-aside section:not(.border),
+  main.one-column-aside section.container > h1 + div > section > *:not(img),
+  .one-column-aside section figcaption,
+  .one-column-aside aside.side-nav {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  /* line 543, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+  main.one-column-aside section.container h4 + figure > img.small-image-right + figcaption,
+  main.one-column-aside section.container h4 + figure > img.img-small-right + figcaption {
+    /* This allows right floated images that follow an H4 to be in a captionable figure */
+    clear: both;
+  }
+  /* line 548, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+  main.one-column-aside section.container > h1 + div > section > ul,
+  main.one-column-aside section.container > h1 + div > section > ol {
+    padding-left: calc(5% + 1.25rem);
+  }
+  /* line 552, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+  main.one-column-aside section.container > h1 + div > section > ul.ul-button-2wide,
+  main.one-column-aside section.container > h1 + div > section > ol.ul-button-2wide {
+    padding: 0 5%;
+  }
+  /* line 556, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+  main.one-column-aside section.container > h1 + div > section figure,
+  main.one-column-aside section.container > h1 + div > section img,
+  main.one-column-aside section.container > h1 + div > section.image.border {
+    padding: 0;
+    border: 0 !important;
+  }
+  /* line 562, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+  .card .table-responsive {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  /* line 568, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+  main.one-column-aside section.container > aside.right-nav {
+    order: 2;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  /* line 574, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+  main.one-column-aside section.container {
+    width: 90%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  /* line 580, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+  main.one-column-aside section.container > h1 + div > section {
+    margin-top: 4rem;
+    padding: 0;
+  }
+  /* line 584, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+  main.one-column-aside section.container > h1 {
+    width: 100%;
+  }
+  /* line 587, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+  main.one-column-aside section.container > h1 + div {
+    width: 65%;
+    align-self: flex-end;
+  }
+  /* line 591, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+  main.one-column-aside section.container > aside {
+    width: 30%;
+    align-self: flex-start;
+    padding: 0;
+    margin-top: 2rem;
+  }
+  /* line 597, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+  .one-column-aside aside.side-nav,
+  #myScrollspy {
+    top: 20px;
+    position: -webkit-sticky;
+    position: sticky;
+  }
+  /* line 603, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+  #myScrollspy {
+    max-height: 95vh;
+    overflow-y: auto;
+  }
+  /******* Scroll style ***********/
+  /* Firefox */
+  /* line 609, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+  #myScrollspy {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(159, 146, 104, 0.5) #eae4cf;
+  }
+  /* Chrome, Edge, and Safari */
+  /* line 614, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+  #myScrollspy::-webkit-scrollbar {
+    width: 12px;
+  }
+  /* line 617, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+  #myScrollspy::-webkit-scrollbar-track {
+    background: #eae4cf;
+  }
+  /* line 620, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+  #myScrollspy::-webkit-scrollbar-thumb {
+    background-color: rgba(159, 146, 104, 0.5);
+    border-radius: 20px;
+  }
+  /******* end scroll style ***********/
+  /* line 625, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+  .one-column-aside aside.side-nav ul {
+    width: 100%;
+    padding: 0;
+  }
+  /* line 629, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+  .one-column-aside aside.side-nav li.active,
+  #myScrollspy li .active {
+    font-weight: 600;
+    background-color: #f3f0e6;
+  }
+  /* line 634, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+  .one-column-aside aside.side-nav li a {
+    font-size: 14px;
+  }
+  /* line 637, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+  .one-column-aside section:not(.border),
+  main.one-column-aside section.container > h1 + div > section figure figcaption {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  /* line 642, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+  main.one-column-aside section.container > h1 + div > section.image.border {
+    padding: 0;
+    border: 0 !important;
+  }
+  /* line 646, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+  main.one-column-aside section.container > h1 + div > section > .cta {
+    flex-wrap: nowrap;
+    gap: 2%;
+  }
+  /* line 650, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+  main.one-column-aside section.container > h1 + div > section > .cta * {
+    margin-top: 0;
+    align-content: center;
+    justify-content: center;
+  }
+  /* line 655, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+  main.one-column-aside section.container > h1 + div > section > .cta:last-child {
+    margin-right: 0;
+  }
+}
+
+/* ==================== Feria exhibitor pages ================ */
+/* line 663, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+.t5[class*="page-2020-feria-exhibitors"].one-column-aside section h2:first-of-type,
+.t5[class*="page-expositores-feria-2020"].one-column-aside section h2:first-of-type {
+  margin-bottom: 0;
+  text-indent: -9999px;
+  line-height: 0;
+}
+
+/* line 670, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+.t5[class*="page-2020-feria-exhibitors"].one-column-aside section.img-top .t5 section h2 + p,
+.t5[class*="page-2020-feria-exhibitors"].one-column-aside section.img-top p + h3 {
+  margin-top: 0;
+}
+
+/*Side-by-side figure hack — see build-with-carlsen-center/virtual-mastermind-cohort */
+/* line 678, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+.page-intro-to-the-sacramento-startup-community.one-column-aside section.container > h1 + div > section.general h2 + figure,
+.page-intro-to-the-sacramento-startup-community.one-column-aside section.container > h1 + div > section.general h2 + p + figure,
+.page-intro-to-the-sacramento-startup-community.one-column-aside section.container > h1 + div > section.general figure + figure,
+.page-virtual-masterminds-cohort.one-column-aside section.container > h1 + div > section.general h2 + figure,
+.page-virtual-masterminds-cohort.one-column-aside section.container > h1 + div > section.general h2 + p + figure,
+.page-virtual-masterminds-cohort.one-column-aside section.container > h1 + div > section.general figure + figure,
+.page-fourthwave-accelerator.one-column-aside section.container > h1 + div > section.general h2 + figure,
+.page-fourthwave-accelerator.one-column-aside section.container > h1 + div > section.general h2 + p + figure,
+.page-fourthwave-accelerator.one-column-aside section.container > h1 + div > section.general figure + figure {
+  width: 48%;
+  float: left;
+  margin-right: 4%;
+}
+
+/* line 692, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+main.page-intro-to-the-sacramento-startup-community.one-column-aside section.container > h1 + div > section.general figure:nth-of-type(even),
+main.page-virtual-masterminds-cohort.one-column-aside section.container > h1 + div > section.general figure:nth-of-type(even),
+main.page-fourthwave-accelerator.one-column-aside section.container > h1 + div > section.general figure:nth-of-type(even) {
+  margin-right: 0;
+}
+
+/*Hornet 5 footer  */
+/* line 701, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+main[class*="page-the-hornet-five"] section[id*="sacramento-state-is-more-than-an-education"]:before {
+  display: block;
+  content: "Sacramento State is more than an education. It's where the future begins.";
+  max-width: 38ch;
+  margin: auto;
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: 700;
+  font-style: italic;
+  font-family: "Myriad Pro";
+  letter-spacing: .01rem;
+  color: #008554;
+}
+
+/* line 715, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/main-t5-w-aside.scss */
+main[class*="page-the-hornet-five"] img[alt*="Sacramento State is more than an education."] {
+  margin-left: -9999px;
+  height: 0;
+}
+
+/*# sourceMappingURL=main-t5-w-aside.css.map */

@@ -1,0 +1,460 @@
+/* line 1, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+[id^="hornetcomb-header-"] {
+  background: var(--brzdk) url(../svg/comb-back.svg);
+  background-repeat: repeat;
+  background-blend-mode: color-burn;
+}
+
+/* line 6, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+[id^="hornetcomb-header-"] h2 {
+  color: var(--white);
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+/* line 11, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+[id^="hornetcomb-header-"] .hexwrapper {
+  margin: auto;
+}
+
+@media screen and (min-width: 800px) {
+  /* line 11, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+  [id^="hornetcomb-header-"] .hexwrapper {
+    padding: 1rem 0;
+  }
+}
+
+/* line 18, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+[id^="hornetcomb-header-"] .hexwrapper .hex-row ul {
+  display: grid;
+  margin: auto;
+  width: calc(10rem * 1);
+  gap: 1.5rem;
+  margin: 0 auto;
+  list-style: none;
+}
+
+/* line 25, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+[id^="hornetcomb-header-"] .hexwrapper .hex-row ul li {
+  position: relative;
+  display: flex;
+  -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  background: var(--wgolt);
+  min-height: 8rem;
+  align-items: center;
+}
+
+/* line 28, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+[id^="hornetcomb-header-"] .hexwrapper .hex-row ul li.nav-item {
+  border-bottom: 0;
+}
+
+/* line 36, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+[id^="hornetcomb-header-"] .hexwrapper .hex-row ul li a {
+  color: var(--ssgr);
+  hyphens: none;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  font-weight: 600;
+  text-shadow: var(--gvgr) 1px 2px 0;
+  font-size: 1.1rem;
+  -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  text-shadow: unset;
+}
+
+/* line 53, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+[id^="hornetcomb-header-"] .hexwrapper .hex-row ul li a:hover, [id^="hornetcomb-header-"] .hexwrapper .hex-row ul li a:focus {
+  color: var(--wgoDk);
+  text-decoration: underline;
+  text-shadow: unset;
+  background: var(--white);
+}
+
+@media (min-width: 500px) {
+  /* line 36, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+  [id^="hornetcomb-header-"] .hexwrapper .hex-row ul li a {
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media (min-width: 800px) {
+  /* line 36, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+  [id^="hornetcomb-header-"] .hexwrapper .hex-row ul li a {
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  /* line 18, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+  [id^="hornetcomb-header-"] .hexwrapper .hex-row ul {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  /* line 72, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+  [id^="hornetcomb-header-"] .hexwrapper .hex-row ul.hex-4, [id^="hornetcomb-header-"] .hexwrapper .hex-row ul.hex-5, [id^="hornetcomb-header-"] .hexwrapper .hex-row ul.hex-6 {
+    transform: translateX(-15%);
+  }
+}
+
+@media screen and (min-width: 401px) {
+  /* line 79, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+  [id^="hornetcomb-header-"] .hexwrapper .hex-row ul.hex-3 {
+    width: unset;
+    max-width: calc(10rem * 3);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    transform: translateX(0);
+    gap: 1rem;
+  }
+  /* line 87, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+  [id^="hornetcomb-header-"] .hexwrapper .hex-row ul.hex-3 li {
+    grid-column-end: span 2;
+    grid-row-end: span 2;
+  }
+  /* line 90, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+  [id^="hornetcomb-header-"] .hexwrapper .hex-row ul.hex-3 li:nth-child(1) {
+    grid-row-start: 1;
+    grid-column-start: 1;
+  }
+  /* line 94, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+  [id^="hornetcomb-header-"] .hexwrapper .hex-row ul.hex-3 li:nth-child(2) {
+    grid-row-start: 1;
+    grid-column-start: 3;
+  }
+  /* line 98, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+  [id^="hornetcomb-header-"] .hexwrapper .hex-row ul.hex-3 li:nth-child(3) {
+    grid-column-start: 2;
+  }
+  /* line 103, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+  [id^="hornetcomb-header-"] .hexwrapper .hex-row ul.hex-4 {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    width: unset;
+    max-width: calc(10rem * 4);
+  }
+  /* line 108, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+  [id^="hornetcomb-header-"] .hexwrapper .hex-row ul.hex-4 li {
+    grid-column-end: span 3;
+    grid-row-end: span 2;
+  }
+  /* line 111, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+  [id^="hornetcomb-header-"] .hexwrapper .hex-row ul.hex-4 li:nth-child(1) {
+    grid-column-start: 1;
+    grid-row-start: 1;
+  }
+  /* line 115, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+  [id^="hornetcomb-header-"] .hexwrapper .hex-row ul.hex-4 li:nth-child(2) {
+    grid-column-start: 3;
+    grid-row-start: 2;
+  }
+  /* line 119, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+  [id^="hornetcomb-header-"] .hexwrapper .hex-row ul.hex-4 li:nth-child(3) {
+    grid-column-start: 1;
+    grid-row-start: 3;
+  }
+  /* line 123, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+  [id^="hornetcomb-header-"] .hexwrapper .hex-row ul.hex-4 li:nth-child(4) {
+    grid-column-start: 3;
+    grid-row-start: 4;
+  }
+  /* line 129, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+  [id^="hornetcomb-header-"] .hexwrapper .hex-row ul.hex-5 {
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    width: unset;
+    max-width: calc(10rem * 3);
+  }
+  /* line 134, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+  [id^="hornetcomb-header-"] .hexwrapper .hex-row ul.hex-5 li {
+    grid-column-end: span 3;
+    grid-row-end: span 2;
+  }
+  /* line 137, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+  [id^="hornetcomb-header-"] .hexwrapper .hex-row ul.hex-5 li:nth-child(1) {
+    grid-column-start: 1;
+    grid-row-start: 1;
+  }
+  /* line 141, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+  [id^="hornetcomb-header-"] .hexwrapper .hex-row ul.hex-5 li:nth-child(2) {
+    grid-column-start: 5;
+    grid-row-start: 1;
+  }
+  /* line 145, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+  [id^="hornetcomb-header-"] .hexwrapper .hex-row ul.hex-5 li:nth-child(3) {
+    grid-column-start: 3;
+    grid-row-start: 2;
+  }
+  /* line 149, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+  [id^="hornetcomb-header-"] .hexwrapper .hex-row ul.hex-5 li:nth-child(4) {
+    grid-column-start: 1;
+    grid-row-start: 3;
+  }
+  /* line 153, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+  [id^="hornetcomb-header-"] .hexwrapper .hex-row ul.hex-5 li:nth-child(5) {
+    grid-column-start: 5;
+    grid-row-start: 3;
+  }
+  /* line 159, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+  [id^="hornetcomb-header-"] .hexwrapper .hex-row ul.hex-6 {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    width: unset;
+    max-width: calc(10rem * 3);
+  }
+  /* line 164, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+  [id^="hornetcomb-header-"] .hexwrapper .hex-row ul.hex-6 li {
+    grid-column-end: span 3;
+    grid-row-end: span 2;
+  }
+  /* line 167, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+  [id^="hornetcomb-header-"] .hexwrapper .hex-row ul.hex-6 li:nth-child(1) {
+    grid-column-start: 1;
+    grid-row-start: 1;
+  }
+  /* line 171, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+  [id^="hornetcomb-header-"] .hexwrapper .hex-row ul.hex-6 li:nth-child(2) {
+    grid-column-start: 3;
+    grid-row-start: 2;
+  }
+  /* line 175, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+  [id^="hornetcomb-header-"] .hexwrapper .hex-row ul.hex-6 li:nth-child(3) {
+    grid-column-start: 1;
+    grid-row-start: 3;
+  }
+  /* line 179, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+  [id^="hornetcomb-header-"] .hexwrapper .hex-row ul.hex-6 li:nth-child(4) {
+    grid-column-start: 3;
+    grid-row-start: 4;
+  }
+  /* line 183, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+  [id^="hornetcomb-header-"] .hexwrapper .hex-row ul.hex-6 li:nth-child(5) {
+    grid-column-start: 1;
+    grid-row-start: 5;
+  }
+  /* line 187, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+  [id^="hornetcomb-header-"] .hexwrapper .hex-row ul.hex-6 li:nth-child(6) {
+    grid-column-start: 3;
+    grid-row-start: 6;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  /* line 195, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+  [id^="hornetcomb-header-"] .hexwrapper .hex-row ul.hex-3 {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    max-width: calc(12rem * 3);
+  }
+  /* line 199, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+  [id^="hornetcomb-header-"] .hexwrapper .hex-row ul.hex-3 li {
+    grid-column-end: span 4;
+  }
+  /* line 201, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+  [id^="hornetcomb-header-"] .hexwrapper .hex-row ul.hex-3 li:first-child {
+    grid-column-start: 2;
+  }
+  /* line 204, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+  [id^="hornetcomb-header-"] .hexwrapper .hex-row ul.hex-3 li:nth-child(2) {
+    grid-row-start: 2;
+    grid-column-start: 5;
+  }
+  /* line 208, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+  [id^="hornetcomb-header-"] .hexwrapper .hex-row ul.hex-3 li:nth-child(3) {
+    grid-row-start: 1;
+    grid-column-start: 8;
+  }
+  /* line 214, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+  [id^="hornetcomb-header-"] .hexwrapper .hex-row ul.hex-4 {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+  /* line 219, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+  [id^="hornetcomb-header-"] .hexwrapper .hex-row ul.hex-4 li {
+    grid-column-end: span 2;
+    grid-row-end: span 2;
+  }
+  /* line 222, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+  [id^="hornetcomb-header-"] .hexwrapper .hex-row ul.hex-4 li:nth-child(1) {
+    grid-column-start: 1;
+    grid-row-start: 1;
+  }
+  /* line 226, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+  [id^="hornetcomb-header-"] .hexwrapper .hex-row ul.hex-4 li:nth-child(2) {
+    grid-column-start: 3;
+    grid-row-start: 1;
+  }
+  /* line 230, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+  [id^="hornetcomb-header-"] .hexwrapper .hex-row ul.hex-4 li:nth-child(3) {
+    grid-column-start: 2;
+    grid-row-start: 3;
+  }
+  /* line 234, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+  [id^="hornetcomb-header-"] .hexwrapper .hex-row ul.hex-4 li:nth-child(4) {
+    grid-column-start: 4;
+    grid-row-start: 3;
+  }
+  /* line 240, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+  [id^="hornetcomb-header-"] .hexwrapper .hex-row ul.hex-6 {
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    max-width: unset;
+  }
+  /* line 244, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+  [id^="hornetcomb-header-"] .hexwrapper .hex-row ul.hex-6 li {
+    grid-column-end: span 3;
+    grid-row-end: span 2;
+  }
+  /* line 247, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+  [id^="hornetcomb-header-"] .hexwrapper .hex-row ul.hex-6 li:nth-child(1) {
+    grid-column-start: 1;
+    grid-row-start: 2;
+  }
+  /* line 251, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+  [id^="hornetcomb-header-"] .hexwrapper .hex-row ul.hex-6 li:nth-child(2) {
+    grid-column-start: 3;
+    grid-row-start: 1;
+  }
+  /* line 255, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+  [id^="hornetcomb-header-"] .hexwrapper .hex-row ul.hex-6 li:nth-child(3) {
+    grid-column-start: 5;
+    grid-row-start: 2;
+  }
+  /* line 259, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+  [id^="hornetcomb-header-"] .hexwrapper .hex-row ul.hex-6 li:nth-child(4) {
+    grid-column-start: 3;
+    grid-row-start: 3;
+  }
+  /* line 263, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+  [id^="hornetcomb-header-"] .hexwrapper .hex-row ul.hex-6 li:nth-child(5) {
+    grid-column-start: 1;
+    grid-row-start: 4;
+  }
+  /* line 267, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+  [id^="hornetcomb-header-"] .hexwrapper .hex-row ul.hex-6 li:nth-child(6) {
+    grid-column-start: 5;
+    grid-row-start: 4;
+  }
+}
+
+@media screen and (min-width: 901px) {
+  /* line 275, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+  [id^="hornetcomb-header-"] .hexwrapper .hex-row ul.hex-4 {
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 0;
+  }
+  /* line 280, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+  [id^="hornetcomb-header-"] .hexwrapper .hex-row ul.hex-4 li {
+    grid-column-end: span 2;
+    grid-row-end: span 2;
+  }
+  /* line 283, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+  [id^="hornetcomb-header-"] .hexwrapper .hex-row ul.hex-4 li:nth-child(1) {
+    grid-column-start: 1;
+    grid-row-start: 1;
+  }
+  /* line 287, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+  [id^="hornetcomb-header-"] .hexwrapper .hex-row ul.hex-4 li:nth-child(2) {
+    grid-column-start: 5;
+    grid-row-start: 1;
+  }
+  /* line 291, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+  [id^="hornetcomb-header-"] .hexwrapper .hex-row ul.hex-4 li:nth-child(3) {
+    grid-column-start: 3;
+    grid-row-start: 2;
+  }
+  /* line 295, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+  [id^="hornetcomb-header-"] .hexwrapper .hex-row ul.hex-4 li:nth-child(4) {
+    grid-column-start: 7;
+    grid-row-start: 2;
+  }
+  /* line 301, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+  [id^="hornetcomb-header-"] .hexwrapper .hex-row ul.hex-5 {
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    max-width: calc(10rem * 5);
+  }
+  /* line 306, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+  [id^="hornetcomb-header-"] .hexwrapper .hex-row ul.hex-5 li {
+    grid-column-end: span 3;
+    grid-row-end: span 2;
+  }
+  /* line 309, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+  [id^="hornetcomb-header-"] .hexwrapper .hex-row ul.hex-5 li:nth-child(1) {
+    grid-column-start: 1;
+    grid-row-start: 1;
+  }
+  /* line 313, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+  [id^="hornetcomb-header-"] .hexwrapper .hex-row ul.hex-5 li:nth-child(2) {
+    grid-column-start: 5;
+    grid-row-start: 1;
+  }
+  /* line 317, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+  [id^="hornetcomb-header-"] .hexwrapper .hex-row ul.hex-5 li:nth-child(3) {
+    grid-column-start: 3;
+    grid-row-start: 2;
+  }
+  /* line 321, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+  [id^="hornetcomb-header-"] .hexwrapper .hex-row ul.hex-5 li:nth-child(4) {
+    grid-column-start: 7;
+    grid-row-start: 2;
+  }
+  /* line 325, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+  [id^="hornetcomb-header-"] .hexwrapper .hex-row ul.hex-5 li:nth-child(5) {
+    grid-column-start: 9;
+    grid-row-start: 1;
+  }
+  /* line 331, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+  [id^="hornetcomb-header-"] .hexwrapper .hex-row ul.hex-6 {
+    grid-template-columns: repeat(26, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    max-width: calc(10rem * 5);
+    gap: .5rem;
+  }
+  /* line 336, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+  [id^="hornetcomb-header-"] .hexwrapper .hex-row ul.hex-6 li {
+    grid-column-end: span 6;
+    grid-row-end: span 3;
+  }
+  /* line 339, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+  [id^="hornetcomb-header-"] .hexwrapper .hex-row ul.hex-6 li:first-child {
+    grid-column-start: 1;
+    grid-row-start: 1;
+  }
+  /* line 343, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+  [id^="hornetcomb-header-"] .hexwrapper .hex-row ul.hex-6 li:nth-child(2) {
+    grid-column-start: 5;
+    grid-row-start: 3;
+  }
+  /* line 347, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+  [id^="hornetcomb-header-"] .hexwrapper .hex-row ul.hex-6 li:nth-child(3) {
+    grid-column-start: 9;
+    grid-row-start: 1;
+  }
+  /* line 351, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+  [id^="hornetcomb-header-"] .hexwrapper .hex-row ul.hex-6 li:nth-child(4) {
+    grid-column-start: 13;
+    grid-row-start: 3;
+  }
+  /* line 355, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+  [id^="hornetcomb-header-"] .hexwrapper .hex-row ul.hex-6 li:nth-child(5) {
+    grid-column-start: 17;
+    grid-row-start: 1;
+  }
+  /* line 359, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-hornetcomb-5.scss */
+  [id^="hornetcomb-header-"] .hexwrapper .hex-row ul.hex-6 li:nth-child(6) {
+    grid-column-start: 21;
+    grid-row-start: 3;
+  }
+}
+
+/*# sourceMappingURL=module-hornetcomb-5.css.map */

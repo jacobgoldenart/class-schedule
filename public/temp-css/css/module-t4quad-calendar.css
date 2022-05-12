@@ -1,0 +1,136 @@
+/* line 2, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-t4quad-calendar.scss */
+.events h2 {
+  background: var(--gvgr);
+  color: var(--ssgr);
+  padding: 1rem 5% .5rem;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+  margin-bottom: 0;
+}
+
+/* line 10, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-t4quad-calendar.scss */
+.events ul {
+  list-style: none;
+  background: var(--white);
+  color: var(--black);
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom: 2px solid var(--gvgr);
+  padding: 0;
+}
+
+/* line 19, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-t4quad-calendar.scss */
+.events ul li.item {
+  border-bottom: 2px solid var(--gvgr);
+  position: relative;
+}
+
+/* line 22, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-t4quad-calendar.scss */
+.events ul li.item:last-of-type {
+  border-bottom: 0;
+}
+
+/* line 25, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-t4quad-calendar.scss */
+.events ul li.item a {
+  display: block;
+  padding: 1.25em 3rem 1.25em 7%;
+  text-decoration: none;
+  background: var(--wgo20a);
+}
+
+@media screen and (min-width: 800px) {
+  /* line 25, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-t4quad-calendar.scss */
+  .events ul li.item a {
+    padding-right: 5rem;
+  }
+}
+
+/* line 33, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-t4quad-calendar.scss */
+.events ul li.item a:hover, .events ul li.item a:focus {
+  background: var(--wgolt);
+  color: var(--graydk);
+}
+
+/* line 39, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-t4quad-calendar.scss */
+.events ul li.item a .eventdate {
+  color: var(--stgr);
+  font-weight: 500;
+}
+
+/* line 46, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-t4quad-calendar.scss */
+.events ul li.item a:after {
+  display: flex;
+  content: " ";
+  position: absolute;
+  right: 1rem;
+  top: 2rem;
+  width: 2rem;
+  height: 2rem;
+  text-indent: -9999px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media screen and (min-width: 800px) {
+  /* line 46, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-t4quad-calendar.scss */
+  .events ul li.item a:after {
+    width: 3rem;
+    height: 3rem;
+    top: 1.5rem;
+  }
+}
+
+/* line 70, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-t4quad-calendar.scss */
+.events ul li.item.academic a:after {
+  background-image: url(../svg/calendar-icons/a-academic.svg);
+}
+
+/* line 78, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-t4quad-calendar.scss */
+.events ul li.item.deadline a:after {
+  content: "B";
+  background-image: url(../svg/calendar-icons/b-deadline.svg);
+}
+
+/* line 86, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-t4quad-calendar.scss */
+.events ul li.item.student-activity a:after, .events ul li.item.hornet-wow-event a:after {
+  content: " ";
+  background-image: url(../svg/calendar-icons/c-csuslogo.svg);
+}
+
+/* line 94, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-t4quad-calendar.scss */
+.events ul li.ceremony a:after {
+  background-image: url(../svg/calendar-icons/d-ceremony.svg);
+}
+
+/* line 103, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-t4quad-calendar.scss */
+.events ul li.meeting a:after, .events ul li.networking a:after, .events ul li.open-house a:after {
+  background-image: url(../svg/calendar-icons/e-networking.svg);
+}
+
+/* line 114, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-t4quad-calendar.scss */
+.events ul li.conference a:after, .events ul li.presentation a:after, .events ul li.lecture a:after, .events ul li.training a:after, .events ul li.workshop a:after, .events ul li.professional-development a:after {
+  background-image: url(../svg/calendar-icons/f-presentation.svg);
+}
+
+/* line 128, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-t4quad-calendar.scss */
+.events ul li.concert a::after, .events ul li.dance a::after, .events ul li.movie a::after, .events ul li.play a::after, .events ul li.photography a::after, .events ul li.performance a::after, .events ul li.literature a::after, .events ul li.exhibit a::after {
+  background-image: url(../svg/calendar-icons/g-performance.svg);
+}
+
+/* line 136, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-t4quad-calendar.scss */
+.events ul li.health-wellness a::after, .events ul li.recreation a::after {
+  background-image: url(../svg/calendar-icons/h-health.svg);
+}
+
+/* line 142, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-t4quad-calendar.scss */
+.events ul li.sporting-event a::after {
+  background-image: url(../svg/calendar-icons/i-sports.svg);
+}
+
+/* line 151, ../../../../../Volumes/cascade-managed/mengtest/web-mobile/_internal/scss/module-t4quad-calendar.scss */
+.events .cal-event-link {
+  text-align: right;
+}
+
+/*# sourceMappingURL=module-t4quad-calendar.css.map */

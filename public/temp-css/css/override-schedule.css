@@ -1,0 +1,185 @@
+  main,
+  article ul,
+  aside ul,
+  article section div,
+  footer div,
+  form {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      margin: 0;
+      padding: 0;
+  }
+  
+  main {
+      padding: 0;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  }
+  
+  article,
+  header[role="banner"] h1,
+  aside.sac-breadcrumb ul {
+      width: 100%;
+      max-width: 1400px;
+      margin: 0 auto;
+  }
+  
+  form {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+  }
+  
+  article > ul,
+  section div > ul,
+  aside ul {
+      list-style-type: none;
+  }
+  
+  header[role="banner"] h1,
+  aside li,
+  footer p,
+  form {
+      padding: 1rem;
+  }
+  
+  header[role="banner"] h1 {
+      padding: 3rem 0 2rem;
+  }
+  
+  main > footer {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-line-pack: center;
+      align-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+  }
+  
+  main > footer div {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 65%;
+      flex: 0 0 65%;
+  }
+  
+  p {
+      max-width: 65ch;
+  }
+  
+  [aria-hidden="true"] {
+      padding: 0;
+      margin: 0;
+      text-indent: -9999px;
+      height: 0;
+      overflow: hidden;
+      position: absolute;
+  }
+  /* local to this page */
+  
+  .page-schedule-home article li {
+      -ms-flex-preferred-size: 33.333%;
+      flex-basis: 33.333%;
+      height: 60vh;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+      /* align-content: center; */
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+  }
+  
+  .page-schedule-home article li a {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%;
+      height: 100%;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      background: var(--graymin);
+  }
+  /* local to term page */
+  
+  article h3 {
+      -webkit-box-flex: 1;
+      -ms-flex: 1 0 5%;
+      flex: 1 0 5%;
+      margin: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-line-pack: center;
+      align-content: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+  }
+  
+  [class*="page-schedule-term-"] article > section > div:nth-of-type(even) {
+      background: var(--graylt);
+  }
+  
+  [class*="page-schedule-term-"] article > section > div:nth-of-type(even) h3 {
+      background: var(--graymin);
+  }
+  
+  [class*="page-schedule-term-"] article ul {
+      -webkit-box-flex: 1;
+      -ms-flex: 1 0 95%;
+      flex: 1 0 95%;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      padding: .5rem 1ch 0 1ch;
+  }
+  
+  [class*="page-schedule-term-"] article > section > div:nth-of-type(odd) ul {
+      background: var(--graymin);
+  }
+  
+  [class*="page-schedule-term-"] article li {
+      -ms-flex-preferred-size: min-content;
+      flex-basis: min-content;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      white-space: nowrap;
+      margin: 0 1ch .5rem 0;
+      border-radius: 4px;
+  }
+  
+  [class*="page-schedule-term-"] article li a {
+      display: block;
+      background: var(--white);
+      padding: 1rem;
+  }
