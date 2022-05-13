@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import GlobalHeader from "./Components/GlobalHeader";
 import Footer from "./Components/Footer";
-import GlobalFooter from "./Components/GlobalFooter";
+import GlobalFooter from "./Components/BreadCrumbs";
 import Main from "./Main";
 
 

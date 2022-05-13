@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Semesters from "./Views/Semesters";
 import AllCourses from "./Views/AllCourses";
 import CourseDetails from "./Views/CourseDetails";
-import Breadcrumbs from "./Components/Breadcrumbs";
+import Breadcrumbs from "./Components/BreadCrumbs";
 import useFetch from "./Components/utils/useFetch";
 export const TermsContext = React.createContext();
 
