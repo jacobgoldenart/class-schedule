@@ -26,6 +26,7 @@ function AllCourses() {
 
   function QueryNavLink({ to, ...props }) {
     let location = useLocation();
+    console.log(`location.search is: ${location.search}`)
     return <NavLink to={to + location.search} {...props} />;
   }
 
@@ -70,8 +71,10 @@ function AllCourses() {
         <section>
           <div>
             <ul>
+            {console.log(`courses pre filtered? is: ${courses}`)}
               {courses &&
                 courses
+                   
                   .filter((filteredCourse) => {
                     let filter = searchParams.get("filter");
                     if (!filter) return true;

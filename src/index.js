@@ -2,14 +2,14 @@ import React from "react";
 import ReactDOM from "react-dom";
 import GlobalHeader from "./Components/GlobalHeader";
 import Footer from "./Components/Footer";
-import GlobalFooter from "./Components/BreadCrumbs";
-import Main from "./Main";
+import GlobalFooter from "./Components/GlobalFooter";
+import App from "./App";
 
 
 ReactDOM.render(
   <React.StrictMode>
     <GlobalHeader />
-    <Main />
+    <App />
     <Footer />
     <GlobalFooter />
   </React.StrictMode>,
