@@ -1,0 +1,9 @@
+.wrapper{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(236, 246, 246);
+}
+.details-table{
+    justify-items: end;
+    width: 50%;
+}

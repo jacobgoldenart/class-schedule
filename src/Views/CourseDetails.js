@@ -1,10 +1,15 @@
+import ClassTable from "../Components/ClassTable";
+import "./CourseDetails.css"
+import Data from "../sample-data/semester-subject-course_spring2022-accy.json"
 function CourseDetails() {
 
 
   return (
-    <>
-      <p>Course Details here</p>
-    </>
+    <div className="wrapper">
+      <div className="details-table">
+        <ClassTable />
+      </div>
+    </div>
   );
 }
 

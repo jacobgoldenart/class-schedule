@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { TermsContext } from "../App"
+import ClassTable from "../Components/ClassTable";
 
 function Semesters() {
 
@@ -19,6 +20,7 @@ function Semesters() {
             </li>
           ))}
         </ul>
+        <ClassTable />
       </article>
     </div>
 
