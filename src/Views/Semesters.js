@@ -20,7 +20,6 @@ function Semesters() {
             </li>
           ))}
         </ul>
-        <ClassTable />
       </article>
     </div>
 

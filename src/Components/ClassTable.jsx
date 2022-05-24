@@ -138,7 +138,7 @@ export default function ClassTable() {
   return (
     <>
         <div className='table' onClick={handleClick}>
-            <h1>{Data.results[0].items[0].class_title}</h1>
+            <h2>{Data.results[0].items[0].subject_code + Data.results[0].items[0].catalog_number + " - " + Data.results[0].items[0].class_title}</h2>
             <p>{Data.results[0].items[0].class_ldesc}</p>
             <DataTable
                 //className='table'
@@ -147,23 +147,7 @@ export default function ClassTable() {
                 sm
                 expandableRows
                 fixedHeader
-                pagination
-                compact
-                selectableRowsHighlight
-                expandableRowsComponent={ExpandedComponent}
-            />
-        </div>
-        <div className='table' onClick={handleClick}>
-            <h1>{Data.results[0].items[0].class_title}</h1>
-            <p>{Data.results[0].items[0].class_ldesc}</p>
-            <DataTable
-                //className='table'
-                columns={columns}
-                data={rows}
-                sm
-                expandableRows
-                fixedHeader
-                pagination
+                
                 compact
                 selectableRowsHighlight
                 expandableRowsComponent={ExpandedComponent}

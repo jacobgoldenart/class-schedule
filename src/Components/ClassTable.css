@@ -1,9 +1,7 @@
-.table{
-    border: 1px solid black;
-}
+
 .class-info-exp{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     align-items: start;
     padding: 2rem;
@@ -13,11 +11,12 @@
 .class-info-exp p{
     margin-left: 2rem;
 }
-@media (max-width: 599px){
-    .class-info-exp{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: start;
-    }
+
+.table{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    background-color:  rgb(226, 223, 223);
 }
