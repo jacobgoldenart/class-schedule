@@ -42,3 +42,19 @@
     display: flex;
     flex-direction: column;
 }
+.toc-wrapper{
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+}
+.toc-wrapper .toc-card{
+    display: flex;
+    padding: 2rem;
+    margin: 1rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+}

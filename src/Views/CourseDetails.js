@@ -9,16 +9,17 @@ const handleClick =() =>{
   return (
     <main>
       <article className="page-schedule-details">
-        <aside class="side-nav ">
+        
+        <aside className="side-nav ">
           <nav id="myScrollspy">
-            <ul class="nav nav-pills ul-button-stack list-group">
-              <li class=""><a href="">Fall 2022</a></li>
-              <li class=""><a href="#">Summer 2022</a></li>
-              <li class=""><a href="./sprg2022.html">Spring 2022</a></li>
+            <ul className="nav nav-pills ul-button-stack list-group">
+              <li className=""><a href="">Fall 2022</a></li>
+              <li className=""><a href="#">Summer 2022</a></li>
+              <li className=""><a href="./sprg2022.html">Spring 2022</a></li>
             </ul>
           </nav>
-          <div class="legend-sidebar">
-            <div class="icon-block">
+          <div className="legend-sidebar">
+            <div className="icon-block">
               <h3>Icon Indicators</h3>
               <figure> <img src="http://www.csus.edu/dev/class_schedule/book-icon-big.png" alt="Book Legend Icon" />
                 <figcaption>Link to course materials list.</figcaption>
@@ -30,7 +31,7 @@ const handleClick =() =>{
                 <figcaption>Course has no course materials cost.</figcaption>
               </figure>
             </div>
-            <div class="attr-block">
+            <div className="attr-block">
               <h3>Class Attribute Codes</h3>
               <dl> <dt>HY</dt>
                 <dd>Hybrid (OnLine &amp; In-Person Meetings)</dd> <dt>I</dt>
@@ -42,10 +43,19 @@ const handleClick =() =>{
             </div>
           </div>
         </aside>
-        <section className="table-section">
-          <ClassTable />
-          <ClassTable />
-          <button onClick={handleClick}>Jora</button>
+        <section>
+            <h1>Table of Contents</h1>
+          <div className="toc-wrapper">
+            {Data.results[0].items.map((item) =>
+              <div className="toc-card">
+                <p>{item.subject_code + " " + item.catalog_number}</p> 
+                </div>
+            )}
+          </div>
+          <div className="table-section">
+            <ClassTable />
+            <ClassTable />
+          </div>
         </section>
       </article>
     </main>
