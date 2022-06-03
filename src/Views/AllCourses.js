@@ -68,7 +68,7 @@ function handleTermChange(e) {
 
 return (
   <>
-  <div class="page-schedule-term-">
+  <div className="page-schedule-term-">
       <article>
         <h2 id="article-head" aria-hidden="true">
           {/* update with dynamic terms */}
@@ -104,6 +104,7 @@ return (
           </fieldset>
         </form>
         <section>
+          <div>
     <ul>
   {groupedCourses
   .filter((filteredAlpha) => {
@@ -140,6 +141,7 @@ return (
           </div>
   })} 
   </ul>
+  </div>
   </section>
   </article>
   </div>
