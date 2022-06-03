@@ -5,7 +5,7 @@ import Semesters from "./Views/Semesters";
 import AllCourses from "./Views/AllCourses";
 import CourseDetails from "./Views/CourseDetails";
 import useFetch from "./Components/utils/useFetch";
-import Breadcrumbs from "./Components/Breadcrumbs";
+import Breadcrumbs from "./Components/BreadCrumbs";
 export const TermsContext = React.createContext();
 
 

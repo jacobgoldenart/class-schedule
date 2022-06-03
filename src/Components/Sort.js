@@ -29,7 +29,7 @@ export default function Sort(props) {
       names: map[el],
     }));
     setGroupedCourses(res);
-    console.log(res);
+    //console.log(res);
   };
 
   return (
@@ -40,7 +40,9 @@ export default function Sort(props) {
           <div>
             <h3>{groupCourse.letter}</h3>
             <ul>
-              <li key={groupCourse.names.length}>{groupCourse.names}</li>
+              {groupCourse.names.map((name) => {
+              return <li>{name}</li>
+              })}
             </ul>
           </div>
         ))}
