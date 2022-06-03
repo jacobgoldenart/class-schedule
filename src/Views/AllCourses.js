@@ -91,11 +91,15 @@ return (
             />
       </fieldset>
           <fieldset>
-            <select>
-              <option value="Spring">Spring</option>
-              <option value="Summer">Summer</option>
-              <option value="Fall">Fall</option>
-              <option value="Winter">Winter</option>
+          <select onChange={handleTermChange} defaultValue="">
+              <option value="" disabled>
+                Select Another Term...
+              </option>
+              {termsLinks.map((termLink) => (
+                <option key={termLink.term} value={termLink.term_ldesc}>
+                  {termLink.term_ldesc}
+                </option>
+              ))}
             </select>
           </fieldset>
         </form>
