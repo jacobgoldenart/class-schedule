@@ -12,13 +12,17 @@ export const TermsContext = React.createContext();
 function App() {
 
   const [terms, setTerms] = useState([]);
-  const { get } = useFetch("./sample-data/");
+  const { get } = useFetch();
 
   useEffect(() => {
 
     get("semester-list_2022.json").then((data) => {
       setTerms(data.results[0].items);
     });
+    // test data 
+    // get("/activesemesters").then((data) => {
+    //   setTerms(data.results[0].items);
+    // });
 
 },[]);
 

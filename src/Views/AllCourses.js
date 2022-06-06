@@ -1,5 +1,4 @@
 import { useState, useEffect, useContext } from "react";
-import uuid from 'react-uuid'
 
 import "./AllCourses.css";
 import {
@@ -45,14 +44,15 @@ useEffect(() => {
     else r[alpha].courses.push(e);
     
     // return accumulator
+  
     return r;
 
   }, {});
-  // This returns grouped results as expected
+
   setGroupedCourses(Object.values(results))
 }, [coursesData]);
 
-// Build Likes for each course
+// Build Links for each course
 function QueryNavLink({ to, ...props }) {
   let location = useLocation();
   return <NavLink to={to + location.search} {...props} />;
@@ -65,18 +65,18 @@ function handleTermChange(e) {
   navigate(`/${changeTerm}`);
 }
 
-
+console.log(groupedCourses)
 return (
-  <>
-  <div className="page-schedule-term-">
+  <> {/* update with dynamic terms */}
+  <div className="page-schedule-term-sp22">
       <article>
         <h2 id="article-head" aria-hidden="true">
           {/* update with dynamic terms */}
           Class Schedule For Spring 2022
         </h2>
-        <form>
+  <form>
    {/* minimal application: additional markup and a11y needed */}
-   <fieldset>
+      <fieldset>
             <label aria-hidden="true">Filter Courses</label>
             <input type="text" placeholder="Filter Courses"
               value={searchParams.get("filter") || ""}
@@ -89,8 +89,6 @@ return (
                 }
               }}
             />
-      </fieldset>
-          <fieldset>
           <select onChange={handleTermChange} defaultValue="">
               <option value="" disabled>
                 Select Another Term...
@@ -101,17 +99,21 @@ return (
                 </option>
               ))}
             </select>
-          </fieldset>
-        </form>
-        <section>
-          <div>
-    <ul>
+      </fieldset>
+    </form>
+
+    <section>
+
   {groupedCourses
+  // Sort Array by Alpha
+  .sort((a, b) => a.alpha.localeCompare(b.alpha))
+  // Compare and filter Courses
   .filter((filteredAlpha) => {
       let Alphafilter = searchParams.get("filter");
       if (!Alphafilter) return true;
       let letter = filteredAlpha.alpha.substring(0,1).toLowerCase();
       return letter.startsWith(Alphafilter.substring(0,1).toLowerCase());
+      // map over and build the html for filtererd results
     }).map(groupedCourse => {
         return <div>
               <h3>{groupedCourse.alpha}</h3>
@@ -122,26 +124,16 @@ return (
       let course = filteredCourse.subject_ldesc.toLowerCase();
       return course.startsWith(filter.toLowerCase());
     }).map((course) => {
-                          return <li key={course.subject_code}>
-                             <QueryNavLink
-                                style={({ isActive }) => {
-                                  return {
-                                    display: "block",
-                                    margin: "1rem 0",
-                                    color: isActive ? "red" : "",
-                                  };
-                                }}
-                        to={course.subject_code}
-                      >
-                            {course.subject_ldesc}
+                          return <li key={course.subject_code} className="box">
+                             {/* This creates a link for the subject_code */}
+                             <QueryNavLink to={course.subject_code}>
+                                {course.subject_ldesc}
                             </QueryNavLink>
                             </li>
                           })}
                 </ul>
           </div>
   })} 
-  </ul>
-  </div>
   </section>
   </article>
   </div>
