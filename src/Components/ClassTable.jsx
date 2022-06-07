@@ -2,40 +2,38 @@ import React from 'react'
 import DataTable from 'react-data-table-component';
 import Data from '../sample-data/partial-data.json';
 import './ClassTable.css'
-function handleClick(){
-    console.log(Data.results[0].items[0]);
-}
-const ExpandedComponent = () => 
+
+const ExpandedComponent = (section) => 
 {
     return(
         //conditional rendering to avoid displaying if the atribute is missing
     <div className='class-info-exp'>
-        <div className='class-info-exp-right'>
-            {Data.results[0].items[1].subject_code && <p><span>Subject Code</span>: {Data.results[0].items[1].subject_code}</p>}
-            {Data.results[0].items[1].catalog_number && <p>Catalog Number: {Data.results[0].items[1].catalog_number}</p>}
-            {Data.results[0].items[1].class_section && <p>Class Section: {Data.results[0].items[1].class_section}</p>}
-            {Data.results[0].items[1].course_id && <p>Course ID: {Data.results[0].items[1].course_id}</p>}
-            {Data.results[0].items[1].class_title && <p>Class title: {Data.results[0].items[1].class_title}</p>}
-            {Data.results[0].items[1].units && <p>Units: {Data.results[0].items[1].units}</p>}
-            {Data.results[0].items[1].class_number && <p>Class Number: {Data.results[0].items[1].class_number}</p>}
-            {Data.results[0].items[1].component && <p>Component: {Data.results[0].items[1].component}</p>}
-            {Data.results[0].items[1].seats_total && <p>Seats Total: {Data.results[0].items[1].seats_total}</p>}
-            {Data.results[0].items[1].seats_available && <p>Seats Available: {Data.results[0].items[1].seats_available}</p>}
-            {Data.results[0].items[1].instructor && <p>Instructor: {Data.results[0].items[1].instructor}</p>}
-            {Data.results[0].items[1].building && <p>Building: {Data.results[0].items[1].building}</p>}
-        </div>
-        <div className='class-info-exp-left'>
-            {Data.results[0].items[1].room && <p>Room: {Data.results[0].items[1].room}</p>}
-            {Data.results[0].items[1].days && <p>Days: {Data.results[0].items[1].days}</p>}
-            {Data.results[0].items[1].start_time && <p>Start Time: {Data.results[0].items[1].start_time}</p>}
-            {Data.results[0].items[1].end_time && <p>End Time: {Data.results[0].items[1].end_time}</p>}
-            {Data.results[0].items[1].meeting_number && <p>Meeting Number: {Data.results[0].items[1].meeting_number}</p>}
-            {Data.results[0].items[1].session_code && <p>Session Code: {Data.results[0].items[1].session_code}</p>}
-            {Data.results[0].items[1].ge_grad_req && <p>GE Grad Req: {Data.results[0].items[1].ge_grad_req}</p>}
-            {Data.results[0].items[1].class_meeting_start_date && <p>Class Meeting Start Date: {Data.results[0].items[1].class_meeting_start_date}</p>}
-            {Data.results[0].items[1].class_meeting_end_date && <p>Class Meeting End Date: {Data.results[0].items[1].class_meeting_end_date}</p>}
-            {Data.results[0].items[1].class_ldesc && <p>Class Description: {Data.results[0].items[1].class_ldesc}</p>}
-        </div>
+        
+        <p onClick={console.log(section[0])}> Jora </p>
+        {section.subject_code && <p><span>Subject Code</span>: {section.subject_code}</p>}
+        {section.catalog_number && <p>Catalog Number: {section.catalog_number}</p>}
+        {section.class_section && <p>Class Section: {section.class_section}</p>}
+        {section.course_id && <p>Course ID: {section.course_id}</p>}
+        {section.class_title && <p>Class title: {section.class_title}</p>}
+        {section.units && <p>Units: {section.units}</p>}
+        {section.class_number && <p>Class Number: {section.class_number}</p>}
+        {section.component && <p>Component: {section.component}</p>}
+        {section.seats_total && <p>Seats Total: {section.seats_total}</p>}
+        {section.seats_available && <p>Seats Available: {section.seats_available}</p>}
+        {section.instructor && <p>Instructor: {section.instructor}</p>}
+        {section.building && <p>Building: {section.building}</p>}
+        {section.room && <p>Room: {section.room}</p>}
+        {section.days && <p>Days: {section.days}</p>}
+        {section.start_time && <p>Start Time: {section.start_time}</p>}
+        {section.end_time && <p>End Time: {section.end_time}</p>}
+        {section.meeting_number && <p>Meeting Number: {section.meeting_number}</p>}
+        {section.session_code && <p>Session Code: {section.session_code}</p>}
+        {section.ge_grad_req && <p>GE Grad Req: {section.ge_grad_req}</p>}
+        {section.class_meeting_start_date && <p>Class Meeting Start Date: {section.class_meeting_start_date}</p>}
+        {section.class_meeting_end_date && <p>Class Meeting End Date: {section.class_meeting_end_date}</p>}
+        {section.class_ldesc && <p>Class Description: {section.class_ldesc}
+        </p>}
+        
     </div>
     )
 }
@@ -44,8 +42,11 @@ const ExpandedComponent = () =>
 //<pre>{JSON.stringify(Data, null, 2)}</pre>;
 
 
-export default function ClassTable() {
+export default function ClassTable({section}) {
     //const columns = Data.results[0].columns;
+    const handleClick = () =>{
+        console.log(section.sections)
+      }
     const columns = [
         // {
         //   name : 'Subject Code',
@@ -65,11 +66,11 @@ export default function ClassTable() {
         //     wrap: 'true',
         //     selector: row => row.class_title,
         // },
-        {
-             name : 'Units',
-             type : '',
-             selector: row => row.units,
-         },
+        // {
+        //      name : 'Units',
+        //      type : '',
+        //      selector: row => row.units,
+        //  },
 
         // {
         //     name : 'Seats Total',
@@ -134,12 +135,12 @@ export default function ClassTable() {
             selector: row => row.end_time,
         }
       ]
-    const rows = Data.results[0].items;
+    const rows = section.sections;
   return (
     <>
-        <div className='table' onClick={handleClick}>
-            <h2>{Data.results[0].items[0].subject_code + Data.results[0].items[0].catalog_number + " - " + Data.results[0].items[0].class_title}</h2>
-            <p>{Data.results[0].items[0].class_ldesc}</p>
+        <div className='table'>
+            <h2 onClick={handleClick}>{section.subject_code + " " + section.catalog_number + " - " + section.class_title + " - " +section.units + " Units"}</h2>
+            <p>{section.class_ldesc}</p>
             <DataTable
                 //className='table'
                 columns={columns}
@@ -147,10 +148,9 @@ export default function ClassTable() {
                 sm
                 expandableRows
                 fixedHeader
-                
                 compact
                 selectableRowsHighlight
-                expandableRowsComponent={ExpandedComponent}
+                expandableRowsComponent={() =>ExpandedComponent(section.sections)}
             />
         </div>
     </>

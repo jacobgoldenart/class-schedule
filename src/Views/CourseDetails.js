@@ -1,10 +1,31 @@
 import ClassTable from "../Components/ClassTable";
 import "./CourseDetails.css"
-import Data from "../sample-data/semester-subject-course_spring2022-accy.json"
+//import Data from "../sample-data/semester-subject-course_spring2022-accy.json"
+import { useState, useEffect } from "react";
+import useFetch from "/Users/irt-web3/Documents/Class Scheduler/class-schedule/src/Components/utils/useFetch.js";
 function CourseDetails() {
 
-const handleClick =() =>{
-  console.log(Data)
+const [Data,setData] = useState()
+const handleClick =(item) =>{
+  console.log(item)
+}
+
+useEffect(() => {
+
+    const getData = async () =>{
+      const dataFromApi = await fetchData()
+      setData(dataFromApi)
+      console.log(dataFromApi)
+    }
+    getData()
+}, []);
+const fetchData = async () =>{
+  //TODO
+  //Use Url parameter
+  const res = await fetch("https://irt-test01.webhost-tst.csus.edu/api/cs/2022/fall/csc")
+  const data = await res.json()
+  //console.log(data)
+  return data
 }
   return (
     <main>
@@ -46,15 +67,16 @@ const handleClick =() =>{
         <section>
             <h1>Table of Contents</h1>
           <div className="toc-wrapper">
-            {Data.results[0].items.map((item) =>
+            {Data.map((item) =>
               <div className="toc-card">
-                <p>{item.subject_code + " " + item.catalog_number}</p> 
-                </div>
-            )}
+                 <p>{item.subject_code + " " + item.catalog_number}</p> 
+              </div> 
+            )}            
           </div>
           <div className="table-section">
-            <ClassTable />
-            <ClassTable />
+          {Data.map((item) =>
+              <ClassTable section={item}/>
+          )}
           </div>
         </section>
       </article>
