@@ -19,3 +19,6 @@ To Run the App locally.
 3. Open your Terminal an cd into the downloaded repository
 4. Run the command: **npm start** in your terminal (from inside the main folder of the app).
 5. Your terminal should generate a local url where you can see the app. It will live update as you change the code. ; )
+
+It helps to occasionally run 'npm install react-scripts' in your commandline from within the projects directory. 
+This will update/install any packages that may have been installed by another dev.
