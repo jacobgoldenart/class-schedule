@@ -1,36 +1,34 @@
 import ClassTable from "../Components/ClassTable";
 import "./CourseDetails.css"
-//import Data from "../sample-data/semester-subject-course_spring2022-accy.json"
 import { useState, useEffect } from "react";
 import useFetch from "/Users/irt-web3/Documents/Class Scheduler/class-schedule/src/Components/utils/useFetch.js";
 function CourseDetails() {
 
-const [Data,setData] = useState()
-const handleClick =(item) =>{
-  console.log(item)
-}
+  const [Data, setData] = useState()
+  const handleClick = (item) => {
+    console.log(item)
+  }
 
-useEffect(() => {
-
-    const getData = async () =>{
+  useEffect(() => {
+    const getData = async () => {
       const dataFromApi = await fetchData()
       setData(dataFromApi)
       console.log(dataFromApi)
     }
     getData()
-}, []);
-const fetchData = async () =>{
-  //TODO
-  //Use Url parameter
-  const res = await fetch("https://irt-test01.webhost-tst.csus.edu/api/cs/2022/fall/csc")
-  const data = await res.json()
-  //console.log(data)
-  return data
-}
+  }, []);
+  const fetchData = async () => {
+    //TODO
+    //Use Url parameter
+    const res = await fetch("https://irt-test01.webhost-tst.csus.edu/api/cs/2022/fall/csc")
+    const data = await res.json()
+    //console.log(data)
+    return data
+  }
   return (
     <main>
       <article className="page-schedule-details">
-        
+
         <aside className="side-nav ">
           <nav id="myScrollspy">
             <ul className="nav nav-pills ul-button-stack list-group">
@@ -65,18 +63,18 @@ const fetchData = async () =>{
           </div>
         </aside>
         <section>
-            <h1>Table of Contents</h1>
+          <h1>Table of Contents</h1>
           <div className="toc-wrapper">
             {Data.map((item) =>
               <div className="toc-card">
-                 <p>{item.subject_code + " " + item.catalog_number}</p> 
-              </div> 
-            )}            
+                <p>{item.subject_code + " " + item.catalog_number}</p>
+              </div>
+            )}
           </div>
           <div className="table-section">
-          {Data.map((item) =>
-              <ClassTable section={item}/>
-          )}
+            {Data.map((item) =>
+              <ClassTable section={item} />
+            )}
           </div>
         </section>
       </article>
