@@ -20,7 +20,7 @@ function CourseDetails() {
   const fetchData = async () => {
     //TODO
     //Use Url parameter
-    const res = await fetch("https://irt-test01.webhost-tst.csus.edu/api/cs/2022/fall/csc")
+    const res = await fetch("https://irt-test01.webhost-tst.csus.edu/api/cs/2022/fall/accy")
     const data = await res.json()
     //console.log(data)
     return data
