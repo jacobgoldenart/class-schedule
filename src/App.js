@@ -16,13 +16,9 @@ function App() {
 
   useEffect(() => {
 
-    get("semester-list_2022.json").then((data) => {
-      setTerms(data.results[0].items);
+    get("/activesemesters").then((data) => {
+      setTerms(data);
     });
-    // test data 
-    // get("/activesemesters").then((data) => {
-    //   setTerms(data.results[0].items);
-    // });
 
 },[]);
 
@@ -32,8 +28,8 @@ function App() {
     <TermsContext.Provider value={terms}>
       <Routes>
         <Route path="/" element={<Semesters />} />
-        <Route path="/:id" element={<AllCourses />} />
-        <Route path="/:id/:id" element={<CourseDetails />} />
+        <Route path="/term/:id"  element={<AllCourses />} />
+        <Route path="/term/:id/:id"  element={<CourseDetails />} /> 
       </Routes>
     </TermsContext.Provider>
     </BrowserRouter>

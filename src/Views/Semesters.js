@@ -14,7 +14,8 @@ function Semesters() {
         <ul aria-labelledby="article-head">
           {terms.map((term) => (
             <li key={term.term}>
-              <Link to={`${term.term_ldesc.toLowerCase().replace(/ /g, "_")}`} 
+              {/* <Link to={`${term.term_ldesc.toLowerCase().replace(/ /g, "_")}`}  */}
+              <Link to={`term/${term.term}`} 
               state={{all_terms: terms,term_desc: term.term_ldesc }}>{term.term_ldesc}</Link>
             </li>
           ))}

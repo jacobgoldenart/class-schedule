@@ -2,9 +2,7 @@ import { useState } from "react";
 
 export default function useFetch(endPoint) {
 
-  //const baseUrl = 'https://irt-test01.webhost-tst.csus.edu/api/cs/'
-  const baseUrl = './sample-data/'
-
+  const baseUrl = 'https://irt-test01.webhost-tst.csus.edu/api/cs/'
 
   const [loading, setLoading] = useState(true);
 
@@ -13,7 +11,7 @@ export default function useFetch(endPoint) {
     return new Promise((resolve, reject) => {
       fetch(baseUrl + endPoint)
       // .then(res => res.text())          // convert to plain text to test api
-      // .then(text => console.log(text))
+       //.then(text => console.log(text))
         .then(response => response.json())
         .then(data => {
           if (!data) {

@@ -5,6 +5,7 @@ import {
   useNavigate,
   useLocation,
   NavLink,
+  useParams,
   useSearchParams,
 } from "react-router-dom";
 import { TermsContext } from "../App";
@@ -18,14 +19,19 @@ function AllCourses() {
   const navigate = useNavigate();
 
   let [searchParams, setSearchParams] = useSearchParams({ replace: true });
+  let { id } = useParams();
+  let location = useLocation();
  
 // useEffect1 
 useEffect(() => {
-  get("semester-subject-all_spring2022.json")
-  .then((data) => {
-    setCoursesData(data.results[0].items);
-  })
-}, []);
+
+  get(`term/${id}`).then((data) => {
+    setCoursesData(data);
+  });
+
+}, [location]);
+
+console.log(location);
 
 // useEffect2 
 useEffect(() => {
@@ -54,18 +60,17 @@ useEffect(() => {
 
 // Build Links for each course
 function QueryNavLink({ to, ...props }) {
-  let location = useLocation();
+  
   return <NavLink to={to + location.search} {...props} />;
 }
 
 function handleTermChange(e) {
   // Todo on change Load JSON for specific term (based on pathname)
   // and re render content
-  const changeTerm = e.target.value.toLowerCase().replaceAll(" ", "_");
-  navigate(`/${changeTerm}`);
+  const changeTerm = e.target.value;
+  navigate(`/term/${changeTerm}`);
 }
 
-console.log(groupedCourses)
 return (
   <> {/* update with dynamic terms */}
   <div className="page-schedule-term-sp22">
@@ -94,7 +99,7 @@ return (
                 Select Another Term...
               </option>
               {termsLinks.map((termLink) => (
-                <option key={termLink.term} value={termLink.term_ldesc}>
+                <option key={termLink.term} value={termLink.term}>
                   {termLink.term_ldesc}
                 </option>
               ))}
