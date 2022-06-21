@@ -4,8 +4,6 @@ import useBreadcrumbs from "use-react-router-breadcrumbs";
 const Breadcrumbs = () => {
   const breadcrumbs = useBreadcrumbs();
 
-  console.log(breadcrumbs)
-
   return (
     <>
       <aside aria-labelledby="breadcrumb-head" className="sac-breadcrumb">

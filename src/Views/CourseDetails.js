@@ -14,8 +14,6 @@ import useFetch from "../Components/utils/useFetch";
 import uuid from 'react-uuid'
 
 
-
-
 function CourseDetails() {
   const [termData, setTermData] = useState()
   const terms = useContext(TermsContext);
@@ -24,7 +22,6 @@ function CourseDetails() {
   let location = useLocation();
   const { get } = useFetch();
 
-  console.log(termData)
 
   useEffect(() => {
 
@@ -33,8 +30,6 @@ function CourseDetails() {
   });
 
   }, [location]);
-
-console.log(location);
 
   return (
     <main>
@@ -45,8 +40,7 @@ console.log(location);
           <ul className="nav nav-pills ul-button-stack list-group">
           {terms.map((term) => (
             <li key={term.term}>
-              {/* <Link to={`${term.term_ldesc.toLowerCase().replace(/ /g, "_")}`}  */}
-              <Link to={`/term/${term.term}`} 
+              <Link to={`/${term.term}`} 
               state={{all_terms: terms,term_desc: term.term_ldesc }}>{term.term_ldesc}</Link>
             </li>
           ))}

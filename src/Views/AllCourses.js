@@ -25,13 +25,12 @@ function AllCourses() {
 // useEffect1 
 useEffect(() => {
 
-  get(`term/${id}`).then((data) => {
+  get(`/${id}`).then((data) => {
     setCoursesData(data);
   });
 
 }, [location]);
 
-console.log(location);
 
 // useEffect2 
 useEffect(() => {
@@ -68,7 +67,7 @@ function handleTermChange(e) {
   // Todo on change Load JSON for specific term (based on pathname)
   // and re render content
   const changeTerm = e.target.value;
-  navigate(`/term/${changeTerm}`);
+  navigate(`/${changeTerm}`);
 }
 
 return (

@@ -28,8 +28,8 @@ function App() {
     <TermsContext.Provider value={terms}>
       <Routes>
         <Route path="/" element={<Semesters />} />
-        <Route path="/term/:id"  element={<AllCourses />} />
-        <Route path="/term/:id/:id"  element={<CourseDetails />} /> 
+        <Route path="/:id"  element={<AllCourses />} />
+        <Route path="/:id/:id"  element={<CourseDetails />} /> 
       </Routes>
     </TermsContext.Provider>
     </BrowserRouter>
