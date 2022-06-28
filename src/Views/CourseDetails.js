@@ -2,11 +2,7 @@ import ClassTable from "../Components/ClassTable";
 import "./CourseDetails.css"
 import { useState, useEffect, useContext } from "react";
 import {
-  useNavigate,
   useLocation,
-  NavLink,
-  useParams,
-  useSearchParams,
   Link
 } from "react-router-dom";
 import { TermsContext } from "../App";
@@ -17,19 +13,18 @@ import uuid from 'react-uuid'
 function CourseDetails() {
   const [termData, setTermData] = useState()
   const terms = useContext(TermsContext);
-  const navigate = useNavigate();
-  let { id } = useParams();
   let location = useLocation();
   const { get } = useFetch();
 
 
   useEffect(() => {
 
-    get(`${location.pathname}`).then((data) => {
+    get(`${location.pathname.slice(16)}`).then((data) => {
     setTermData(data);
   });
 
   }, [location]);
+
 
   return (
     <main>
@@ -40,7 +35,7 @@ function CourseDetails() {
           <ul className="nav nav-pills ul-button-stack list-group">
           {terms.map((term) => (
             <li key={term.term}>
-              <Link to={`/${term.term}`} 
+              <Link to={`/class-schedule/${term.term}`} 
               state={{all_terms: terms,term_desc: term.term_ldesc }}>{term.term_ldesc}</Link>
             </li>
           ))}

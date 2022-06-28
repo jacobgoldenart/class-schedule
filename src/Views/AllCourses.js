@@ -14,7 +14,7 @@ import useFetch from "../Components/utils/useFetch";
 function AllCourses() {
   const [groupedCourses, setGroupedCourses] = useState([]);
   const [coursesData, setCoursesData] = useState([]);
-  const { get } = useFetch("./sample-data/");
+  const { get } = useFetch();
   const termsLinks = useContext(TermsContext);
   const navigate = useNavigate();
 
@@ -25,7 +25,7 @@ function AllCourses() {
 // useEffect1 
 useEffect(() => {
 
-  get(`/${id}`).then((data) => {
+  get(`${id}`).then((data) => {
     setCoursesData(data);
   });
 
@@ -67,7 +67,7 @@ function handleTermChange(e) {
   // Todo on change Load JSON for specific term (based on pathname)
   // and re render content
   const changeTerm = e.target.value;
-  navigate(`/${changeTerm}`);
+  navigate(`/class-schedule/${changeTerm}`);
 }
 
 return (

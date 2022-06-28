@@ -629,7 +629,7 @@ export default function Header() {
             }}
           />
           {/* Minimal t5 Header */}
-          <h1>Sac State Class Schedule</h1>{" "}
+          <h1>Sac State Class Schedule</h1>
         </header>
         {/****** END: Hero Section ******/}
       </main>
