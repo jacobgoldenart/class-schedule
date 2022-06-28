@@ -1,0 +1,218 @@
+{
+    "results" : [
+      {
+        "columns" : [
+          {
+            "name" : "SUBJECT_CODE",
+            "type" : ""
+          },
+          {
+            "name" : "CATALOG_NUMBER",
+            "type" : ""
+          },
+          {
+            "name" : "CLASS_SECTION",
+            "type" : ""
+          },
+          {
+            "name" : "COURSE_ID",
+            "type" : ""
+          },
+          {
+            "name" : "CLASS_TITLE",
+            "type" : ""
+          },
+          {
+            "name" : "UNITS",
+            "type" : ""
+          },
+          {
+            "name" : "CLASS_NUMBER",
+            "type" : ""
+          },
+          {
+            "name" : "COMPONENT",
+            "type" : ""
+          },
+          {
+            "name" : "SEATS_TOTAL",
+            "type" : ""
+          },
+          {
+            "name" : "SEATS_AVAILABLE",
+            "type" : ""
+          },
+          {
+            "name" : "INSTRUCTOR",
+            "type" : ""
+          },
+          {
+            "name" : "BUILDING",
+            "type" : ""
+          },
+          {
+            "name" : "ROOM",
+            "type" : ""
+          },
+          {
+            "name" : "DAYS",
+            "type" : ""
+          },
+          {
+            "name" : "START_TIME",
+            "type" : ""
+          },
+          {
+            "name" : "END_TIME",
+            "type" : ""
+          },
+          {
+            "name" : "MEETING_NUMBER",
+            "type" : ""
+          },
+          {
+            "name" : "SESSION_CODE",
+            "type" : ""
+          },
+          {
+            "name" : "GE_GRAD_REQ",
+            "type" : ""
+          },
+          {
+            "name" : "CLASS_LDESC",
+            "type" : ""
+          },
+          {
+            "name" : "CLASS_MEETING_START_DATE",
+            "type" : ""
+          },
+          {
+            "name" : "CLASS_MEETING_END_DATE",
+            "type" : ""
+          }
+        ],
+        "items" : [
+          {
+            "subject_code" : "ACCY",
+            "catalog_number" : "   1",
+            "class_section" : "10",
+            "course_id" : "100086",
+            "class_title" : "Accounting Fundamentals",
+            "units" : "3",
+            "class_number" : "36861",
+            "component" : "Discussion",
+            "seats_total" : "55",
+            "seats_available" : "13",
+            "instructor" : "Adcock Jr,Don",
+            "building" : "WEB",
+            "room" : "ONLINE",
+            "days" : "T       ",
+            "start_time" : "0600PM",
+            "end_time" : "0715PM",
+            "meeting_number" : 2,
+            "session_code" : "1",
+            "ge_grad_req" : "HY",
+            "class_ldesc" : "Accounting as the basis of an information system with emphasis on concepts and assumptions underlying data accumulation for financial reports.  Includes the concepts of income determination and financial position, and the accounting for various types of ownership equities.\nPrerequisite: Entry Level Math (ELM) test of at least 36 or a CR grade in LS 7A.",
+            "class_meeting_start_date" : " ",
+            "class_meeting_end_date" : " "
+          },
+          {
+            "subject_code" : "ACCY",
+            "catalog_number" : "   1",
+            "class_section" : "07",
+            "course_id" : "100086",
+            "class_title" : "Accounting Fundamentals",
+            "units" : "3",
+            "class_number" : "35805",
+            "component" : "Discussion",
+            "seats_total" : "55",
+            "seats_available" : "0",
+            "instructor" : "Jang,Daun",
+            "building" : "TAH",
+            "room" : "1003",
+            "days" : "MW      ",
+            "start_time" : "0430PM",
+            "end_time" : "0545PM",
+            "meeting_number" : 1,
+            "session_code" : "1",
+            "ge_grad_req" : "",
+            "class_ldesc" : "Accounting as the basis of an information system with emphasis on concepts and assumptions underlying data accumulation for financial reports.  Includes the concepts of income determination and financial position, and the accounting for various types of ownership equities.\nPrerequisite: Entry Level Math (ELM) test of at least 36 or a CR grade in LS 7A.",
+            "class_meeting_start_date" : " ",
+            "class_meeting_end_date" : " "
+          },
+          {
+            "subject_code" : "ACCY",
+            "catalog_number" : "   1",
+            "class_section" : "04",
+            "course_id" : "100086",
+            "class_title" : "Accounting Fundamentals",
+            "units" : "3",
+            "class_number" : "31639",
+            "component" : "Discussion",
+            "seats_total" : "55",
+            "seats_available" : "0",
+            "instructor" : "Roberts,Roslyn A",
+            "building" : "WEB",
+            "room" : "ONLINE",
+            "days" : "MW      ",
+            "start_time" : "1200PM",
+            "end_time" : "0115PM",
+            "meeting_number" : 2,
+            "session_code" : "1",
+            "ge_grad_req" : "HY",
+            "class_ldesc" : "Accounting as the basis of an information system with emphasis on concepts and assumptions underlying data accumulation for financial reports.  Includes the concepts of income determination and financial position, and the accounting for various types of ownership equities.\nPrerequisite: Entry Level Math (ELM) test of at least 36 or a CR grade in LS 7A.",
+            "class_meeting_start_date" : " ",
+            "class_meeting_end_date" : " "
+          },
+          {
+            "subject_code" : "ACCY",
+            "catalog_number" : "   1",
+            "class_section" : "06",
+            "course_id" : "100086",
+            "class_title" : "Accounting Fundamentals",
+            "units" : "3",
+            "class_number" : "31685",
+            "component" : "Discussion",
+            "seats_total" : "55",
+            "seats_available" : "0",
+            "instructor" : "Zhang,Jin",
+            "building" : "WEB",
+            "room" : "ONLINE",
+            "days" : "MW      ",
+            "start_time" : "0300PM",
+            "end_time" : "0415PM",
+            "meeting_number" : 2,
+            "session_code" : "1",
+            "ge_grad_req" : "OL",
+            "class_ldesc" : "Accounting as the basis of an information system with emphasis on concepts and assumptions underlying data accumulation for financial reports.  Includes the concepts of income determination and financial position, and the accounting for various types of ownership equities.\nPrerequisite: Entry Level Math (ELM) test of at least 36 or a CR grade in LS 7A.",
+            "class_meeting_start_date" : " ",
+            "class_meeting_end_date" : " "
+          },
+          {
+            "subject_code" : "ACCY",
+            "catalog_number" : "   1",
+            "class_section" : "04",
+            "course_id" : "100086",
+            "class_title" : "Accounting Fundamentals",
+            "units" : "3",
+            "class_number" : "31639",
+            "component" : "Discussion",
+            "seats_total" : "55",
+            "seats_available" : "0",
+            "instructor" : "Roberts,Roslyn A",
+            "building" : "ALP",
+            "room" : "236",
+            "days" : "MW      ",
+            "start_time" : "1200PM",
+            "end_time" : "0115PM",
+            "meeting_number" : 1,
+            "session_code" : "1",
+            "ge_grad_req" : "HY",
+            "class_ldesc" : "Accounting as the basis of an information system with emphasis on concepts and assumptions underlying data accumulation for financial reports.  Includes the concepts of income determination and financial position, and the accounting for various types of ownership equities.\nPrerequisite: Entry Level Math (ELM) test of at least 36 or a CR grade in LS 7A.",
+            "class_meeting_start_date" : " ",
+            "class_meeting_end_date" : " "
+          }
+        ]
+    }
+    ]
+}

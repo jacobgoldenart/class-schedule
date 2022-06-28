@@ -4,8 +4,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Semesters from "./Views/Semesters";
 import AllCourses from "./Views/AllCourses";
 import CourseDetails from "./Views/CourseDetails";
-import Breadcrumbs from "./Components/Breadcrumbs";
 import useFetch from "./Components/utils/useFetch";
+import Breadcrumbs from "./Components/BreadCrumbs";
+import ClassTable from "./Components/ClassTable";
 export const TermsContext = React.createContext();
 
 
@@ -24,8 +25,8 @@ function App() {
 
   return (
     <BrowserRouter>
+    <Breadcrumbs />
     <TermsContext.Provider value={terms}>
-      <Breadcrumbs />
       <Routes>
         <Route path="/" element={<Semesters />} />
         <Route path="/:id" element={<AllCourses />} />
