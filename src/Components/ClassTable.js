@@ -8,28 +8,28 @@ const ExpandedComponent = (section) => {
     return (
         //conditional rendering to avoid displaying if the atribute is missing
         <div key={uuid()} className='class-info-exp'>
-           {section.data.subject_code && <p><span>Subject Code</span>: {section.data.subject_code}</p>}
-            {section.data.catalog_number && <p>Catalog Number: {section.data.catalog_number}</p>}
-            {section.data.class_section && <p>Class Section: {section.data.class_section}</p>}
-            {section.data.course_id && <p>Course ID: {section.data.course_id}</p>}
-            {section.data.class_title && <p>Class title: {section.data.class_title}</p>}
-            {section.data.units && <p>Units: {section.data.units}</p>}
-            {section.data.class_number && <p>Class Number: {section.data.class_number}</p>}
-            {section.data.component && <p>Component: {section.data.component}</p>}
-            {section.data.seats_total && <p>Seats Total: {section.data.seats_total}</p>}
-            {section.data.seats_available && <p>Seats Available: {section.data.seats_available}</p>}
-            {section.data.instructor && <p>Instructor: {section.data.instructor}</p>}
-            {section.data.building && <p>Building: {section.data.building}</p>}
-            {section.data.room && <p>Room: {section.data.room}</p>}
-            {section.data.days && <p>Days: {section.data.days}</p>}
-            {section.data.start_time && <p>Start Time: {section.data.start_time}</p>}
-            {section.data.end_time && <p>End Time: {section.data.end_time}</p>}
-            {section.data.meeting_number && <p>Meeting Number: {section.data.meeting_number}</p>}
-            {section.data.session_code && <p>Session Code: {section.data.session_code}</p>}
-            {section.data.ge_grad_req && <p>GE Grad Req: {section.data.ge_grad_req}</p>}
-            {section.data.class_meeting_start_date && <p>Class Meeting Start Date: {section.data.class_meeting_start_date}</p>}
-            {section.data.class_meeting_end_date && <p>Class Meeting End Date: {section.data.class_meeting_end_date}</p>}
-            {section.data.class_ldesc && <p>Class Description: {section.data.class_ldesc}</p>}
+            <div className='class-info-main'>
+                {section.data.class_title && <p className="class_title"><span>Class Title: </span>{section.data.class_title}</p>}
+                {section.data.instructor && <p className="class_instructor"><span>Instructor: </span>{section.data.instructor}</p>}
+                {section.data.component && <p className="class_component"><span>Component: </span> {section.data.component}</p>}
+                {section.data.building && <p className="class_building"><span>Building: </span>{section.data.building} {section.data.building}</p>}
+                {section.data.room && <p className="class_room"><span>Room: </span> {section.data.room}</p>}
+                {section.data.days && <p className="class_days"><span>Days: </span> {section.data.days}</p>}
+                {section.data.start_time && <p className="class_start_time"><span>Start Time: </span> {section.data.start_time}</p>}
+                {section.data.end_time && <p className="class_end_time"><span>End Time: </span>{section.data.end_time}</p>}
+            </div>
+            <div className='class-info-data'>
+                {section.data.class_section && <p className="class_section"><span>Class Section: </span> {section.data.class_section}</p>}
+                {section.data.course_id && <p className="class_course_id"><span>Course ID: </span> {section.data.course_id}</p>}
+                {section.data.class_number && <p className="class_number"><span>Class Number: </span> {section.data.class_number}</p>}
+                {section.data.seats_total && <p className="class_seats_total"><span>Seats Total: </span> {section.data.seats_total}</p>}
+                {section.data.seats_available && <p className="class_available"><span>Seats Available: </span> {section.data.seats_available}</p>}
+            </div>
+            <div className='class-info-other'>
+                {section.data.ge_grad_req && <p className="class_attributes"><span>Class atributes: </span> {section.data.ge_grad_req}</p>}
+                {section.data.class_meeting_start_date && <p className="class_meeting_start_date"><span>Class Meeting Start Date: </span> {section.data.class_meeting_start_date}</p>}
+                {section.data.class_meeting_end_date && <p className="class_meeting_end_date"><span>Class Meeting End Date: </span> {section.data.class_meeting_end_date}</p>}    
+            </div>      
         </div>
     )
 }

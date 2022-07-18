@@ -7,7 +7,13 @@ const Breadcrumbs = () => {
 
   return (
     <>
-      <aside aria-labelledby="breadcrumb-head" className="sac-breadcrumb">
+        <header className="bg-image-full">
+          <div>
+            
+            <h2><span>Dynamic Page Title</span></h2>
+          </div>
+        </header>
+      <aside aria-labelledby="breadcrumb-head" className="v22 sac-breadcrumb">
         <ul>
           {breadcrumbs.slice(1).map(({ match, breadcrumb }) => (
             <li key={match.pathname}>

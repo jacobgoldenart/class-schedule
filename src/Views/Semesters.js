@@ -9,7 +9,7 @@ function Semesters() {
   return (
 
     <div className="page-schedule-home">
-      <article>
+      <article id="skip">
         <h2 id="article-head">Available Schedules</h2>
         <ul aria-labelledby="article-head">
           {terms.map((term) => (
@@ -20,8 +20,9 @@ function Semesters() {
             </li>
           ))}
         </ul>
-      </article>
-    </div>
+ 
+       </article>
+   </div>
 
   );
 }

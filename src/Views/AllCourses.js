@@ -72,7 +72,7 @@ function handleTermChange(e) {
 
 return (
   <> {/* update with dynamic terms */}
-  <div className="page-schedule-term-sp22">
+  <div className="page-schedule-term spring">
       <article>
         <h2 id="article-head" aria-hidden="true">
           {/* update with dynamic terms */}

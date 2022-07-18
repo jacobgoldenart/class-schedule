@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer>
+<footer>
   <h3 id="footer-head" aria-hidden="true">
     Important
   </h3>

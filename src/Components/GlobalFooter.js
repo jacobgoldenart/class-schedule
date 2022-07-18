@@ -1,11 +1,7 @@
 export default function Footer() {
   return (
     <>
-  <footer
-    aria-labelledby="footer-extras"
-    className="footer vcard"
-    id="csus-global-footer"
-  >
+ <footer aria-labelledby="footer-extras" className="footer vcard v22" id="csus-global-footer">
     <div className="container-fluid">
       <h2 aria-hidden="true" className="d-none" id="footer-extras">
         Campus Contact Information
