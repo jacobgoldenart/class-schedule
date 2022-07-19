@@ -1,4 +1,4 @@
-main,
+#root,
 article ul,
 aside ul,
 article section div,
@@ -14,7 +14,7 @@ form {
     padding: 0;
 }
 
-main {
+#root {
     padding: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -58,7 +58,7 @@ header[role="banner"] h1 {
     padding: 3rem 0 2rem;
 }
 
-main > footer {
+#root > footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -72,7 +72,7 @@ main > footer {
     justify-content: center;
 }
 
-main > footer div {
+#root > footer div {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 65%;
     flex: 0 0 65%;
@@ -144,15 +144,15 @@ article h3 {
     align-items: center;
 }
 
-[class*="page-schedule-term-"] article > section > div:nth-of-type(even) {
+[class*="page-schedule-term"] article > section > div:nth-of-type(even) {
     background: var(--graylt);
 }
 
-[class*="page-schedule-term-"] article > section > div:nth-of-type(even) h3 {
+[class*="page-schedule-term"] article > section > div:nth-of-type(even) h3 {
     background: var(--graymin);
 }
 
-[class*="page-schedule-term-"] article ul {
+[class*="page-schedule-term"] article ul {
     -webkit-box-flex: 1;
     -ms-flex: 1 0 95%;
     flex: 1 0 95%;
@@ -161,11 +161,11 @@ article h3 {
     padding: .5rem 1ch 0 1ch;
 }
 
-[class*="page-schedule-term-"] article > section > div:nth-of-type(odd) ul {
+[class*="page-schedule-term"] article > section > div:nth-of-type(odd) ul {
     background: var(--graymin);
 }
 
-[class*="page-schedule-term-"] article li {
+[class*="page-schedule-term"] article li {
     -ms-flex-preferred-size: min-content;
     flex-basis: min-content;
     display: -webkit-box;
@@ -178,7 +178,7 @@ article h3 {
     border-radius: 4px;
 }
 
-[class*="page-schedule-term-"] article li a {
+[class*="page-schedule-term"] article li a {
     display: block;
     background: var(--white);
     padding: 1rem;

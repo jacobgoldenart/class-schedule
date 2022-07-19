@@ -1,7 +1,6 @@
 import React from 'react'
 import DataTable from 'react-data-table-component';
 import uuid from 'react-uuid'
-//import Data from '../sample-data/partial-data.json';
 import './ClassTable.css'
 
 const ExpandedComponent = (section) => {
@@ -73,7 +72,6 @@ export default function ClassTable({ section }) {
         {
             name: 'Start Time',
             type: '',
-            hide: 'sm',
             sortable: 'true',
             hide: 'lg',
             center: 'true',

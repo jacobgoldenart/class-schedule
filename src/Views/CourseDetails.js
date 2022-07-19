@@ -1,10 +1,7 @@
 import ClassTable from "../Components/ClassTable";
 import "./CourseDetails.css"
 import { useState, useEffect, useContext } from "react";
-import {
-  useLocation,
-  Link
-} from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { TermsContext } from "../App";
 import useFetch from "../Components/utils/useFetch";
 import uuid from 'react-uuid'
@@ -18,20 +15,16 @@ function CourseDetails() {
 
 
   useEffect(() => {
-
-    get(`${location.pathname.slice(16)}`).then((data) => {
+    // get(`${location.pathname.slice(16)}`).then((data) => {
+    get(`${location.pathname}`).then((data) => {
     setTermData(data);
   });
 
   }, [location]);
 
 
-  console.log(`terms: ${terms}`);
-
-
-
   return (
-    <div clasName="page-schedule-details">
+    <div className="page-schedule-details">
      <article id="skip">
     
       <aside className="side-nav">

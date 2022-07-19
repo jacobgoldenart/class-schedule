@@ -19,7 +19,6 @@ export default function Header() {
     <>
         <div role="banner">
         <h1 aria-hidden="true" className="d-none">California State University, Sacramento</h1>
-        <p className="ie-browser-msg" style="padding: 1em 0; background: #e6b711; color: #333; text-align: center;">Based on real user feedback and statistics, csus.edu no longer supports Microsoft’s Internet Explorer browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <nav aria-labelledby="primary-navigation" className="navbar navbar-default navbar-light navbar-static-top splitter" id="csus-global-navbar">
             <h2 hidden="" id="primary-navigation">Primary Navigation</h2>
             <div className="container">
@@ -31,7 +30,7 @@ export default function Header() {
                 </ul>
                 <button aria-expanded="false" aria-haspopup="true" aria-label="Menu" className="navbar-toggler navbar-toggler-right navbar-toggler-icon" data-target="#quicklinks-modal" data-toggle="modal" href="#quicklinks-modal" type="submit">Menu</button>
                 {/* Modal: Start */}
-                <div aria-labelledby="quicklinksModalLabel" className="modal fade" id="quicklinks-modal" tabindex="-1">
+                <div aria-labelledby="quicklinksModalLabel" className="modal fade" id="quicklinks-modal">
                     <div className="modal-dialog modal-dialog-slideout modal-sm">
                         <div className="modal-content">
                             <div className="modal-header">
@@ -39,11 +38,11 @@ export default function Header() {
                                 <button aria-label="Close Primary Navigation" className="close" data-dismiss="modal" href="#" type="submit">× </button>
                             </div>
                             <div className="modal-body">
-                                <form action="https://www.tst.csus.edu/search/" method="get" role="search" style="border: none;">
+                                <form action="https://www.tst.csus.edu/search/" method="get" role="search">
                                     <fieldset>
                                         <legend>Search</legend>
-                                        <input aria-label="Search CSUS.edu" autofocus="autofocus" className="form-control" name="q" placeholder="Search" title="Search CSUS.edu" type="search" />
-                                        <button aria-label="Submit Search" type="submit"> <span style="text-indent: -999px; display: inline-block; max-width: 1px; overflow: hidden;">Submit Search</span> <img alt="Submit Search" height="32" src="https://irt-cdn.webhost.csus.edu/cascade/csusnew2019/NewCSUS2019-global-assets/_internal/images/toolbar_find.png" title="Click to submit your search request" width="32" /> </button>
+                                        <input aria-label="Search CSUS.edu" className="form-control" name="q" placeholder="Search" title="Search CSUS.edu" type="search" />
+                                        <button aria-label="Submit Search" type="submit"> <span>Submit Search</span> <img alt="Submit Search" height="32" src="https://irt-cdn.webhost.csus.edu/cascade/csusnew2019/NewCSUS2019-global-assets/_internal/images/toolbar_find.png" title="Click to submit your search request" width="32" /> </button>
                                     </fieldset>
                                 </form>
                                 <ul className="ql-stacker" id="top-quick-links" role="menubar">
