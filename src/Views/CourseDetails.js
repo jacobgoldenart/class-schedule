@@ -16,7 +16,7 @@ function CourseDetails() {
 
   useEffect(() => {
     // get(`${location.pathname.slice(16)}`).then((data) => {
-    get(`${location.pathname}`).then((data) => {
+    get(`${location.pathname.slice(16)}`).then((data) => {
     setTermData(data);
   });
 

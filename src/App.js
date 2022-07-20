@@ -27,9 +27,9 @@ function App() {
     <Breadcrumbs />
     <TermsContext.Provider value={terms}>
       <Routes>
-        <Route path="/" element={<Semesters />} />
-        <Route path="/:id"  element={<AllCourses />} />
-        <Route path="/:id/:id"  element={<CourseDetails />} /> 
+        <Route path="/class-schedule" element={<Semesters />} />
+        <Route path="/class-schedule/:id"  element={<AllCourses />} />
+        <Route path="/class-schedule/:id/:id"  element={<CourseDetails />} /> 
       </Routes>
     </TermsContext.Provider>
     </BrowserRouter>
